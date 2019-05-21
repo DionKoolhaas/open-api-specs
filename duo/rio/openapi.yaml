@@ -692,7 +692,7 @@ components:
                   aangebodenMboOpleidingen:
                     type: array
                     items:
-                      $ref: 'aangeboden-mbo-opleiding-cohort.json'
+                      $ref: 'aangeboden-mbo-opleiding.json'
                 required:
                   - aangebodenMboOpleidingen
               _links:
@@ -704,7 +704,7 @@ components:
       content:
         application/hal+json:
           schema:
-            $ref: 'aangeboden-mbo-opleiding-cohort.json'
+            $ref: 'aangeboden-mbo-opleiding.json'
     AangebodenMboOpleidingCohorten:
       description: OK.
       headers:
