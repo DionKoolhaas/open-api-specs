@@ -59,7 +59,7 @@ paths:
         - $ref: '#/components/parameters/instellingSoort'
       responses:
         '200':
-          $ref: '#/components/responses/Onderwijsinstellingen'
+          $ref: '#/components/responses/Onderwijsbesturen'
         '401':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
         '403':
@@ -75,7 +75,7 @@ paths:
         - $ref: '#/components/parameters/id'
       responses:
         '200':
-          $ref: '#/components/responses/Onderwijsinstelling'
+          $ref: '#/components/responses/Onderwijsbestuur'
         '401':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
         '403':
@@ -157,7 +157,7 @@ components:
         application/hal+json:
           schema:
             $ref: '#/components/schemas/BevoegdGezag'
-    Onderwijsinstellingen:
+    Onderwijsbesturen:
       description: OK.
       headers:
         X-Pagination-Page:
@@ -177,60 +177,19 @@ components:
               _embedded:
                 type: object
                 properties:
-                  onderwijsinstellingen:
+                  onderwijsbesturen:
                     type: array
                     items:
-                      $ref: '#/components/schemas/Onderwijsinstelling'
+                      $ref: 'onderwijsbestuur.json'
                 required:
                   - onderwijsinstellingen
               _links:
                 type: object
                 allOf:
                   - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
-    Onderwijsinstelling:
+    Onderwijsbestuur:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: '#/components/schemas/Onderwijsinstelling'
-  schemas:
-    BevoegdGezag:
-      type: object
-      required:
-        - _links
-      properties:
-        _links:
-          type: object
-          properties:
-            self:
-              allOf:
-                - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalLink'
-              description: 'Absolute link naar deze resource'
-        denominatie:
-          type: string
-        wetgeving:
-          type: string
-        type:
-          type: string
-        instellingSoort:
-          type: string
-    Onderwijsinstelling:
-      type: object
-      required:
-        - _links
-      properties:
-        _links:
-          type: object
-          properties:
-            self:
-              allOf:
-                - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalLink'
-              description: 'Absolute link naar deze resource'
-        denominatie:
-          type: string
-        wetgeving:
-          type: string
-        type:
-          type: string
-        instellingSoort:
-          type: string
+            $ref: 'onderwijsbestuur.json'
