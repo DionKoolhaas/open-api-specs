@@ -1,0 +1,92 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MboDomein JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+			],
+			"type": "object"
+		},
+		"code": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/code",
+				"maxLength": 8,
+				"minLength": 1
+				}
+		},
+		"naam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/naam",
+			"maxLength": 40,
+			"minLength": 1
+		},
+		"naamLang": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/naamLang",
+			"maxLength": 225,
+			"minLength": 1
+		},
+		"internationaleNaam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/internationaleNaam",
+			"maxLength": 225,
+			"minLength": 1
+		},
+		"afkorting": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/afkorting",
+			"maxLength": 12,
+			"minLength": 1
+		},
+		"herkomstOpleiding": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/herkomstOpleiding",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"startdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/startdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		},
+		"opheffingsdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboDomein/opheffingsdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		}
+	},
+	"required": [
+		"_links",
+		"naamLang",
+		"herkomstOpleiding"
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "BevoegdGezagErkenning JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"onderwijsbestuur": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"onderwijsbestuur"
+			],
+			"type": "object"
+		},
+		"nummer": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/nummer",
+			"maxLength": 3000,
+			"pattern": "^\\d{5}$"
+		},
+		"verkorteNaam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/verkorteNaam",
+			"maxLength": 30,
+			"minLength": 1
+		},
+		"volledigeNaam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/volledigeNaam",
+			"maxLength": 80,
+			"minLength": 1
+		},
+		"soort": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/soort",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"richtingen": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/richtingen",
+				"maxLength": 70,
+				"minLength": 1,
+				"pattern": "^[A-Z0-9_]*$"
+				}
+		},
+		"bekostigingscode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/bekostigingscode",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"wet": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/wet",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"ingangsdatum": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/ingangsdatum",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"einddatum": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/einddatum",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		}
+	},
+	"required": [
+		"_links",
+		"nummer",
+		"volledigeNaam",
+		"soort",
+		"bekostigingscode"
+	]
+}

@@ -1,0 +1,189 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "AangebodenMboOpleiding JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"aangebodenMboOpleidingCohort": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"onderwijslocatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"onderwijsaanbieder": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"mboCrossOverKwalificatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"mboKwalificatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"mboDomein": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"mboKwalificatiedossier": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"aangebodenMboOpleidingCohort"
+				,"onderwijslocatie"
+				,"onderwijsaanbieder"
+				,"mboCrossOverKwalificatie"
+				,"mboKwalificatie"
+				,"mboDomein"
+				,"mboKwalificatiedossier"
+			],
+			"type": "object"
+		},
+		"code": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/code",
+			"pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
+		},
+		"leertraject": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/leertraject",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"eigenAangebodenOpleidingSleutel": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/eigenAangebodenOpleidingSleutel",
+				"maxLength": 60,
+				"minLength": 1
+				}
+		},
+		"eigenNaam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/eigenNaam",
+			"maxLength": 225,
+			"minLength": 1
+		},
+		"eigenInternationaleNaam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/eigenInternationaleNaam",
+			"maxLength": 225,
+			"minLength": 1
+		},
+		"startdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/startdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		},
+		"opheffingsdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleiding/opheffingsdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		}
+	},
+	"required": [
+		"_links",
+		"leertraject"
+	]
+}

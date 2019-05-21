@@ -1,0 +1,73 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Onderwijslocatiegebruik JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"onderwijslocatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"onderwijslocatie"
+			],
+			"type": "object"
+		},
+		"naam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/naam",
+			"maxLength": 100,
+			"minLength": 1
+		},
+		"inBedrijfdatum": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/inBedrijfdatum",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"uitBedrijfdatum": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/uitBedrijfdatum",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"eigenOnderwijslocatiegebruikSleutel": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/eigenOnderwijslocatiegebruikSleutel",
+			"maxLength": 60,
+			"minLength": 1
+		}
+	},
+	"required": [
+		"_links",
+		"naam",
+		"inBedrijfdatum"
+	]
+}

@@ -1,0 +1,99 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MboOpleidingserkenning JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+			],
+			"type": "object"
+		},
+		"CREBOcode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/CREBOcode",
+			"maxLength": 5,
+			"minLength": 5
+		},
+		"instroomEinddatum": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/instroomEinddatum",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"prijsfactorBekostiging": {
+			"type": "number",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/prijsfactorBekostiging"
+		},
+		"toegestaneLeerweg": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/toegestaneLeerweg",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"wet": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/wet",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"ministerie": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/ministerie",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"licentieerwijze": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/licentieerwijze",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"ingangsdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/ingangsdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		},
+		"einddatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/einddatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		}
+	},
+	"required": [
+		"_links",
+		"CREBOcode",
+		"prijsfactorBekostiging",
+		"toegestaneLeerweg",
+		"wet",
+		"ministerie",
+		"licentieerwijze"
+	]
+}

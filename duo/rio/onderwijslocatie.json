@@ -1,0 +1,85 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Onderwijslocatie JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"bAGverblijfsobject": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"bAGverblijfsobject"
+			],
+			"type": "object"
+		},
+		"code": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/code",
+			"maxLength": 7,
+			"minLength": 7,
+			"pattern": "^(\\d{3}X\\d{3})$"
+		},
+		"postcode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/postcode",
+			"maxLength": 6,
+			"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
+		},
+		"huisnummer": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/huisnummer",
+			"maxLength": 3000,
+			"pattern": "^\\d{0,5}$"
+		},
+		"huisnummertoevoeging": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/huisnummertoevoeging",
+			"maxLength": 4,
+			"minLength": 1
+		},
+		"gpsLatitude": {
+			"type": "number",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/gpsLatitude"
+		},
+		"gpsLongitude": {
+			"type": "number",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/gpsLongitude"
+		}
+	},
+	"required": [
+		"_links",
+		"code",
+		"gpsLatitude",
+		"gpsLongitude"
+	]
+}

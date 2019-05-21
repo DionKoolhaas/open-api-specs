@@ -1,0 +1,88 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "AangebodenMboOpleidingCohort JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+			],
+			"type": "object"
+		},
+		"code": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/code",
+			"maxLength": 60,
+			"minLength": 1
+		},
+		"status": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/status",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"beginAanmeldperiode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/beginAanmeldperiode",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"eindeAanmeldperiode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/eindeAanmeldperiode",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"instroommoment": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/instroommoment",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"beginInstroomperiode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/beginInstroomperiode",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"eindeInstroomperiode": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/eindeInstroomperiode",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"toestemmingVereistVoorAanmelding": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/toestemmingVereistVoorAanmelding",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"toelichtingVereisteToestemming": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/toelichtingVereisteToestemming",
+			"maxLength": 3000
+		}
+	},
+	"required": [
+		"_links",
+		"code",
+		"status",
+		"beginAanmeldperiode",
+		"toestemmingVereistVoorAanmelding"
+	]
+}

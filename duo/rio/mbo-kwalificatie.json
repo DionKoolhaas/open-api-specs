@@ -1,0 +1,168 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MboKwalificatie JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"mboKwalificatiedossier": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,"mboOpleidingserkenning": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"mboKwalificatiedossier"
+				,"mboOpleidingserkenning"
+			],
+			"type": "object"
+		},
+		"code": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/code",
+			"maxLength": 8,
+			"minLength": 1
+		},
+		"naam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/naam",
+			"maxLength": 40,
+			"minLength": 1
+		},
+		"naamLang": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/naamLang",
+			"maxLength": 225,
+			"minLength": 1
+		},
+		"internationaleNaam": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/internationaleNaam",
+			"maxLength": 225,
+			"minLength": 1
+		},
+		"afkorting": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/afkorting",
+			"maxLength": 12,
+			"minLength": 1
+		},
+		"herkomstOpleiding": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/herkomstOpleiding",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"opleidingssoort": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/opleidingssoort",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"wetEisendMinisterie": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/wetEisendMinisterie",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"niveau": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/niveau",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9\\-]*$"
+		},
+		"studielasteenheid": {
+			"type": "string",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/studielasteenheid",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"studielast": {
+			"type": "integer",
+			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/studielast",
+			"pattern": "^\\d{0,5}$"
+		},
+		"waardedocumentsoort": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/waardedocumentsoort",
+				"maxLength": 70,
+				"minLength": 1,
+				"pattern": "^[A-Z0-9_]*$"
+				}
+		},
+		"startdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/startdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		},
+		"opheffingsdatum": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatie/opheffingsdatum",
+				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+				}
+		}
+	},
+	"required": [
+		"_links",
+		"code",
+		"naamLang",
+		"herkomstOpleiding",
+		"opleidingssoort",
+		"wetEisendMinisterie",
+		"niveau",
+		"studielasteenheid",
+		"studielast"
+	]
+}
