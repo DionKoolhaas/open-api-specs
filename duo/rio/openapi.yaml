@@ -9,46 +9,7 @@ info:
 servers:
   - url: 'https://.../api/v0'
 paths:
-  /bevoegd-gezagen:
-    get:
-      parameters:
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: '#/components/parameters/denominatie'
-        - $ref: '#/components/parameters/wetgeving'
-        - $ref: '#/components/parameters/type'
-        - $ref: '#/components/parameters/instellingSoort'
-      responses:
-        '200':
-          $ref: '#/components/responses/BevoegdGezagen'
-        '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
-        '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
-        '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
-        '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
-      summary: 'Bevoegd gezagen collectie'
-  '/bevoegd-gezagen/{id}':
-    get:
-      parameters:
-        - $ref: '#/components/parameters/id'
-      responses:
-        '200':
-          $ref: '#/components/responses/BevoegdGezag'
-        '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
-        '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
-        '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
-        '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
-        '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
-      summary: 'Bevoegd gezag resource'
-  /onderwijsinstellingen:
+  /onderwijsbesturen:
     get:
       parameters:
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
@@ -69,10 +30,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsinstellingen collectie'
-  '/onderwijsinstellingen/{id}':
+  '/onderwijsbestuur':
     get:
       parameters:
-        - $ref: '#/components/parameters/id'
+        - $ref: '#/components/parameters/uri'
       responses:
         '200':
           $ref: '#/components/responses/Onderwijsbestuur'
@@ -89,9 +50,9 @@ paths:
       summary: 'Onderwijsinstelling resource'
 components:
   parameters:
-    id:
-      name: id
-      in: path
+    uri:
+      name: uri
+      in: query
       description: Identifier
       required: true
       schema:
@@ -121,42 +82,6 @@ components:
       schema:
         type: string
   responses:
-    BevoegdGezagen:
-      description: OK.
-      headers:
-        X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
-        X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
-        X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
-      content:
-        application/hal+json:
-          schema:
-            required:
-              - _embedded
-              - _links
-            type: object
-            properties:
-              _embedded:
-                type: object
-                properties:
-                  bevoegdGezagen:
-                    type: array
-                    items:
-                      $ref: '#/components/schemas/BevoegdGezag'
-                required:
-                  - bevoegdGezagen
-              _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
-    BevoegdGezag:
-      description: OK.
-      content:
-        application/hal+json:
-          schema:
-            $ref: '#/components/schemas/BevoegdGezag'
     Onderwijsbesturen:
       description: OK.
       headers:
