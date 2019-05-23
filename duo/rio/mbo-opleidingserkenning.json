@@ -21,9 +21,73 @@
 					],
 					"type": "object"
 				}
+				,
+				"examenlicentie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"mboCrossOverKwalificatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"mboOnderwijslicentie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"mboKwalificatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
+				,"examenlicentie"
+				,"mboCrossOverKwalificatie"
+				,"mboOnderwijslicentie"
+				,"mboKwalificatie"
 			],
 			"type": "object"
 		},

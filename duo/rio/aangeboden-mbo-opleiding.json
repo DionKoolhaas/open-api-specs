@@ -21,7 +21,8 @@
 					],
 					"type": "object"
 				}
-				,"aangebodenMboOpleidingCohort": {
+				,
+				"aangebodenMboOpleidingCohort": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -35,7 +36,8 @@
 					],
 					"type": "object"
 				}
-				,"onderwijslocatie": {
+				,
+				"onderwijslocatie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -49,7 +51,8 @@
 					],
 					"type": "object"
 				}
-				,"onderwijsaanbieder": {
+				,
+				"onderwijsaanbieder": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -63,7 +66,8 @@
 					],
 					"type": "object"
 				}
-				,"mboCrossOverKwalificatie": {
+				,
+				"mboCrossOverKwalificatie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -77,7 +81,8 @@
 					],
 					"type": "object"
 				}
-				,"mboKwalificatie": {
+				,
+				"mboKwalificatie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -91,7 +96,8 @@
 					],
 					"type": "object"
 				}
-				,"mboDomein": {
+				,
+				"mboDomein": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -105,7 +111,8 @@
 					],
 					"type": "object"
 				}
-				,"mboKwalificatiedossier": {
+				,
+				"mboKwalificatiedossier": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {

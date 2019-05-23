@@ -21,7 +21,8 @@
 					],
 					"type": "object"
 				}
-				,"aangebodenMboOpleidingCohort": {
+				,
+				"aangebodenMboOpleidingCohort": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {

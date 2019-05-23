@@ -21,7 +21,8 @@
 					],
 					"type": "object"
 				}
-				,"onderwijslocatiegebruik": {
+				,
+				"onderwijslocatiegebruik": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -35,7 +36,8 @@
 					],
 					"type": "object"
 				}
-				,"nederlandsAdres": {
+				,
+				"nederlandsBezoekadres": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -49,7 +51,38 @@
 					],
 					"type": "object"
 				}
-				,"nederlandsCorrespondentieAdres": {
+				,
+				"nederlandsCorrespondentieadres": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"onderwijsaanbieder": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"bevoegdGezagErkenning": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -69,6 +102,8 @@
 				,"onderwijslocatiegebruik"
 				,"nederlandsAdres"
 				,"nederlandsAdres"
+				,"onderwijsaanbieder"
+				,"bevoegdGezagErkenning"
 			],
 			"type": "object"
 		},

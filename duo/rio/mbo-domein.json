@@ -21,9 +21,41 @@
 					],
 					"type": "object"
 				}
+				,
+				"aangebodenMboOpleiding": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"mboKwalificatiedossier": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
+				,"aangebodenMboOpleiding"
+				,"mboKwalificatiedossier"
 			],
 			"type": "object"
 		},

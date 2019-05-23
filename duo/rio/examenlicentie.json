@@ -21,7 +21,8 @@
 					],
 					"type": "object"
 				}
-				,"onderwijsinstellingserkenning": {
+				,
+				"onderwijsinstellingserkenning": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -35,7 +36,8 @@
 					],
 					"type": "object"
 				}
-				,"mboOpleidingserkenning": {
+				,
+				"mboOpleidingserkenning": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {

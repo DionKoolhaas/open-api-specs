@@ -21,9 +21,25 @@
 					],
 					"type": "object"
 				}
+				,
+				"onderwijslocatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
+				,"onderwijslocatie"
 			],
 			"type": "object"
 		},

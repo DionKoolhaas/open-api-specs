@@ -21,7 +21,8 @@
 					],
 					"type": "object"
 				}
-				,"mboKwalificatiedossier": {
+				,
+				"mboKwalificatiedossier": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -35,7 +36,23 @@
 					],
 					"type": "object"
 				}
-				,"mboOpleidingserkenning": {
+				,
+				"mboOpleidingserkenning": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"aangebodenMboOpleiding": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -54,6 +71,7 @@
 				"self"
 				,"mboKwalificatiedossier"
 				,"mboOpleidingserkenning"
+				,"aangebodenMboOpleiding"
 			],
 			"type": "object"
 		},

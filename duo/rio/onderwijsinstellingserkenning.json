@@ -21,7 +21,8 @@
 					],
 					"type": "object"
 				}
-				,"bevoegdGezagErkenning": {
+				,
+				"bevoegdGezagErkenning": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -35,7 +36,38 @@
 					],
 					"type": "object"
 				}
-				,"onderwijsaanbieder": {
+				,
+				"onderwijsaanbieder": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"examenlicentie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"mboOnderwijslicentie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -54,6 +86,8 @@
 				"self"
 				,"bevoegdGezagErkenning"
 				,"onderwijsaanbieder"
+				,"examenlicentie"
+				,"mboOnderwijslicentie"
 			],
 			"type": "object"
 		},
