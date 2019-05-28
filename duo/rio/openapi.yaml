@@ -818,7 +818,13 @@ components:
       name: "sortProperty"
       schema:
         enum:
-        - "label"
+        - "internationaleNaam"
+        - "naam"
+        - "naamLang"
+        - "volledigeNaam"
+        - "startdatum"
+        - "opheffingsdatum"
+        - "plaatsnaam"
         type: "string"
   responses:
     AangebodenMboOpleidingen:
