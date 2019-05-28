@@ -22,37 +22,22 @@
 					"type": "object"
 				}
 				,
-				"examenlicentie": {
-					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"mboCrossOverKwalificatie": {
-					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
 				"mboOnderwijslicentie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"examenlicentie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -81,55 +66,70 @@
 					],
 					"type": "object"
 				}
+				,
+				"mboCrossOverKwalificatie": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
-				,"examenlicentie"
-				,"mboCrossOverKwalificatie"
 				,"mboOnderwijslicentie"
+				,"examenlicentie"
 				,"mboKwalificatie"
+				,"mboCrossOverKwalificatie"
 			],
 			"type": "object"
 		},
 		"CREBOcode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/CREBOcode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/cREBOcode-v02",
 			"maxLength": 5,
 			"minLength": 5
 		},
 		"instroomEinddatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/instroomEinddatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/datumEindeInstroom",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"prijsfactorBekostiging": {
 			"type": "number",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/prijsfactorBekostiging"
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/prijsfactorMBO-v01"
 		},
 		"toegestaneLeerweg": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/toegestaneLeerweg",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"wet": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/wet",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ministerie": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/ministerie",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/ministerieAanduiding-v02",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"licentieerwijze": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/licentieerwijze",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentieerwijze-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -138,7 +138,7 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/ingangsdatum",
+				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		},
@@ -146,7 +146,7 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOpleidingserkenning/einddatum",
+				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		}

@@ -61,7 +61,7 @@
 		},
 		"stadium": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Examenlicentie/stadium",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentiestadium-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"

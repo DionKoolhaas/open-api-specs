@@ -93,31 +93,31 @@
 		},
 		"straatnaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/NederlandsAdres/straatnaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/straatnaam-v02",
 			"maxLength": 80,
 			"minLength": 1
 		},
 		"huisnummer": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/NederlandsAdres/huisnummer",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v02",
 			"maxLength": 3000,
 			"pattern": "^\\d{0,5}$"
 		},
 		"huisnummertoevoeging": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/NederlandsAdres/huisnummertoevoeging",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummertoevoegingNEN-v02",
 			"maxLength": 6,
 			"minLength": 1
 		},
 		"postcode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/NederlandsAdres/postcode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/postcode-v02",
 			"maxLength": 6,
 			"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
 		},
 		"plaatsnaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/NederlandsAdres/plaatsnaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/plaatsnaam-v02",
 			"maxLength": 40,
 			"minLength": 1
 		}

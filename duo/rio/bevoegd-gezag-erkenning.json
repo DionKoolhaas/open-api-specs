@@ -61,25 +61,25 @@
 		},
 		"nummer": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/nummer",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bevoegdGezagnummer",
 			"maxLength": 3000,
 			"pattern": "^\\d{5}$"
 		},
 		"verkorteNaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/verkorteNaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/commercieleNaam-v01",
 			"maxLength": 30,
 			"minLength": 1
 		},
 		"volledigeNaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/volledigeNaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/officieleNaam-v01",
 			"maxLength": 80,
 			"minLength": 1
 		},
 		"soort": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/soort",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/besturendeOrganisatiesoort-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -88,7 +88,7 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/richtingen",
+				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/denominatie-v04",
 				"maxLength": 70,
 				"minLength": 1,
 				"pattern": "^[A-Z0-9_]*$"
@@ -96,26 +96,26 @@
 		},
 		"bekostigingscode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/bekostigingscode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingsbekostigingcode-v03",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"wet": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/wet",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ingangsdatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/ingangsdatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatieErkenningBegindatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"einddatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BevoegdGezagErkenning/einddatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatieErkenningEinddatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		}
 	},

@@ -61,21 +61,21 @@
 		},
 		"leerweg": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOnderwijslicentie/leerweg",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"stadium": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOnderwijslicentie/stadium",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentiestadium-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"bekostigd": {
 			"type": "boolean",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboOnderwijslicentie/bekostigd"
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bekostigingsIndicatie"
 		}
 	},
 	"required": [

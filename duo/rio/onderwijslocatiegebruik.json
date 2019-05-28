@@ -61,23 +61,23 @@
 		},
 		"naam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/naam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatienaam",
 			"maxLength": 100,
 			"minLength": 1
 		},
 		"inBedrijfdatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/inBedrijfdatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatiegebruikbegindatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"uitBedrijfdatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/uitBedrijfdatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatiegebruikeinddatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"eigenOnderwijslocatiegebruikSleutel": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatiegebruik/eigenOnderwijslocatiegebruikSleutel",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatiegebruikExterneIdentificatie-v01",
 			"maxLength": 60,
 			"minLength": 1
 		}

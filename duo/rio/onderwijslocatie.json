@@ -37,7 +37,7 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
+				"onderwijslocatiegebruik": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -52,7 +52,7 @@
 					"type": "object"
 				}
 				,
-				"onderwijslocatiegebruik": {
+				"aangebodenMboOpleiding": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -70,43 +70,43 @@
 			"required": [
 				"self"
 				,"bAGverblijfsobject"
-				,"aangebodenMboOpleiding"
 				,"onderwijslocatiegebruik"
+				,"aangebodenMboOpleiding"
 			],
 			"type": "object"
 		},
 		"code": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/code",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatieID-v01",
 			"maxLength": 7,
 			"minLength": 7,
 			"pattern": "^(\\d{3}X\\d{3})$"
 		},
 		"postcode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/postcode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/postcode-v02",
 			"maxLength": 6,
 			"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
 		},
 		"huisnummer": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/huisnummer",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v02",
 			"maxLength": 3000,
 			"pattern": "^\\d{0,5}$"
 		},
 		"huisnummertoevoeging": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/huisnummertoevoeging",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummertoevoeging-v03",
 			"maxLength": 4,
 			"minLength": 1
 		},
 		"gpsLatitude": {
 			"type": "number",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/gpsLatitude"
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/latitude-v01"
 		},
 		"gpsLongitude": {
 			"type": "number",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijslocatie/gpsLongitude"
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/longitude-v01"
 		}
 	},
 	"required": [

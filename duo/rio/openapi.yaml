@@ -12,6 +12,8 @@ paths:
   '/aangeboden-mbo-opleiding-cohorten':
     get:
       parameters:
+        - $ref: "#/components/parameters/bedrijfsopleiding"
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -49,6 +51,13 @@ paths:
   '/aangeboden-mbo-opleidingen':
     get:
       parameters:
+        - $ref: "#/components/parameters/aangebodenMboOpleidingCohort"
+        - $ref: "#/components/parameters/onderwijsaanbieder"
+        - $ref: "#/components/parameters/onderwijslocatie"
+        - $ref: "#/components/parameters/mboCrossOverKwalificatie"
+        - $ref: "#/components/parameters/mboKwalificatie"
+        - $ref: "#/components/parameters/mboKwalificatiedossier"
+        - $ref: "#/components/parameters/mboDomein"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -86,6 +95,7 @@ paths:
   '/bag-verblijfsobjecten':
     get:
       parameters:
+        - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -123,6 +133,7 @@ paths:
   '/bedrijfsopleidingen':
     get:
       parameters:
+        - $ref: "#/components/parameters/aangebodenMboOpleidingCohort"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -160,6 +171,8 @@ paths:
   '/bevoegd-gezag-erkenningen':
     get:
       parameters:
+        - $ref: "#/components/parameters/onderwijsbestuur"
+        - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -197,6 +210,8 @@ paths:
   '/examenlicenties':
     get:
       parameters:
+        - $ref: "#/components/parameters/onderwijsinstellingserkenning"
+        - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -234,6 +249,8 @@ paths:
   '/mbo-cross-over-kwalificaties':
     get:
       parameters:
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -271,6 +288,8 @@ paths:
   '/mbo-domeinen':
     get:
       parameters:
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -308,6 +327,9 @@ paths:
   '/mbo-kwalificaties':
     get:
       parameters:
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/mboKwalificatiedossier"
+        - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -345,6 +367,8 @@ paths:
   '/mbo-onderwijslicenties':
     get:
       parameters:
+        - $ref: "#/components/parameters/mboOpleidingserkenning"
+        - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -382,6 +406,10 @@ paths:
   '/mbo-opleidingserkenningen':
     get:
       parameters:
+        - $ref: "#/components/parameters/mboKwalificatie"
+        - $ref: "#/components/parameters/mboCrossOverKwalificatie"
+        - $ref: "#/components/parameters/examenlicentie"
+        - $ref: "#/components/parameters/mboOnderwijslicentie"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -419,6 +447,8 @@ paths:
   '/nederlands-adressen':
     get:
       parameters:
+        - $ref: "#/components/parameters/onderwijsaanbieder"
+        - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -456,6 +486,10 @@ paths:
   '/onderwijsaanbieders':
     get:
       parameters:
+        - $ref: "#/components/parameters/nederlandsAdres"
+        - $ref: "#/components/parameters/onderwijsbestuur"
+        - $ref: "#/components/parameters/onderwijsinstellingserkenning"
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -493,6 +527,10 @@ paths:
   '/onderwijsbesturen':
     get:
       parameters:
+        - $ref: "#/components/parameters/bevoegdGezagErkenning"
+        - $ref: "#/components/parameters/nederlandsAdres"
+        - $ref: "#/components/parameters/onderwijsaanbieder"
+        - $ref: "#/components/parameters/onderwijslocatiegebruik"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -530,6 +568,10 @@ paths:
   '/onderwijsinstellingserkenningen':
     get:
       parameters:
+        - $ref: "#/components/parameters/bevoegdGezagErkenning"
+        - $ref: "#/components/parameters/examenlicentie"
+        - $ref: "#/components/parameters/mboOnderwijslicentie"
+        - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -567,6 +609,9 @@ paths:
   '/onderwijslocaties':
     get:
       parameters:
+        - $ref: "#/components/parameters/bagVerblijfsobject"
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/onderwijslocatiegebruik"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -604,6 +649,8 @@ paths:
   '/onderwijslocatiegebruiken':
     get:
       parameters:
+        - $ref: "#/components/parameters/onderwijslocatie"
+        - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -643,11 +690,116 @@ components:
     subject:
       description: "URI van de op te vragen resource"
       in: "query"
-      name: "sortProperty"
+      name: "subject"
       schema:
-        enum:
-        - "label"
-        - "altLabel"
+        type: "string"
+    aangebodenMboOpleiding:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "aangebodenMboOpleiding"
+      schema:
+        type: "string"
+    aangebodenMboOpleidingCohort:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "aangebodenMboOpleidingCohort"
+      schema:
+        type: "string"
+    bagVerblijfsobject:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "bagVerblijfsobject"
+      schema:
+        type: "string"
+    bedrijfsopleiding:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "bedrijfsopleiding"
+      schema:
+        type: "string"
+    bevoegdGezagErkenning:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "bevoegdGezagErkenning"
+      schema:
+        type: "string"
+    examenlicentie:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "examenlicentie"
+      schema:
+        type: "string"
+    mboCrossOverKwalificatie:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "mboCrossOverKwalificatie"
+      schema:
+        type: "string"
+    mboDomein:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "mboDomein"
+      schema:
+        type: "string"
+    mboKwalificatie:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "mboKwalificatie"
+      schema:
+        type: "string"
+    mboKwalificatiedossier:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "mboKwalificatiedossier"
+      schema:
+        type: "string"
+    mboOnderwijslicentie:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "mboOnderwijslicentie"
+      schema:
+        type: "string"
+    mboOpleidingserkenning:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "mboOpleidingserkenning"
+      schema:
+        type: "string"
+    nederlandsAdres:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "nederlandsAdres"
+      schema:
+        type: "string"
+    onderwijsaanbieder:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "onderwijsaanbieder"
+      schema:
+        type: "string"
+    onderwijsbestuur:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "onderwijsbestuur"
+      schema:
+        type: "string"
+    onderwijsinstellingserkenning:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "onderwijsinstellingserkenning"
+      schema:
+        type: "string"
+    onderwijslocatie:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "onderwijslocatie"
+      schema:
+        type: "string"
+    onderwijslocatiegebruik:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "onderwijslocatiegebruik"
+      schema:
         type: "string"
     sortDirection:
       description: "Specificeert de richting van de sortering."

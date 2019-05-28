@@ -45,7 +45,7 @@
 		},
 		"toegangscodeCohort": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Bedrijfsopleiding/toegangscodeCohort",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/cohorttoegangscode-v01",
 			"maxLength": 60,
 			"minLength": 1
 		}

@@ -22,7 +22,7 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
+				"bedrijfsopleiding": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -37,7 +37,7 @@
 					"type": "object"
 				}
 				,
-				"bedrijfsopleiding": {
+				"aangebodenMboOpleiding": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -54,60 +54,61 @@
 			},
 			"required": [
 				"self"
-				,"aangebodenMboOpleiding"
 				,"bedrijfsopleiding"
+				,"aangebodenMboOpleiding"
 			],
 			"type": "object"
 		},
 		"code": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/code",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aangebodenOpleidingscohortidentifcatie-v01",
 			"maxLength": 60,
 			"minLength": 1
 		},
 		"status": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/status",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/cohortstatus-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"beginAanmeldperiode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/beginAanmeldperiode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aanmeldingscohortbegindatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"eindeAanmeldperiode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/eindeAanmeldperiode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aanmeldingscohorteinddatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"instroommoment": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/instroommoment",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/cohortaanvangsdatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"beginInstroomperiode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/beginInstroomperiode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instroomperiodeCohortbegindatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"eindeInstroomperiode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/eindeInstroomperiode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instroomperiodeCohorteinddatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"toestemmingVereistVoorAanmelding": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/toestemmingVereistVoorAanmelding",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/toestemmingAanmeldingscohortVereist-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"toelichtingVereisteToestemming": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/AangebodenMboOpleidingCohort/toelichtingVereisteToestemming",
-			"maxLength": 3000
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/toestemmingAanmeldingscohorttoelichting-v01",
+			"maxLength": 3000,
+			"minLength": 1
 		}
 	},
 	"required": [

@@ -77,37 +77,37 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/code",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode",
 			"maxLength": 8,
 			"minLength": 1
 		},
 		"naam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/naam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingKort",
 			"maxLength": 40,
 			"minLength": 1
 		},
 		"naamLang": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/naamLang",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingLang",
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"internationaleNaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/internationaleNaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/internationaleNaamOpleiding-v02",
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"afkorting": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/afkorting",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aanduidingOpleiding-v01",
 			"maxLength": 12,
 			"minLength": 1
 		},
 		"herkomstOpleiding": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/herkomstOpleiding",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsherkomst-v01",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -116,7 +116,7 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/startdatum",
+				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		},
@@ -124,7 +124,7 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/MboKwalificatiedossier/opheffingsdatum",
+				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		}

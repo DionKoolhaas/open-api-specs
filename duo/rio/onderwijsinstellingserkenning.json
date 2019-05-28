@@ -52,7 +52,7 @@
 					"type": "object"
 				}
 				,
-				"examenlicentie": {
+				"mboOnderwijslicentie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -67,7 +67,7 @@
 					"type": "object"
 				}
 				,
-				"mboOnderwijslicentie": {
+				"examenlicentie": {
 					"description": "Absolute link naar deze resource",
 					"properties": {
 						"href": {
@@ -86,33 +86,33 @@
 				"self"
 				,"bevoegdGezagErkenning"
 				,"onderwijsaanbieder"
-				,"examenlicentie"
 				,"mboOnderwijslicentie"
+				,"examenlicentie"
 			],
 			"type": "object"
 		},
 		"bRIN4": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/bRIN4",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bRIN",
 			"maxLength": 4,
 			"minLength": 4,
 			"pattern": "^([0-9]{2}[A-Z]{2})$"
 		},
 		"verkorteNaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/verkorteNaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/commercieleNaam-v01",
 			"maxLength": 30,
 			"minLength": 1
 		},
 		"volledigeNaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/volledigeNaam",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/officieleNaam-v01",
 			"maxLength": 80,
 			"minLength": 1
 		},
 		"soort": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/soort",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingssoort-v04",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -121,7 +121,7 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/richtingen",
+				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/denominatie-v04",
 				"maxLength": 70,
 				"minLength": 1,
 				"pattern": "^[A-Z0-9_]*$"
@@ -129,26 +129,26 @@
 		},
 		"bekostigingscode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/bekostigingscode",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingsbekostigingcode-v03",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"wet": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/wet",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ingangsdatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/ingangsdatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatieErkenningBegindatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"einddatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/Onderwijsinstellingserkenning/einddatum",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatieErkenningEinddatum-v01",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		}
 	},

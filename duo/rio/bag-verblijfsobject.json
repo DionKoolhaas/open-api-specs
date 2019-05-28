@@ -45,7 +45,7 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/rio/sh/BAGverblijfsobject/code",
+			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bAGID-v01",
 			"minLength": 1
 		}
 	},
