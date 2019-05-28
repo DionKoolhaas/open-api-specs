@@ -22,8 +22,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "Absolute link naar deze resource",
+				"AangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboDomein",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"mboKwalificatiedossier": {
-					"description": "Absolute link naar deze resource",
+				"MboKwalificatiedossier": {
+					"description": "MboKwalificatiedossier heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboDomein",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

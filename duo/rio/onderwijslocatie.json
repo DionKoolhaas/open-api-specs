@@ -23,7 +23,7 @@
 				}
 				,
 				"bAGverblijfsobject": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeVindenOp",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijslocatiegebruik": {
-					"description": "Absolute link naar deze resource",
+				"AangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp) met deze resource Onderwijslocatie",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -52,8 +52,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijslocatiegebruik": {
+					"description": "Onderwijslocatiegebruik heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isOp) met deze resource Onderwijslocatie",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -70,8 +70,8 @@
 			"required": [
 				"self"
 				,"bAGverblijfsobject"
-				,"onderwijslocatiegebruik"
 				,"aangebodenMboOpleiding"
+				,"onderwijslocatiegebruik"
 			],
 			"type": "object"
 		},

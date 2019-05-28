@@ -22,8 +22,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijslocatie": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijslocatie": {
+					"description": "Onderwijslocatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeVindenOp) met deze resource BAGverblijfsobject",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

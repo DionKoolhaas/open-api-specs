@@ -22,8 +22,8 @@
 					"type": "object"
 				}
 				,
-				"mboOnderwijslicentie": {
-					"description": "Absolute link naar deze resource",
+				"MboOnderwijslicentie": {
+					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"examenlicentie": {
-					"description": "Absolute link naar deze resource",
+				"MboCrossOverKwalificatie": {
+					"description": "MboCrossOverKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -52,8 +52,8 @@
 					"type": "object"
 				}
 				,
-				"mboKwalificatie": {
-					"description": "Absolute link naar deze resource",
+				"MboKwalificatie": {
+					"description": "MboKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -67,8 +67,8 @@
 					"type": "object"
 				}
 				,
-				"mboCrossOverKwalificatie": {
-					"description": "Absolute link naar deze resource",
+				"Examenlicentie": {
+					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -85,9 +85,9 @@
 			"required": [
 				"self"
 				,"mboOnderwijslicentie"
-				,"examenlicentie"
-				,"mboKwalificatie"
 				,"mboCrossOverKwalificatie"
+				,"mboKwalificatie"
+				,"examenlicentie"
 			],
 			"type": "object"
 		},

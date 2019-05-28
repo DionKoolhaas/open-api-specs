@@ -23,7 +23,7 @@
 				}
 				,
 				"aangebodenMboOpleidingCohort": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanToepassingOp",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

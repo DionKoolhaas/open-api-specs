@@ -23,7 +23,7 @@
 				}
 				,
 				"onderwijslocatie": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isOp",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsbestuur": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijsbestuur": {
+					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/laatOnderwijsVerzorgenOp) met deze resource Onderwijslocatiegebruik",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

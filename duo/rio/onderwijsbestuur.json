@@ -23,7 +23,7 @@
 				}
 				,
 				"onderwijslocatiegebruik": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/laatOnderwijsVerzorgenOp",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +38,7 @@
 				}
 				,
 				"nederlandsBezoekadres": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -53,7 +53,7 @@
 				}
 				,
 				"nederlandsCorrespondentieadres": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -67,8 +67,8 @@
 					"type": "object"
 				}
 				,
-				"bevoegdGezagErkenning": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/behoortTot) met deze resource Onderwijsbestuur",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -82,8 +82,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsaanbieder": {
-					"description": "Absolute link naar deze resource",
+				"BevoegdGezagErkenning": {
+					"description": "BevoegdGezagErkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsbestuur",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -100,10 +100,10 @@
 			"required": [
 				"self"
 				,"onderwijslocatiegebruik"
-				,"nederlandsBezoekadres"
-				,"nederlandsCorrespondentieadres"
-				,"bevoegdGezagErkenning"
+				,"nederlandsAdres"
+				,"nederlandsAdres"
 				,"onderwijsaanbieder"
+				,"bevoegdGezagErkenning"
 			],
 			"type": "object"
 		},

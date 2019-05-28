@@ -22,8 +22,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsaanbieder": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsaanbieder": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -52,8 +52,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsbestuur": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijsbestuur": {
+					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -67,8 +67,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsbestuur": {
-					"description": "Absolute link naar deze resource",
+				"Onderwijsbestuur": {
+					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

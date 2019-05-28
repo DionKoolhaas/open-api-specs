@@ -23,7 +23,7 @@
 				}
 				,
 				"mboOpleidingserkenning": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "Absolute link naar deze resource",
+				"AangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboCrossOverKwalificatie",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

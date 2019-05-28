@@ -23,7 +23,7 @@
 				}
 				,
 				"bevoegdGezagErkenning": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isOnderdeelVan",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +38,7 @@
 				}
 				,
 				"onderwijsaanbieder": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -52,8 +52,8 @@
 					"type": "object"
 				}
 				,
-				"mboOnderwijslicentie": {
-					"description": "Absolute link naar deze resource",
+				"MboOnderwijslicentie": {
+					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan) met deze resource Onderwijsinstellingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -67,8 +67,8 @@
 					"type": "object"
 				}
 				,
-				"examenlicentie": {
-					"description": "Absolute link naar deze resource",
+				"Examenlicentie": {
+					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan) met deze resource Onderwijsinstellingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

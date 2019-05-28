@@ -23,7 +23,7 @@
 				}
 				,
 				"onderwijsinstellingserkenning": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +38,7 @@
 				}
 				,
 				"mboOpleidingserkenning": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

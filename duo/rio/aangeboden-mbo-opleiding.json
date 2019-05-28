@@ -23,7 +23,7 @@
 				}
 				,
 				"aangebodenMboOpleidingCohort": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAanmeldingscohort",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +38,7 @@
 				}
 				,
 				"onderwijslocatie": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -53,7 +53,7 @@
 				}
 				,
 				"onderwijsaanbieder": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -68,7 +68,7 @@
 				}
 				,
 				"mboCrossOverKwalificatie": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -83,7 +83,7 @@
 				}
 				,
 				"mboKwalificatie": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -98,7 +98,7 @@
 				}
 				,
 				"mboDomein": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -113,7 +113,7 @@
 				}
 				,
 				"mboKwalificatiedossier": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
 					"properties": {
 						"href": {
 							"description": "URL van de link",

@@ -23,7 +23,7 @@
 				}
 				,
 				"mboDomein": {
-					"description": "Absolute link naar deze resource",
+					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "Absolute link naar deze resource",
+				"AangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboKwalificatiedossier",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -52,8 +52,8 @@
 					"type": "object"
 				}
 				,
-				"mboKwalificatie": {
-					"description": "Absolute link naar deze resource",
+				"MboKwalificatie": {
+					"description": "MboKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboKwalificatiedossier",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
