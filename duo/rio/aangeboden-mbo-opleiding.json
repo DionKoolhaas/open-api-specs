@@ -146,7 +146,8 @@
 		},
 		"leertraject": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leertrajectMBO-v02",
+			"description": "testing",
+			"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leertrajectMBO-v02",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
