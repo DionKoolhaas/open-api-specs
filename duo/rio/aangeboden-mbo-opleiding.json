@@ -147,7 +147,10 @@
 		"leertraject": {
 			"type": "string",
 			"description": "testing",
-			"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leertrajectMBO-v02",
+			"externalDocs": {
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leertrajectMBO-v02",
+				"description": "teso"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
