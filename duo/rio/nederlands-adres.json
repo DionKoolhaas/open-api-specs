@@ -22,37 +22,7 @@
 					"type": "object"
 				}
 				,
-				"Onderwijsaanbieder": {
-					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"Onderwijsaanbieder": {
-					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"Onderwijsbestuur": {
+				"onderwijsbestuur": {
 					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
@@ -67,8 +37,38 @@
 					"type": "object"
 				}
 				,
-				"Onderwijsbestuur": {
+				"onderwijsbestuur": {
 					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -84,40 +84,60 @@
 			},
 			"required": [
 				"self"
-				,"onderwijsaanbieder"
-				,"onderwijsaanbieder"
 				,"onderwijsbestuur"
 				,"onderwijsbestuur"
+				,"onderwijsaanbieder"
+				,"onderwijsaanbieder"
 			],
 			"type": "object"
 		},
 		"straatnaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/straatnaam-v02",
+			"description": "De straatnaam zoals die officieel is vastgesteld door de gemeente",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/straatnaam-v02",
+				"description": "straatnaam-v02"
+			},
 			"maxLength": 80,
 			"minLength": 1
 		},
 		"huisnummer": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v02",
+			"description": "De numerieke aanduiding zoals deze door het gemeentebestuur aan het object is toegekend",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v02",
+				"description": "huisnummer-v02"
+			},
 			"maxLength": 3000,
 			"pattern": "^\\d{0,5}$"
 		},
 		"huisnummertoevoeging": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummertoevoegingNEN-v02",
+			"description": "Die letters of tekens die noodzakelijk zijn om, naast het juiste huisnummer, de brievenbus te vinden",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummertoevoegingNEN-v02",
+				"description": "huisnummertoevoegingNEN-v02"
+			},
 			"maxLength": 6,
 			"minLength": 1
 		},
 		"postcode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/postcode-v02",
+			"description": "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/postcode-v02",
+				"description": "postcode-v02"
+			},
 			"maxLength": 6,
 			"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
 		},
 		"plaatsnaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/plaatsnaam-v02",
+			"description": "De naam van de plaats ",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/plaatsnaam-v02",
+				"description": "plaatsnaam-v02"
+			},
 			"maxLength": 40,
 			"minLength": 1
 		}

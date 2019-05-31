@@ -22,7 +22,7 @@
 					"type": "object"
 				}
 				,
-				"Onderwijslocatie": {
+				"onderwijslocatie": {
 					"description": "Onderwijslocatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeVindenOp) met deze resource BAGverblijfsobject",
 					"properties": {
 						"href": {
@@ -45,7 +45,11 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bAGID-v01",
+			"description": "De identificatie van een gebouw zoals dat in de Basisadministratie Gebouwen (BAG) bekend is.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bAGID-v01",
+				"description": "bAGID-v01"
+			},
 			"minLength": 1
 		}
 	},

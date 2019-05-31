@@ -22,7 +22,7 @@
 					"type": "object"
 				}
 				,
-				"MboOnderwijslicentie": {
+				"mboOnderwijslicentie": {
 					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
@@ -37,7 +37,7 @@
 					"type": "object"
 				}
 				,
-				"MboCrossOverKwalificatie": {
+				"mboCrossOverKwalificatie": {
 					"description": "MboCrossOverKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
@@ -52,7 +52,7 @@
 					"type": "object"
 				}
 				,
-				"MboKwalificatie": {
+				"mboKwalificatie": {
 					"description": "MboKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
@@ -67,7 +67,7 @@
 					"type": "object"
 				}
 				,
-				"Examenlicentie": {
+				"examenlicentie": {
 					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
@@ -93,43 +93,71 @@
 		},
 		"CREBOcode": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/cREBOcode-v02",
+			"description": "De code van de opleiding binnen het centraal register beroepsopleidingen",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/cREBOcode-v02",
+				"description": "cREBOcode-v02"
+			},
 			"maxLength": 5,
 			"minLength": 5
 		},
 		"instroomEinddatum": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/datumEindeInstroom",
+			"description": "Datum tot wanneer nieuwe studenten kunnen starten met de opleiding.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/datumEindeInstroom",
+				"description": "datumEindeInstroom"
+			},
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"prijsfactorBekostiging": {
 			"type": "number",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/prijsfactorMBO-v01"
+			"description": "Vermenigvuldigingsfactor behorende bij de opleiding. Wordt gebruikt bij de bepaling van de bijdrage aan de deelnemerswaarde. "
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/prijsfactorMBO-v01"
+				"description": "prijsfactorMBO-v01"
+			},
 		},
 		"toegestaneLeerweg": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
+			"description": "Uitputtende lijst ten behoeve van de onderwijssector MBO (Middelbaar Beroepsonderwijs) voor de manier waarop de kennisoverdracht is ingericht wat betreft fysieke aanwezigheid op de onderwijslocatie en de duur daarvan.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
+				"description": "leerwegMBO-v04"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"wet": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
+			"description": "Wet waarin of waaronder de juridische grondslag bepaald is.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
+				"description": "wet-v02"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ministerie": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/ministerieAanduiding-v02",
+			"description": "Het ministerie waaronder een opleiding of instelling ressorteert.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/ministerieAanduiding-v02",
+				"description": "ministerieAanduiding-v02"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"licentieerwijze": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentieerwijze-v01",
+			"description": "Geeft aan op welke manier erkenning is verkregen voor het onderwijzen van de opleidingseenheid.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentieerwijze-v01",
+				"description": "licentieerwijze-v01"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -138,7 +166,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+				"description": "De datum die het begin van de periode aangeeft (inclusief).",
+				"externalDocs": { 
+					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+					"description": "periodeBegindatum-v01"
+				},
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		},
@@ -146,7 +178,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+				"description": "De datum die het einde van de periode aangeeft (exclusief).",
+				"externalDocs": { 
+					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+					"description": "periodeEinddatum-v01"
+				},
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		}

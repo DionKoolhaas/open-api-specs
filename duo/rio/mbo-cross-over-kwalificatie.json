@@ -37,7 +37,7 @@
 					"type": "object"
 				}
 				,
-				"AangebodenMboOpleiding": {
+				"aangebodenMboOpleiding": {
 					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboCrossOverKwalificatie",
 					"properties": {
 						"href": {
@@ -61,79 +61,127 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode",
+			"description": "De code van de opleiding binnen het codestelsel",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode",
+				"description": "opleidingcode"
+			},
 			"maxLength": 8,
 			"minLength": 1
 		},
 		"naam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingKort",
+			"description": "Korte naam voor een opleiding",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingKort",
+				"description": "naamOpleidingKort"
+			},
 			"maxLength": 40,
 			"minLength": 1
 		},
 		"naamLang": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingLang",
+			"description": "Lange naam voor een opleiding",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingLang",
+				"description": "naamOpleidingLang"
+			},
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"internationaleNaam": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/internationaleNaamOpleiding-v02",
+			"description": "De naam voor internationaal gebruik ter aanduiding van de  opleiding.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/internationaleNaamOpleiding-v02",
+				"description": "internationaleNaamOpleiding-v02"
+			},
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"afkorting": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aanduidingOpleiding-v01",
+			"description": "Is een korte omschrijving van de naam van de opleiding.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aanduidingOpleiding-v01",
+				"description": "aanduidingOpleiding-v01"
+			},
 			"maxLength": 12,
 			"minLength": 1
 		},
 		"herkomstOpleiding": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsherkomst-v01",
+			"description": "Geeft aan welke instantie de Opleiding heeft ontwikkeld.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsherkomst-v01",
+				"description": "opleidingsherkomst-v01"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"opleidingssoort": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/beroepsopleidingsoort-v01",
+			"description": "Opsomming van de mogelijke soorten beroepsopleidingen zoals die in de Wet Educatie en Beroepsonderwijs worden onderkend.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/beroepsopleidingsoort-v01",
+				"description": "beroepsopleidingsoort-v01"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"wetEisendMinisterie": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wetEisendMinisterie-v03",
+			"description": "Het ministerie dat wettelijke eisen stelt aan de opleiding.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wetEisendMinisterie-v03",
+				"description": "wetEisendMinisterie-v03"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"niveau": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/kwalificatieniveau-v03",
+			"description": "De aanduiding van het niveau van beroepsuitoefening, gebaseerd op de mate van verantwoordelijkheid en complexiteit.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/kwalificatieniveau-v03",
+				"description": "kwalificatieniveau-v03"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9\\-]*$"
 		},
 		"studielasteenheid": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/studielastEenheid-v03",
+			"description": "De meeteenheid voor de studielast",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/studielastEenheid-v03",
+				"description": "studielastEenheid-v03"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"studielast": {
 			"type": "integer",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/studielastZwaarte",
+			"description": "Een getal dat de inspanning weergeeft die de opleiding vergt.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/studielastZwaarte",
+				"description": "studielastZwaarte"
+			},
 			"pattern": "^\\d{0,5}$"
 		},
 		"waardedocumentsoort": {
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/soortWaardedocument-v01",
+				"description": "Aanduiding van het soort waardedocument dat kan worden of is behaald.",
+				"externalDocs": { 
+					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/soortWaardedocument-v01",
+					"description": "soortWaardedocument-v01"
+				},
 				"maxLength": 70,
 				"minLength": 1,
 				"pattern": "^[A-Z0-9_]*$"
@@ -143,7 +191,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+				"description": "De datum die het begin van de periode aangeeft (inclusief).",
+				"externalDocs": { 
+					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+					"description": "periodeBegindatum-v01"
+				},
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		},
@@ -151,7 +203,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+				"description": "De datum die het einde van de periode aangeeft (exclusief).",
+				"externalDocs": { 
+					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+					"description": "periodeEinddatum-v01"
+				},
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		}

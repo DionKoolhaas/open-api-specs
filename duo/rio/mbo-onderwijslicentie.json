@@ -61,21 +61,33 @@
 		},
 		"leerweg": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
+			"description": "Uitputtende lijst ten behoeve van de onderwijssector MBO (Middelbaar Beroepsonderwijs) voor de manier waarop de kennisoverdracht is ingericht wat betreft fysieke aanwezigheid op de onderwijslocatie en de duur daarvan.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
+				"description": "leerwegMBO-v04"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"stadium": {
 			"type": "string",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentiestadium-v01",
+			"description": "De toestand waarin een licentie zich bevindt.",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentiestadium-v01",
+				"description": "licentiestadium-v01"
+			},
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"bekostigd": {
 			"type": "boolean",
-			"description": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bekostigingsIndicatie"
+			"description": "De bekostigingsindicatie geeft aan of een inschrijving, graad, licentie of instelling in aanmerking komt voor bekostiging in de vorm van een rijksbijdrage."
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bekostigingsIndicatie"
+				"description": "bekostigingsIndicatie"
+			},
 		}
 	},
 	"required": [
