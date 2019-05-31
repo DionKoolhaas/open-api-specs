@@ -63,62 +63,62 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "De code van de opleiding binnen het codestelsel",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode",
 					"description": "opleidingcode"
 				},
+				"description": "De code van de opleiding binnen het codestelsel",
 				"maxLength": 8,
 				"minLength": 1
 				}
 		},
 		"naam": {
 			"type": "string",
-			"description": "Korte naam voor een opleiding",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingKort",
 				"description": "naamOpleidingKort"
 			},
+			"description": "Korte naam voor een opleiding",
 			"maxLength": 40,
 			"minLength": 1
 		},
 		"naamLang": {
 			"type": "string",
-			"description": "Lange naam voor een opleiding",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingLang",
 				"description": "naamOpleidingLang"
 			},
+			"description": "Lange naam voor een opleiding",
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"internationaleNaam": {
 			"type": "string",
-			"description": "De naam voor internationaal gebruik ter aanduiding van de  opleiding.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/internationaleNaamOpleiding-v02",
 				"description": "internationaleNaamOpleiding-v02"
 			},
+			"description": "De naam voor internationaal gebruik ter aanduiding van de  opleiding.",
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"afkorting": {
 			"type": "string",
-			"description": "Is een korte omschrijving van de naam van de opleiding.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aanduidingOpleiding-v01",
 				"description": "aanduidingOpleiding-v01"
 			},
+			"description": "Is een korte omschrijving van de naam van de opleiding.",
 			"maxLength": 12,
 			"minLength": 1
 		},
 		"herkomstOpleiding": {
 			"type": "string",
-			"description": "Geeft aan welke instantie de Opleiding heeft ontwikkeld.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsherkomst-v01",
 				"description": "opleidingsherkomst-v01"
 			},
+			"description": "Geeft aan welke instantie de Opleiding heeft ontwikkeld.",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -127,11 +127,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "De datum die het begin van de periode aangeeft (inclusief).",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
 					"description": "periodeBegindatum-v01"
 				},
+				"description": "De datum die het begin van de periode aangeeft (inclusief).",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		},
@@ -139,11 +139,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "De datum die het einde van de periode aangeeft (exclusief).",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
 					"description": "periodeEinddatum-v01"
 				},
+				"description": "De datum die het einde van de periode aangeeft (exclusief).",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		}

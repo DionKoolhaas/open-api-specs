@@ -141,20 +141,20 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "De unieke aanduiding van een opleidingseenheid voor uitwisseling in de keten.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsUUID-v01",
 				"description": "opleidingsUUID-v01"
 			},
+			"description": "De unieke aanduiding van een opleidingseenheid voor uitwisseling in de keten.",
 			"pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
 		},
 		"leertraject": {
 			"type": "string",
-			"description": "De manier waarop het onderwijsprogramma van de student aan een MBO-instelling (Middelbaar beroepsonderwijs) is ingericht",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leertrajectMBO-v02",
 				"description": "leertrajectMBO-v02"
 			},
+			"description": "De manier waarop het onderwijsprogramma van de student aan een MBO-instelling (Middelbaar beroepsonderwijs) is ingericht",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -163,32 +163,32 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor een aangeboden opleiding ten behoeve van uitwisseling in de keten.",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aangebodenOpleidingExterneIdentificatie-v01",
 					"description": "aangebodenOpleidingExterneIdentificatie-v01"
 				},
+				"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor een aangeboden opleiding ten behoeve van uitwisseling in de keten.",
 				"maxLength": 60,
 				"minLength": 1
 				}
 		},
 		"eigenNaam": {
 			"type": "string",
-			"description": "Lange naam voor een opleiding",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingLang",
 				"description": "naamOpleidingLang"
 			},
+			"description": "Lange naam voor een opleiding",
 			"maxLength": 225,
 			"minLength": 1
 		},
 		"eigenInternationaleNaam": {
 			"type": "string",
-			"description": "De naam voor internationaal gebruik ter aanduiding van de  opleiding.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/internationaleNaamOpleiding-v02",
 				"description": "internationaleNaamOpleiding-v02"
 			},
+			"description": "De naam voor internationaal gebruik ter aanduiding van de  opleiding.",
 			"maxLength": 225,
 			"minLength": 1
 		},
@@ -196,11 +196,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "De datum die het begin van de periode aangeeft (inclusief).",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
 					"description": "periodeBegindatum-v01"
 				},
+				"description": "De datum die het begin van de periode aangeeft (inclusief).",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		},
@@ -208,11 +208,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "De datum die het einde van de periode aangeeft (exclusief).",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
 					"description": "periodeEinddatum-v01"
 				},
+				"description": "De datum die het einde van de periode aangeeft (exclusief).",
 				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 				}
 		}

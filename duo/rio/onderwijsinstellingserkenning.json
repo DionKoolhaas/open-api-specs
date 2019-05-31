@@ -93,42 +93,42 @@
 		},
 		"bRIN4": {
 			"type": "string",
-			"description": "Een unieke code voor een onderwijsinstelling in de Basis Registratie Instellingen of een onderwijsinstellingserkenning in de Registratie Instellingen en Opleidingen in het Onderwijs.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bRIN",
 				"description": "bRIN"
 			},
+			"description": "Een unieke code voor een onderwijsinstelling in de Basis Registratie Instellingen of een onderwijsinstellingserkenning in de Registratie Instellingen en Opleidingen in het Onderwijs.",
 			"maxLength": 4,
 			"minLength": 4,
 			"pattern": "^([0-9]{2}[A-Z]{2})$"
 		},
 		"verkorteNaam": {
 			"type": "string",
-			"description": "De aanduiding in het maatschappelijk verkeer.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/commercieleNaam-v01",
 				"description": "commercieleNaam-v01"
 			},
+			"description": "De aanduiding in het maatschappelijk verkeer.",
 			"maxLength": 30,
 			"minLength": 1
 		},
 		"volledigeNaam": {
 			"type": "string",
-			"description": "De formele juridische naam",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/officieleNaam-v01",
 				"description": "officieleNaam-v01"
 			},
+			"description": "De formele juridische naam",
 			"maxLength": 80,
 			"minLength": 1
 		},
 		"soort": {
 			"type": "string",
-			"description": "Functionele codering voor de erkenningen die volgens wetgeving van OCW zijn toegestaan voor onderwijsinstellingen.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingssoort-v04",
 				"description": "instellingssoort-v04"
 			},
+			"description": "Functionele codering voor de erkenningen die volgens wetgeving van OCW zijn toegestaan voor onderwijsinstellingen.",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
@@ -137,11 +137,11 @@
 			"type": "array",
 			"items": {
 				"type": "string",
-				"description": "De levensbeschouwing of godsdienst die een organisatie uitdraagt.",
 				"externalDocs": { 
 					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/denominatie-v04",
 					"description": "denominatie-v04"
 				},
+				"description": "De levensbeschouwing of godsdienst die een organisatie uitdraagt.",
 				"maxLength": 70,
 				"minLength": 1,
 				"pattern": "^[A-Z0-9_]*$"
@@ -149,42 +149,42 @@
 		},
 		"bekostigingscode": {
 			"type": "string",
-			"description": "Geeft aan of en zo ja in welke vorm er sprake is van  bekostiging van een erkende organisatie.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingsbekostigingcode-v03",
 				"description": "instellingsbekostigingcode-v03"
 			},
+			"description": "Geeft aan of en zo ja in welke vorm er sprake is van  bekostiging van een erkende organisatie.",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"wet": {
 			"type": "string",
-			"description": "Wet waarin of waaronder de juridische grondslag bepaald is.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
 				"description": "wet-v02"
 			},
+			"description": "Wet waarin of waaronder de juridische grondslag bepaald is.",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ingangsdatum": {
 			"type": "string",
-			"description": "De datum waarop de erkenning van een organisatie volgens onderwijsregelgeving van kracht wordt.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatieErkenningBegindatum-v01",
 				"description": "organisatieErkenningBegindatum-v01"
 			},
+			"description": "De datum waarop de erkenning van een organisatie volgens onderwijsregelgeving van kracht wordt.",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"einddatum": {
 			"type": "string",
-			"description": "De datum waarop de erkenning van een organisatie volgens onderwijsregelgeving is ingetrokken of vervallen.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatieErkenningEinddatum-v01",
 				"description": "organisatieErkenningEinddatum-v01"
 			},
+			"description": "De datum waarop de erkenning van een organisatie volgens onderwijsregelgeving is ingetrokken of vervallen.",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		}
 	},

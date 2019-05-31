@@ -45,11 +45,11 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "De identificatie van een gebouw zoals dat in de Basisadministratie Gebouwen (BAG) bekend is.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bAGID-v01",
 				"description": "bAGID-v01"
 			},
+			"description": "De identificatie van een gebouw zoals dat in de Basisadministratie Gebouwen (BAG) bekend is.",
 			"minLength": 1
 		}
 	},

@@ -61,39 +61,39 @@
 		},
 		"naam": {
 			"type": "string",
-			"description": "De aanduiding van een onderwijslocatie",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatienaam",
 				"description": "onderwijslocatienaam"
 			},
+			"description": "De aanduiding van een onderwijslocatie",
 			"maxLength": 100,
 			"minLength": 1
 		},
 		"inBedrijfdatum": {
 			"type": "string",
-			"description": "De datum waarop een onderwijsbestuur een onderwijslocatie in gebruik neemt.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatiegebruikbegindatum-v01",
 				"description": "onderwijslocatiegebruikbegindatum-v01"
 			},
+			"description": "De datum waarop een onderwijsbestuur een onderwijslocatie in gebruik neemt.",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"uitBedrijfdatum": {
 			"type": "string",
-			"description": "De datum waarop een onderwijsbestuur stopt met het gebruik van een onderwijslocatie.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatiegebruikeinddatum-v01",
 				"description": "onderwijslocatiegebruikeinddatum-v01"
 			},
+			"description": "De datum waarop een onderwijsbestuur stopt met het gebruik van een onderwijslocatie.",
 			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"eigenOnderwijslocatiegebruikSleutel": {
 			"type": "string",
-			"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor het gebruik van een onderwijslocatie ten behoeve van uitwisseling in de keten.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatiegebruikExterneIdentificatie-v01",
 				"description": "onderwijslocatiegebruikExterneIdentificatie-v01"
 			},
+			"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor het gebruik van een onderwijslocatie ten behoeve van uitwisseling in de keten.",
 			"maxLength": 60,
 			"minLength": 1
 		}

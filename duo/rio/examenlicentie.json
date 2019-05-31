@@ -61,11 +61,11 @@
 		},
 		"stadium": {
 			"type": "string",
-			"description": "De toestand waarin een licentie zich bevindt.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/licentiestadium-v01",
 				"description": "licentiestadium-v01"
 			},
+			"description": "De toestand waarin een licentie zich bevindt.",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"

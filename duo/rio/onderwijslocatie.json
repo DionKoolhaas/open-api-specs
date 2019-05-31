@@ -77,60 +77,60 @@
 		},
 		"code": {
 			"type": "string",
-			"description": "Een betekenisloze identifier voor een onderwijslocatie in de Registratie Instellingen en Opleidingen.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatieID-v01",
 				"description": "onderwijslocatieID-v01"
 			},
+			"description": "Een betekenisloze identifier voor een onderwijslocatie in de Registratie Instellingen en Opleidingen.",
 			"maxLength": 7,
 			"minLength": 7,
 			"pattern": "^(\\d{3}X\\d{3})$"
 		},
 		"postcode": {
 			"type": "string",
-			"description": "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/postcode-v02",
 				"description": "postcode-v02"
 			},
+			"description": "De door de Post NL vastgestelde code behorend bij de straatnaam en het huisnummer dan wel de door Post NL vastgestelde code behorende bij een bepaalde combinatie van een naam openbare ruimte en een huisnummer.",
 			"maxLength": 6,
 			"pattern": "^([1-9]{1}[0-9]{3}[A-Z]{2})$"
 		},
 		"huisnummer": {
 			"type": "string",
-			"description": "De numerieke aanduiding zoals deze door het gemeentebestuur aan het object is toegekend",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v02",
 				"description": "huisnummer-v02"
 			},
+			"description": "De numerieke aanduiding zoals deze door het gemeentebestuur aan het object is toegekend",
 			"maxLength": 3000,
 			"pattern": "^\\d{0,5}$"
 		},
 		"huisnummertoevoeging": {
 			"type": "string",
-			"description": "Die letters of tekens die noodzakelijk zijn om, naast het juiste huisnummer en huisletter, de brievenbus te vinden",
 			"externalDocs": { 
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummertoevoeging-v03",
 				"description": "huisnummertoevoeging-v03"
 			},
+			"description": "Die letters of tekens die noodzakelijk zijn om, naast het juiste huisnummer en huisletter, de brievenbus te vinden",
 			"maxLength": 4,
 			"minLength": 1
 		},
 		"gpsLatitude": {
 			"type": "number",
-			"description": "Is de breedtegraad, deze vormt samen met de lengtegraad een geografische positieaanduiding in bolcoördinaten."
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/latitude-v01"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/latitude-v01",
 				"description": "latitude-v01"
 			},
+			"description": "Is de breedtegraad, deze vormt samen met de lengtegraad een geografische positieaanduiding in bolcoördinaten."
 		},
 		"gpsLongitude": {
 			"type": "number",
-			"description": "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten."
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/longitude-v01"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/longitude-v01",
 				"description": "longitude-v01"
 			},
+			"description": "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten."
 		}
 	},
 	"required": [
