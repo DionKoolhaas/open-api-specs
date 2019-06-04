@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijsaanbieder JSON-Schema",
 	"type": "object",
@@ -23,7 +23,11 @@
 				}
 				,
 				"nederlandsBezoekadres": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres",
+					"description": "Deze resource heeft een associatie heeftAlgemeenNederlandsBezoekadres met NederlandsAdres",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres",
+						"description": "heeftAlgemeenNederlandsBezoekadres"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +42,11 @@
 				}
 				,
 				"nederlandsCorrespondentieadres": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres",
+					"description": "Deze resource heeft een associatie heeftAlgemeenNederlandsCorrespondentieadres met NederlandsAdres",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres",
+						"description": "heeftAlgemeenNederlandsCorrespondentieadres"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -53,22 +61,11 @@
 				}
 				,
 				"onderwijsbestuur": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/behoortTot",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
+					"description": "Deze resource heeft een associatie behoortTot met Onderwijsbestuur",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/behoortTot",
+						"description": "behoortTot"
 					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"onderwijsinstellingserkenning": {
-					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -96,14 +93,29 @@
 					],
 					"type": "object"
 				}
+				,
+				"onderwijsinstellingserkenning": {
+					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
 				,"nederlandsAdres"
 				,"nederlandsAdres"
 				,"onderwijsbestuur"
-				,"onderwijsinstellingserkenning"
 				,"aangebodenMboOpleiding"
+				,"onderwijsinstellingserkenning"
 			],
 			"type": "object"
 		},
@@ -125,7 +137,8 @@
 				"description": "organisatorischeEenheidnaam-v01"
 			},
 			"description": "De naam die de onderwijsorganisatie in het maatschappelijk verkeer hanteert voor de organisatorische eenheid ",
-			"maxLength": 80
+			"maxLength": 80,
+			"minLength": 1
 		},
 		"internationaleNaam": {
 			"type": "string",

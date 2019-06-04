@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "AangebodenMboOpleiding JSON-Schema",
 	"type": "object",
@@ -23,7 +23,11 @@
 				}
 				,
 				"aangebodenMboOpleidingCohort": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAanmeldingscohort",
+					"description": "Deze resource heeft een associatie heeftAanmeldingscohort met AangebodenMboOpleidingCohort",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAanmeldingscohort",
+						"description": "heeftAanmeldingscohort"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +42,11 @@
 				}
 				,
 				"onderwijslocatie": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp",
+					"description": "Deze resource heeft een associatie wordtAangebodenOp met Onderwijslocatie",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp",
+						"description": "wordtAangebodenOp"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -53,7 +61,11 @@
 				}
 				,
 				"onderwijsaanbieder": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor",
+					"description": "Deze resource heeft een associatie wordtAangebodenDoor met Onderwijsaanbieder",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor",
+						"description": "wordtAangebodenDoor"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -68,7 +80,11 @@
 				}
 				,
 				"mboCrossOverKwalificatie": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+					"description": "Deze resource heeft een associatie isVanHetSoort met MboCrossOverKwalificatie",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+						"description": "isVanHetSoort"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -83,7 +99,11 @@
 				}
 				,
 				"mboKwalificatie": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+					"description": "Deze resource heeft een associatie isVanHetSoort met MboKwalificatie",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+						"description": "isVanHetSoort"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -98,7 +118,11 @@
 				}
 				,
 				"mboDomein": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+					"description": "Deze resource heeft een associatie isVanHetSoort met MboDomein",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+						"description": "isVanHetSoort"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -113,7 +137,11 @@
 				}
 				,
 				"mboKwalificatiedossier": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+					"description": "Deze resource heeft een associatie isVanHetSoort met MboKwalificatiedossier",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+						"description": "isVanHetSoort"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -192,33 +220,63 @@
 			"maxLength": 225,
 			"minLength": 1
 		},
+		"mboNiveau": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/kwalificatieniveau-v03",
+				"description": "kwalificatieniveau-v03"
+			},
+			"description": "De aanduiding van het niveau van beroepsuitoefening, gebaseerd op de mate van verantwoordelijkheid en complexiteit.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9\\-]*$"
+		},
+		"toelatingseisen": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/toelatingseisen-v01",
+				"description": "toelatingseisen-v01"
+			},
+			"description": "Specificeert of er aan bepaalde eisen voldaan moet worden voor toelating.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"toegankelijkheid": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/toegankelijkVoor-v01",
+				"description": "toegankelijkVoor-v01"
+			},
+			"description": "Geeft aan of toegankelijkheid beperkt is.",
+			"maxLength": 4,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
 		"startdatum": {
-			"type": "array",
-			"items": {
-				"type": "string",
-				"externalDocs": { 
-					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
-					"description": "periodeBegindatum-v01"
-				},
-				"description": "De datum die het begin van de periode aangeeft (inclusief).",
-				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
-				}
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+				"description": "periodeBegindatum-v01"
+			},
+			"description": "De datum die het begin van de periode aangeeft (inclusief).",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		},
 		"opheffingsdatum": {
-			"type": "array",
-			"items": {
-				"type": "string",
-				"externalDocs": { 
-					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
-					"description": "periodeEinddatum-v01"
-				},
-				"description": "De datum die het einde van de periode aangeeft (exclusief).",
-				"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
-				}
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+				"description": "periodeEinddatum-v01"
+			},
+			"description": "De datum die het einde van de periode aangeeft (exclusief).",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		}
 	},
 	"required": [
 		"_links",
-		"leertraject"
+		"leertraject",
+		"toelatingseisen",
+		"toegankelijkheid",
+		"startdatum"
 	]
 }

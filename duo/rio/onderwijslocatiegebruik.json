@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijslocatiegebruik JSON-Schema",
 	"type": "object",
@@ -23,7 +23,11 @@
 				}
 				,
 				"onderwijslocatie": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isOp",
+					"description": "Deze resource heeft een associatie isOp met Onderwijslocatie",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isOp",
+						"description": "isOp"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",

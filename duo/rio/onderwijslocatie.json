@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijslocatie JSON-Schema",
 	"type": "object",
@@ -9,36 +9,6 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"bAGverblijfsobject": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeVindenOp",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"onderwijslocatiegebruik": {
-					"description": "Onderwijslocatiegebruik heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isOp) met deze resource Onderwijslocatie",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -66,12 +36,26 @@
 					],
 					"type": "object"
 				}
+				,
+				"onderwijslocatiegebruik": {
+					"description": "Onderwijslocatiegebruik heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isOp) met deze resource Onderwijslocatie",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
-				,"bAGverblijfsobject"
-				,"onderwijslocatiegebruik"
 				,"aangebodenMboOpleiding"
+				,"onderwijslocatiegebruik"
 			],
 			"type": "object"
 		},
@@ -131,12 +115,22 @@
 				"description": "longitude-v01"
 			},
 			"description": "Is de lengtegraad, deze vormt samen met de breedtegraad een geografische positieaanduiding in bolcoördinaten."
+		},
+		"bagcode": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bAGID-v01",
+				"description": "bAGID-v01"
+			},
+			"description": "De identificatie van een gebouw zoals dat in de Basisadministratie Gebouwen (BAG) bekend is.",
+			"minLength": 1
 		}
 	},
 	"required": [
 		"_links",
 		"code",
 		"gpsLatitude",
-		"gpsLongitude"
+		"gpsLongitude",
+		"bagcode"
 	]
 }

@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#115 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190509 om 10:04. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboOnderwijslicentie JSON-Schema",
 	"type": "object",
@@ -23,7 +23,11 @@
 				}
 				,
 				"onderwijsinstellingserkenning": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan",
+					"description": "Deze resource heeft een associatie geeftToestemmingAan met Onderwijsinstellingserkenning",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan",
+						"description": "geeftToestemmingAan"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -38,7 +42,11 @@
 				}
 				,
 				"mboOpleidingserkenning": {
-					"description": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
+					"description": "Deze resource heeft een associatie geeftToestemmingVoor met MboOpleidingserkenning",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
+						"description": "geeftToestemmingVoor"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -88,12 +96,31 @@
 				"description": "bekostigingsIndicatie"
 			},
 			"description": "De bekostigingsindicatie geeft aan of een inschrijving, graad, licentie of instelling in aanmerking komt voor bekostiging in de vorm van een rijksbijdrage."
+		},
+		"begindatum": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+				"description": "periodeBegindatum-v01"
+			},
+			"description": "De datum die het begin van de periode aangeeft (inclusief).",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+		},
+		"einddatum": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+				"description": "periodeEinddatum-v01"
+			},
+			"description": "De datum die het einde van de periode aangeeft (exclusief).",
+			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
 		}
 	},
 	"required": [
 		"_links",
 		"leerweg",
 		"stadium",
-		"bekostigd"
+		"bekostigd",
+		"begindatum"
 	]
 }
