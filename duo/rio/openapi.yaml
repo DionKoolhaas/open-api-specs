@@ -92,44 +92,6 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleiding resource'
-  '/bag-verblijfsobjecten':
-    get:
-      parameters:
-        - $ref: "#/components/parameters/onderwijslocatie"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
-        - $ref: "#/components/parameters/sortDirection"
-      responses:
-        '200':
-          $ref: '#/components/responses/BagVerblijfsobjecten'
-        '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
-        '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
-        '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
-        '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
-      summary: 'BagVerblijfsobjecten collectie'
-  '/bag-verblijfsobject':
-    get:
-      parameters:
-        - $ref: '#/components/parameters/subject'
-      responses:
-        '200':
-          $ref: '#/components/responses/BagVerblijfsobject'
-        '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
-        '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
-        '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
-        '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
-        '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
-      summary: 'BagVerblijfsobject resource'
   '/bedrijfsopleidingen':
     get:
       parameters:
@@ -609,7 +571,6 @@ paths:
   '/onderwijslocaties':
     get:
       parameters:
-        - $ref: "#/components/parameters/bagVerblijfsobject"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
@@ -703,12 +664,6 @@ components:
       description: "URI van de op te vragen resource"
       in: "query"
       name: "aangebodenMboOpleidingCohort"
-      schema:
-        type: "string"
-    bagVerblijfsobject:
-      description: "URI van de op te vragen resource"
-      in: "query"
-      name: "bagVerblijfsobject"
       schema:
         type: "string"
     bedrijfsopleiding:
@@ -899,42 +854,6 @@ components:
         application/hal+json:
           schema:
             $ref: 'aangeboden-mbo-opleiding-cohort.json'            
-    BagVerblijfsobjecten:
-      description: OK.
-      headers:
-        X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
-        X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
-        X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
-      content:
-        application/hal+json:
-          schema:
-            required:
-              - _embedded
-              - _links
-            type: object
-            properties:
-              _embedded:
-                type: object
-                properties:
-                  bagVerblijfsobjecten:
-                    type: array
-                    items:
-                      $ref: 'bag-verblijfsobject.json'
-                required:
-                  - bagVerblijfsobjecten
-              _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
-    BagVerblijfsobject:
-      description: OK.
-      content:
-        application/hal+json:
-          schema:
-            $ref: 'bag-verblijfsobject.json'
     Bedrijfsopleidingen:
       description: OK.
       headers:
