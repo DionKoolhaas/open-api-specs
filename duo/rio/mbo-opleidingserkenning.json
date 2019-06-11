@@ -116,7 +116,7 @@
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/prijsfactorMBO-v01",
 				"description": "prijsfactorMBO-v01"
 			},
-			"description": "Vermenigvuldigingsfactor behorende bij de opleiding. Wordt gebruikt bij de bepaling van de bijdrage aan de deelnemerswaarde. "
+			"description": "Vermenigvuldigingsfactor behorende bij de opleiding. Wordt gebruikt bij de bepaling van de bijdrage aan de deelnemerswaarde. ",
 			"format": "date"
 		},
 		"toegestaneLeerweg": {

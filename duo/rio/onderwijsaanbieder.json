@@ -111,8 +111,8 @@
 			},
 			"required": [
 				"self"
-				,"nederlandsAdres"
-				,"nederlandsAdres"
+				,"nederlandsBezoekadres"
+				,"nederlandsCorrespondentieadres"
 				,"onderwijsbestuur"
 				,"aangebodenMboOpleiding"
 				,"onderwijsinstellingserkenning"
