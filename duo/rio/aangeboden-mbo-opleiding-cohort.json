@@ -134,7 +134,7 @@
 			"description": "Geeft aan of een aspirant student voor een bepaald cohort van een aangeboden opleidng toestemming van de instelling nodig heeft om zich aan te mogen melden.",
 			"maxLength": 70,
 			"minLength": 1,
-			"format": "date"
+			"pattern": "^[A-Z0-9_]*$"
 		},
 		"toelichtingVereisteToestemming": {
 			"type": "string",
@@ -144,8 +144,7 @@
 			},
 			"description": "Is een tekstuele toelichting op de voor aanmelding vereiste toestemming van de onderwijsaanbieder.",
 			"maxLength": 3000,
-			"minLength": 1,
-			"format": "date"
+			"minLength": 1
 		}
 	},
 	"required": [

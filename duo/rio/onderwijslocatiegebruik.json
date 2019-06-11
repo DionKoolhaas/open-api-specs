@@ -99,8 +99,7 @@
 			},
 			"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor het gebruik van een onderwijslocatie ten behoeve van uitwisseling in de keten.",
 			"maxLength": 60,
-			"minLength": 1,
-			"format": "date"
+			"minLength": 1
 		}
 	},
 	"required": [

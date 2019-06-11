@@ -116,8 +116,7 @@
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/prijsfactorMBO-v01",
 				"description": "prijsfactorMBO-v01"
 			},
-			"description": "Vermenigvuldigingsfactor behorende bij de opleiding. Wordt gebruikt bij de bepaling van de bijdrage aan de deelnemerswaarde. ",
-			"format": "date"
+			"description": "Vermenigvuldigingsfactor behorende bij de opleiding. Wordt gebruikt bij de bepaling van de bijdrage aan de deelnemerswaarde. "
 		},
 		"toegestaneLeerweg": {
 			"type": "array",
@@ -130,7 +129,7 @@
 				"description": "Uitputtende lijst ten behoeve van de onderwijssector MBO (Middelbaar Beroepsonderwijs) voor de manier waarop de kennisoverdracht is ingericht wat betreft fysieke aanwezigheid op de onderwijslocatie en de duur daarvan.",
 				"maxLength": 70,
 				"minLength": 1,
-				"format": "date"
+				"pattern": "^[A-Z0-9_]*$"
 				}
 		},
 		"wet": {
@@ -142,7 +141,7 @@
 			"description": "Wet waarin of waaronder de juridische grondslag bepaald is.",
 			"maxLength": 70,
 			"minLength": 1,
-			"format": "date"
+			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ministerie": {
 			"type": "string",
@@ -153,7 +152,7 @@
 			"description": "Het ministerie waaronder een opleiding of instelling ressorteert.",
 			"maxLength": 70,
 			"minLength": 1,
-			"format": "date"
+			"pattern": "^[A-Z0-9_]*$"
 		},
 		"opleidingsstelsel": {
 			"type": "string",
@@ -164,7 +163,7 @@
 			"description": "De naam van het codestelsel waarbinnen samenhangende erkende opleidingen of vakken uniek onderscheiden worden.",
 			"maxLength": 70,
 			"minLength": 1,
-			"format": "date"
+			"pattern": "^[A-Z0-9_]*$"
 		},
 		"ingangsdatum": {
 			"type": "string",
