@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboDomein JSON-Schema",
 	"type": "object",
@@ -9,21 +9,6 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"mboKwalificatiedossier": {
-					"description": "MboKwalificatiedossier heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboDomein",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -51,11 +36,26 @@
 					],
 					"type": "object"
 				}
+				,
+				"mboKwalificatiedossier": {
+					"description": "MboKwalificatiedossier heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboDomein",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
-				,"mboKwalificatiedossier"
 				,"aangebodenMboOpleiding"
+				,"mboKwalificatiedossier"
 			],
 			"type": "object"
 		},
@@ -141,7 +141,7 @@
 				"description": "periodeBegindatum-v01"
 			},
 			"description": "De datum die het begin van de periode aangeeft (inclusief).",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"opheffingsdatum": {
 			"type": "string",
@@ -150,7 +150,7 @@
 				"description": "periodeEinddatum-v01"
 			},
 			"description": "De datum die het einde van de periode aangeeft (exclusief).",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		}
 	},
 	"required": [

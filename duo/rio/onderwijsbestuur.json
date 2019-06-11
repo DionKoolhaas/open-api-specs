@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijsbestuur JSON-Schema",
 	"type": "object",
@@ -79,8 +79,8 @@
 					"type": "object"
 				}
 				,
-				"bevoegdGezagErkenning": {
-					"description": "BevoegdGezagErkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsbestuur",
+				"onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/behoortTot) met deze resource Onderwijsbestuur",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -94,8 +94,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsaanbieder": {
-					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/behoortTot) met deze resource Onderwijsbestuur",
+				"bevoegdGezagErkenning": {
+					"description": "BevoegdGezagErkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsbestuur",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -112,10 +112,10 @@
 			"required": [
 				"self"
 				,"onderwijslocatiegebruik"
-				,"nederlandsAdres"
-				,"nederlandsAdres"
-				,"bevoegdGezagErkenning"
+				,"nederlandsBezoekadres"
+				,"nederlandsCorrespondentieadres"
 				,"onderwijsaanbieder"
+				,"bevoegdGezagErkenning"
 			],
 			"type": "object"
 		},
@@ -211,7 +211,7 @@
 				"description": "inBedrijfdatum-v01"
 			},
 			"description": "De datum waarop een organisatorische eenheid zoals een onderwijsaanbieder start. ",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"uitBedrijfdatum": {
 			"type": "string",
@@ -220,7 +220,7 @@
 				"description": "uitBedrijfdatum-v01"
 			},
 			"description": "De datum waarop een organisatorische eenheid zoals een onderwijsaanbieder niet meer bestaat.",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		}
 	},
 	"required": [

@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "AangebodenMboOpleidingCohort JSON-Schema",
 	"type": "object",
@@ -9,21 +9,6 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"aangebodenMboOpleiding": {
-					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAanmeldingscohort) met deze resource AangebodenMboOpleidingCohort",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -51,11 +36,26 @@
 					],
 					"type": "object"
 				}
+				,
+				"aangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAanmeldingscohort) met deze resource AangebodenMboOpleidingCohort",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
-				,"aangebodenMboOpleiding"
 				,"bedrijfsopleiding"
+				,"aangebodenMboOpleiding"
 			],
 			"type": "object"
 		},
@@ -87,7 +87,7 @@
 				"description": "aanmeldingscohortbegindatum-v01"
 			},
 			"description": "Is de eerste dag waarop een aspirant-student zich aan kan melden voor het betreffende cohort van een aangeboden opleiding. ",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"eindeAanmeldperiode": {
 			"type": "string",
@@ -96,7 +96,7 @@
 				"description": "aanmeldingscohorteinddatum-v01"
 			},
 			"description": "Is de laatste dag waarop een aspirant-student zich aan kan melden voor het betreffende cohort van een aangeboden opleiding. ",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"instroommoment": {
 			"type": "string",
@@ -105,7 +105,7 @@
 				"description": "cohortaanvangsdatum-v01"
 			},
 			"description": "De dag waarop het cohort voor de aangeboden opleiding begint. ",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"beginInstroomperiode": {
 			"type": "string",
@@ -114,7 +114,7 @@
 				"description": "instroomperiodeCohortbegindatum-v01"
 			},
 			"description": "De eerste dag dat een student in een cohort van een aangeboden opleiding met een flexibele instroom kan beginnen. ",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"eindeInstroomperiode": {
 			"type": "string",
@@ -123,7 +123,7 @@
 				"description": "instroomperiodeCohorteinddatum-v01"
 			},
 			"description": "De laatste dag dat een student kan beginnen in een cohort van een aangeboden opleiding met een flexibele instroom. ",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"toestemmingVereistVoorAanmelding": {
 			"type": "string",
@@ -134,7 +134,7 @@
 			"description": "Geeft aan of een aspirant student voor een bepaald cohort van een aangeboden opleidng toestemming van de instelling nodig heeft om zich aan te mogen melden.",
 			"maxLength": 70,
 			"minLength": 1,
-			"pattern": "^[A-Z0-9_]*$"
+			"format": "date"
 		},
 		"toelichtingVereisteToestemming": {
 			"type": "string",
@@ -144,7 +144,8 @@
 			},
 			"description": "Is een tekstuele toelichting op de voor aanmelding vereiste toestemming van de onderwijsaanbieder.",
 			"maxLength": 3000,
-			"minLength": 1
+			"minLength": 1,
+			"format": "date"
 		}
 	},
 	"required": [

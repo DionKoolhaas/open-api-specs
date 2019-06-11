@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "NederlandsAdres JSON-Schema",
 	"type": "object",
@@ -9,36 +9,6 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"onderwijsbestuur": {
-					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"onderwijsbestuur": {
-					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -81,13 +51,43 @@
 					],
 					"type": "object"
 				}
+				,
+				"onderwijsbestuur": {
+					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"onderwijsbestuur": {
+					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres) met deze resource NederlandsAdres",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
-				,"onderwijsbestuur"
-				,"onderwijsbestuur"
 				,"onderwijsaanbieder"
 				,"onderwijsaanbieder"
+				,"onderwijsbestuur"
+				,"onderwijsbestuur"
 			],
 			"type": "object"
 		},
@@ -102,14 +102,12 @@
 			"minLength": 1
 		},
 		"huisnummer": {
-			"type": "string",
+			"type": "integer",
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v02",
-				"description": "huisnummer-v02"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v03",
+				"description": "huisnummer-v03"
 			},
-			"description": "De numerieke aanduiding zoals deze door het gemeentebestuur aan het object is toegekend",
-			"maxLength": 3000,
-			"pattern": "^\\d{0,5}$"
+			"description": "De numerieke aanduiding zoals deze door het gemeentebestuur aan het object is toegekend"
 		},
 		"huisnummertoevoeging": {
 			"type": "string",

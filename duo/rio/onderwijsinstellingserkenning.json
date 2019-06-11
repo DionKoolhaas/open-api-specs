@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#117 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190604 om 13:44. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijsinstellingserkenning JSON-Schema",
 	"type": "object",
@@ -60,8 +60,8 @@
 					"type": "object"
 				}
 				,
-				"mboOnderwijslicentie": {
-					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan) met deze resource Onderwijsinstellingserkenning",
+				"examenlicentie": {
+					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan) met deze resource Onderwijsinstellingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -75,8 +75,8 @@
 					"type": "object"
 				}
 				,
-				"examenlicentie": {
-					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan) met deze resource Onderwijsinstellingserkenning",
+				"mboOnderwijslicentie": {
+					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingAan) met deze resource Onderwijsinstellingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -94,8 +94,8 @@
 				"self"
 				,"bevoegdGezagErkenning"
 				,"onderwijsaanbieder"
-				,"mboOnderwijslicentie"
 				,"examenlicentie"
+				,"mboOnderwijslicentie"
 			],
 			"type": "object"
 		},
@@ -184,7 +184,7 @@
 				"description": "oprichtingsdatum-v01"
 			},
 			"description": "De datum waarop iets wordt opgericht (start).",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"ingangsdatum": {
 			"type": "string",
@@ -193,7 +193,7 @@
 				"description": "organisatieErkenningBegindatum-v01"
 			},
 			"description": "De datum waarop de erkenning van een organisatie volgens onderwijsregelgeving van kracht wordt.",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		},
 		"einddatum": {
 			"type": "string",
@@ -202,7 +202,7 @@
 				"description": "organisatieErkenningEinddatum-v01"
 			},
 			"description": "De datum waarop de erkenning van een organisatie volgens onderwijsregelgeving is ingetrokken of vervallen.",
-			"pattern": "^([0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$"
+			"format": "date"
 		}
 	},
 	"required": [
