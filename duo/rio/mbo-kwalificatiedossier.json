@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboKwalificatiedossier JSON-Schema",
 	"type": "object",
@@ -41,8 +41,8 @@
 					"type": "object"
 				}
 				,
-				"mboKwalificatie": {
-					"description": "MboKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboKwalificatiedossier",
+				"aangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboKwalificatiedossier",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -56,8 +56,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboKwalificatiedossier",
+				"mboKwalificatie": {
+					"description": "MboKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboKwalificatiedossier",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -74,8 +74,8 @@
 			"required": [
 				"self"
 				,"mboDomein"
-				,"mboKwalificatie"
 				,"aangebodenMboOpleiding"
+				,"mboKwalificatie"
 			],
 			"type": "object"
 		},

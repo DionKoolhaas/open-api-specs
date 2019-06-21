@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#118 in het DUO_POC_Registratie Instellingen en Opleidingen (RIO) op 20190611 om 10:40. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboKwalificatie JSON-Schema",
 	"type": "object",
@@ -198,19 +198,15 @@
 			"pattern": "^\\d{0,5}$"
 		},
 		"waardedocumentsoort": {
-			"type": "array",
-			"minItems": 1,
-			"items": {
-				"type": "string",
-				"externalDocs": { 
-					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/soortWaardedocument-v01",
-					"description": "soortWaardedocument-v01"
-				},
-				"description": "Aanduiding van het soort waardedocument dat kan worden of is behaald.",
-				"maxLength": 70,
-				"minLength": 1,
-				"pattern": "^[A-Z0-9_]*$"
-				}
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/soortWaardedocument-v01",
+				"description": "soortWaardedocument-v01"
+			},
+			"description": "Aanduiding van het soort waardedocument dat kan worden of is behaald.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
 		},
 		"structuur": {
 			"type": "string",
