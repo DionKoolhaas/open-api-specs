@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboOpleidingserkenning JSON-Schema",
 	"type": "object",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"mboCrossOverKwalificatie": {
-					"description": "MboCrossOverKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
+				"mboOnderwijslicentie": {
+					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -67,8 +67,8 @@
 					"type": "object"
 				}
 				,
-				"mboOnderwijslicentie": {
-					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
+				"mboCrossOverKwalificatie": {
+					"description": "MboCrossOverKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -85,9 +85,9 @@
 			"required": [
 				"self"
 				,"examenlicentie"
-				,"mboCrossOverKwalificatie"
-				,"mboKwalificatie"
 				,"mboOnderwijslicentie"
+				,"mboKwalificatie"
+				,"mboCrossOverKwalificatie"
 			],
 			"type": "object"
 		},

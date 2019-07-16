@@ -1,7 +1,7 @@
 {
 	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "MboOnderwijslicentie JSON-Schema",
+    "title": "VavoOnderwijslicentie JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
@@ -9,6 +9,25 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"vavoOpleidingserkenning": {
+					"description": "Deze resource heeft een associatie geeftToestemmingVoor met VavoOpleidingserkenning",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
+						"description": "geeftToestemmingVoor"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -40,43 +59,21 @@
 					],
 					"type": "object"
 				}
-				,
-				"mboOpleidingserkenning": {
-					"description": "Deze resource heeft een associatie geeftToestemmingVoor met MboOpleidingserkenning",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
-						"description": "geeftToestemmingVoor"
-					},
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
 			},
 			"required": [
 				"self"
+				,"vavoOpleidingserkenning"
 				,"onderwijsinstellingserkenning"
-				,"mboOpleidingserkenning"
 			],
 			"type": "object"
 		},
-		"leerweg": {
-			"type": "string",
+		"bekostigd": {
+			"type": "boolean",
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwegMBO-v04",
-				"description": "leerwegMBO-v04"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bekostigingsIndicatie",
+				"description": "bekostigingsIndicatie"
 			},
-			"description": "Uitputtende lijst ten behoeve van de onderwijssector MBO (Middelbaar Beroepsonderwijs) voor de manier waarop de kennisoverdracht is ingericht wat betreft fysieke aanwezigheid op de onderwijslocatie en de duur daarvan.",
-			"maxLength": 70,
-			"minLength": 1,
-			"pattern": "^[A-Z0-9_]*$"
+			"description": "De bekostigingsindicatie geeft aan of een inschrijving, graad, licentie of instelling in aanmerking komt voor bekostiging in de vorm van een rijksbijdrage."
 		},
 		"stadium": {
 			"type": "string",
@@ -88,14 +85,6 @@
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
-		},
-		"bekostigd": {
-			"type": "boolean",
-			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bekostigingsIndicatie",
-				"description": "bekostigingsIndicatie"
-			},
-			"description": "De bekostigingsindicatie geeft aan of een inschrijving, graad, licentie of instelling in aanmerking komt voor bekostiging in de vorm van een rijksbijdrage."
 		},
 		"begindatum": {
 			"type": "string",
@@ -118,9 +107,8 @@
 	},
 	"required": [
 		"_links",
-		"leerweg",
-		"stadium",
 		"bekostigd",
+		"stadium",
 		"begindatum"
 	]
 }

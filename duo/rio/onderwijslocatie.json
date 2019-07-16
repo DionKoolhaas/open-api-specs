@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijslocatie JSON-Schema",
 	"type": "object",
@@ -51,11 +51,27 @@
 					],
 					"type": "object"
 				}
+				,
+				"aangebodenVavoOpleiding": {
+					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp) met deze resource Onderwijslocatie",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
 				,"aangebodenMboOpleiding"
 				,"onderwijslocatiegebruik"
+				,"aangebodenVavoOpleiding"
 			],
 			"type": "object"
 		},

@@ -1,0 +1,148 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Communicatiecontext JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"nederlandsPostadres": {
+					"description": "Deze resource heeft een associatie isViaPostBereikbaarOp met NederlandsAdres",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isViaPostBereikbaarOp",
+						"description": "isViaPostBereikbaarOp"
+					},
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"nederlandsBezoekadres": {
+					"description": "Deze resource heeft een associatie isTeBezoekOp met NederlandsAdres",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBezoekOp",
+						"description": "isTeBezoekOp"
+					},
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"onderwijsbestuur": {
+					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBereikenVoor) met deze resource Communicatiecontext",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"onderwijsaanbieder": {
+					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBereikenVoor) met deze resource Communicatiecontext",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"nederlandsPostadres"
+				,"nederlandsBezoekadres"
+				,"onderwijsbestuur"
+				,"onderwijsaanbieder"
+			],
+			"type": "object"
+		},
+		"context": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/communicatiecontextsoortLOD-v03",
+				"description": "communicatiecontextsoortLOD-v03"
+			},
+			"description": "Het kader waarbinnen men in contact treedt dat als linked open data mag worden gepubliceerd. ",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"eMailadres": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/emailadres-v05",
+				"description": "emailadres-v05"
+			},
+			"description": "Is een adres voor het ontvangen en verzenden van elektronische post.",
+			"maxLength": 256,
+			"minLength": 4
+		},
+		"telefoonnummer": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/telefoonnummer-v02",
+				"description": "telefoonnummer-v02"
+			},
+			"description": "Het geheel aan cijfers en tekens waarmee wordt aangeduid hoe een persoon via telefonie kan worden bereikt",
+			"maxLength": 22,
+			"pattern": "^((085)[-]?[0-9]{7})|((088)[-]?[0-9]{7})|(((0)[1-9]{2}[0-9][-]?[1-9][0-9]{5})|((\\+31|0|0031)[1-9][0-9][-]?[1-9][0-9]{6}))|((06)[-]?[1-9]{1}[0-9]{7})|(((\\+31|0|0031)6){1}[-]?[1-9]{1}[0-9]{7})|\\+(1\\d{4,14}|2[078]\\d{3,13}|3[0-469]\\d{3,13}|4[013-9]\\d{3,13}|5[1-8]\\d{3,13}|6[0-6]\\d{3,13}|7\\d{4,14}|8[1-469]\\d{3,13}|9[0-58]\\d{3,13}|[2-9]\\d{4,14})$"
+		},
+		"webadres": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/uRL",
+				"description": "uRL"
+			},
+			"description": "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
+			"maxLength": 320,
+			"minLength": 0
+		}
+	},
+	"required": [
+		"_links",
+		"context"
+	]
+}

@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "NederlandsAdres JSON-Schema",
 	"type": "object",
@@ -22,8 +22,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsbestuur": {
-					"description": "Onderwijsbestuur heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
+				"communicatiecontext": {
+					"description": "Communicatiecontext heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isViaPostBereikbaarOp) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsaanbieder": {
-					"description": "Onderwijsaanbieder heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres) met deze resource NederlandsAdres",
+				"communicatiecontext": {
+					"description": "Communicatiecontext heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBezoekOp) met deze resource NederlandsAdres",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -54,10 +54,24 @@
 			},
 			"required": [
 				"self"
-				,"onderwijsbestuur"
-				,"onderwijsaanbieder"
+				,"communicatiecontext"
+				,"communicatiecontext"
 			],
 			"type": "object"
+		},
+		"communicatiecontext": {
+			"type": "array",
+			"items": {
+				"type": "string",
+				"externalDocs": { 
+					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/communicatiecontextsoort-v03",
+					"description": "communicatiecontextsoort-v03"
+				},
+				"description": "Het kader waarbinnen men in contact treedt",
+				"maxLength": 70,
+				"minLength": 1,
+				"pattern": "^[A-Z0-9_]*$"
+				}
 		},
 		"straatnaam": {
 			"type": "string",
