@@ -137,6 +137,7 @@ paths:
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/voOpleiding"
+        - $ref: "#/components/parameters/voGroep"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -889,6 +890,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vavoOpleidingserkenning"
         - $ref: "#/components/parameters/voGroep"
+        - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
