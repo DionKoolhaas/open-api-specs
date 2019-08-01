@@ -91,6 +91,11 @@
 			],
 			"type": "object"
 		},
+		"uri": {
+			"type": "string",
+			"format": "uri",
+			"description": "URI van de specifieke resource"
+		},
 		"CREBOcode": {
 			"type": "string",
 			"externalDocs": { 

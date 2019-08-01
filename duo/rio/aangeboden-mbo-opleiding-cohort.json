@@ -62,7 +62,7 @@
 		"uri": {
 			"type": "string",
 			"format": "uri",
-			"description": "URI van het specifieke"
+			"description": "URI van de specifieke resource"
 		},
 		"code": {
 			"type": "string",

@@ -115,6 +115,11 @@
 			],
 			"type": "object"
 		},
+		"uri": {
+			"type": "string",
+			"format": "uri",
+			"description": "URI van de specifieke resource"
+		},
 		"bRIN4": {
 			"type": "string",
 			"externalDocs": { 

@@ -99,6 +99,11 @@
 			],
 			"type": "object"
 		},
+		"uri": {
+			"type": "string",
+			"format": "uri",
+			"description": "URI van de specifieke resource"
+		},
 		"context": {
 			"type": "string",
 			"externalDocs": { 
