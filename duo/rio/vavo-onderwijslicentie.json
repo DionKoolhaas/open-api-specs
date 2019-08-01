@@ -1,7 +1,7 @@
 {
 	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Examenlicentie JSON-Schema",
+    "title": "VavoOnderwijslicentie JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
@@ -9,6 +9,25 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"vavoOpleidingserkenning": {
+					"description": "Deze resource heeft een associatie geeftToestemmingVoor met VavoOpleidingserkenning",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
+						"description": "geeftToestemmingVoor"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -40,30 +59,11 @@
 					],
 					"type": "object"
 				}
-				,
-				"mboOpleidingserkenning": {
-					"description": "Deze resource heeft een associatie geeftToestemmingVoor met MboOpleidingserkenning",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor",
-						"description": "geeftToestemmingVoor"
-					},
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
 			},
 			"required": [
 				"self"
+				,"vavoOpleidingserkenning"
 				,"onderwijsinstellingserkenning"
-				,"mboOpleidingserkenning"
 			],
 			"type": "object"
 		},
@@ -71,6 +71,14 @@
 			"type": "string",
 			"format": "uri",
 			"description": "URI van de specifieke resource"
+		},
+		"bekostigd": {
+			"type": "boolean",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bekostigingsIndicatie",
+				"description": "bekostigingsIndicatie"
+			},
+			"description": "De bekostigingsindicatie geeft aan of een inschrijving, graad, licentie of instelling in aanmerking komt voor bekostiging in de vorm van een rijksbijdrage."
 		},
 		"stadium": {
 			"type": "string",
@@ -104,6 +112,7 @@
 	},
 	"required": [
 		"_links",
+		"bekostigd",
 		"stadium",
 		"begindatum"
 	]

@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijsaanbieder JSON-Schema",
 	"type": "object",
@@ -9,44 +9,6 @@
 			"properties": {
 				"self": {
 					"description": "Absolute link naar deze resource",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"nederlandsBezoekadres": {
-					"description": "Deze resource heeft een associatie heeftAlgemeenNederlandsBezoekadres met NederlandsAdres",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsBezoekadres",
-						"description": "heeftAlgemeenNederlandsBezoekadres"
-					},
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"nederlandsCorrespondentieadre": {
-					"description": "Deze resource heeft een associatie heeftAlgemeenNederlandsCorrespondentieadres met NederlandsAdres",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAlgemeenNederlandsCorrespondentieadres",
-						"description": "heeftAlgemeenNederlandsCorrespondentieadres"
-					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -79,8 +41,12 @@
 					"type": "object"
 				}
 				,
-				"onderwijsinstellingserkenning": {
-					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
+				"communicatiecontext": {
+					"description": "Deze resource heeft een associatie isTeBereikenVoor met Communicatiecontext",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBereikenVoor",
+						"description": "isTeBereikenVoor"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -108,16 +74,51 @@
 					],
 					"type": "object"
 				}
+				,
+				"onderwijsinstellingserkenning": {
+					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"aangebodenVavoOpleiding": {
+					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor) met deze resource Onderwijsaanbieder",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
-				,"nederlandsBezoekadres"
-				,"nederlandsCorrespondentieadres"
 				,"onderwijsbestuur"
-				,"onderwijsinstellingserkenning"
+				,"communicatiecontext"
 				,"aangebodenMboOpleiding"
+				,"onderwijsinstellingserkenning"
+				,"aangebodenVavoOpleiding"
 			],
 			"type": "object"
+		},
+		"uri": {
+			"type": "string",
+			"format": "uri",
+			"description": "URI van de specifieke resource"
 		},
 		"onderwijsaanbiederID": {
 			"type": "string",
@@ -150,39 +151,6 @@
 			"maxLength": 225,
 			"minLength": 1
 		},
-		"algemeenTelefoonnummer": {
-			"type": "string",
-			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/telefoonnummer-v02",
-				"description": "telefoonnummer-v02"
-			},
-			"description": "Het geheel aan cijfers en tekens waarmee wordt aangeduid hoe een persoon via telefonie kan worden bereikt",
-			"maxLength": 22,
-			"pattern": "^((085)[-]?[0-9]{7})|((088)[-]?[0-9]{7})|(((0)[1-9]{2}[0-9][-]?[1-9][0-9]{5})|((\\+31|0|0031)[1-9][0-9][-]?[1-9][0-9]{6}))|((06)[-]?[1-9]{1}[0-9]{7})|(((\\+31|0|0031)6){1}[-]?[1-9]{1}[0-9]{7})|\\+(1\\d{4,14}|2[078]\\d{3,13}|3[0-469]\\d{3,13}|4[013-9]\\d{3,13}|5[1-8]\\d{3,13}|6[0-6]\\d{3,13}|7\\d{4,14}|8[1-469]\\d{3,13}|9[0-58]\\d{3,13}|[2-9]\\d{4,14})$"
-		},
-		"algemeenEmailadres": {
-			"type": "array",
-			"items": {
-				"type": "string",
-				"externalDocs": { 
-					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/emailadres-v05",
-					"description": "emailadres-v05"
-				},
-				"description": "Is een adres voor het ontvangen en verzenden van elektronische post.",
-				"maxLength": 256,
-				"minLength": 4
-				}
-		},
-		"algemeenWebadres": {
-			"type": "string",
-			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/uRL",
-				"description": "uRL"
-			},
-			"description": "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
-			"maxLength": 320,
-			"minLength": 0
-		},
 		"onderwijsmethode": {
 			"type": "string",
 			"externalDocs": { 
@@ -195,17 +163,14 @@
 			"pattern": "^[A-Z0-9_]*$"
 		},
 		"eigenOnderwijsaanbiederSleutel": {
-			"type": "array",
-			"items": {
-				"type": "string",
-				"externalDocs": { 
-					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijsaanbiederExterneIdentificatie-v01",
-					"description": "onderwijsaanbiederExterneIdentificatie-v01"
-				},
-				"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor een onderwijsaanbieder ten behoeve van uitwisseling in de keten.",
-				"maxLength": 60,
-				"minLength": 1
-				}
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijsaanbiederExterneIdentificatie-v01",
+				"description": "onderwijsaanbiederExterneIdentificatie-v01"
+			},
+			"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor een onderwijsaanbieder ten behoeve van uitwisseling in de keten.",
+			"maxLength": 60,
+			"minLength": 1
 		},
 		"inBedrijfdatum": {
 			"type": "string",

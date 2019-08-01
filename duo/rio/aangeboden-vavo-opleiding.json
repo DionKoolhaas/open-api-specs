@@ -1,7 +1,7 @@
 {
 	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "AangebodenMboOpleiding JSON-Schema",
+    "title": "AangebodenVavoOpleiding JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
@@ -22,11 +22,30 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleidingCohort": {
-					"description": "Deze resource heeft een associatie heeftAanmeldingscohort met AangebodenMboOpleidingCohort",
+				"aangebodenVavoOpleidingCohort": {
+					"description": "Deze resource heeft een associatie heeftAanmeldingscohort met AangebodenVavoOpleidingCohort",
 					"externalDocs": { 
 						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/heeftAanmeldingscohort",
 						"description": "heeftAanmeldingscohort"
+					},
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"voOpleiding": {
+					"description": "Deze resource heeft een associatie isVanHetSoort met VoOpleiding",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
+						"description": "isVanHetSoort"
 					},
 					"properties": {
 						"href": {
@@ -79,65 +98,8 @@
 					"type": "object"
 				}
 				,
-				"mboCrossOverKwalificatie": {
-					"description": "Deze resource heeft een associatie isVanHetSoort met MboCrossOverKwalificatie",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
-						"description": "isVanHetSoort"
-					},
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"mboKwalificatie": {
-					"description": "Deze resource heeft een associatie isVanHetSoort met MboKwalificatie",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
-						"description": "isVanHetSoort"
-					},
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"mboDomein": {
-					"description": "Deze resource heeft een associatie isVanHetSoort met MboDomein",
-					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
-						"description": "isVanHetSoort"
-					},
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"mboKwalificatiedossier": {
-					"description": "Deze resource heeft een associatie isVanHetSoort met MboKwalificatiedossier",
+				"voGroep": {
+					"description": "Deze resource heeft een associatie isVanHetSoort met VoGroep",
 					"externalDocs": { 
 						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort",
 						"description": "isVanHetSoort"
@@ -157,13 +119,11 @@
 			},
 			"required": [
 				"self"
-				,"aangebodenMboOpleidingCohort"
+				,"aangebodenVavoOpleidingCohort"
+				,"voOpleiding"
 				,"onderwijslocatie"
 				,"onderwijsaanbieder"
-				,"mboCrossOverKwalificatie"
-				,"mboKwalificatie"
-				,"mboDomein"
-				,"mboKwalificatiedossier"
+				,"voGroep"
 			],
 			"type": "object"
 		},
@@ -180,17 +140,6 @@
 			},
 			"description": "De unieke aanduiding van een opleidingseenheid voor uitwisseling in de keten.",
 			"pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
-		},
-		"leertraject": {
-			"type": "string",
-			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leertrajectMBO-v02",
-				"description": "leertrajectMBO-v02"
-			},
-			"description": "De manier waarop het onderwijsprogramma van de student aan een MBO-instelling (Middelbaar beroepsonderwijs) is ingericht",
-			"maxLength": 70,
-			"minLength": 1,
-			"pattern": "^[A-Z0-9_]*$"
 		},
 		"eigenAangebodenOpleidingSleutel": {
 			"type": "string",
@@ -221,17 +170,6 @@
 			"description": "De naam voor internationaal gebruik ter aanduiding van de  opleiding.",
 			"maxLength": 225,
 			"minLength": 1
-		},
-		"mboNiveau": {
-			"type": "string",
-			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/kwalificatieniveau-v03",
-				"description": "kwalificatieniveau-v03"
-			},
-			"description": "De aanduiding van het niveau van beroepsuitoefening, gebaseerd op de mate van verantwoordelijkheid en complexiteit.",
-			"maxLength": 70,
-			"minLength": 1,
-			"pattern": "^[A-Z0-9\\-]*$"
 		},
 		"toelatingseisen": {
 			"type": "string",
@@ -276,7 +214,6 @@
 	},
 	"required": [
 		"_links",
-		"leertraject",
 		"toelatingseisen",
 		"toegankelijkheid",
 		"startdatum"

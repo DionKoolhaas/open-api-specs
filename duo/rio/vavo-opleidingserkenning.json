@@ -1,0 +1,137 @@
+{
+	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "VavoOpleidingserkenning JSON-Schema",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"_links": {
+			"properties": {
+				"self": {
+					"description": "Absolute link naar deze resource",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"vavoOnderwijslicentie": {
+					"description": "VavoOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource VavoOpleidingserkenning",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"voOpleiding": {
+					"description": "VoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource VavoOpleidingserkenning",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+			},
+			"required": [
+				"self"
+				,"vavoOnderwijslicentie"
+				,"voOpleiding"
+			],
+			"type": "object"
+		},
+		"uri": {
+			"type": "string",
+			"format": "uri",
+			"description": "URI van de specifieke resource"
+		},
+		"ingangsdatum": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeBegindatum-v01",
+				"description": "periodeBegindatum-v01"
+			},
+			"description": "De datum die het begin van de periode aangeeft (inclusief).",
+			"format": "date"
+		},
+		"einddatum": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/periodeEinddatum-v01",
+				"description": "periodeEinddatum-v01"
+			},
+			"description": "De datum die het einde van de periode aangeeft (exclusief).",
+			"format": "date"
+		},
+		"ministerie": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/ministerieAanduiding-v02",
+				"description": "ministerieAanduiding-v02"
+			},
+			"description": "Het ministerie waaronder een opleiding of instelling ressorteert.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"opleidingsstelsel": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsstelsel-v07",
+				"description": "opleidingsstelsel-v07"
+			},
+			"description": "De naam van het codestelsel waarbinnen samenhangende erkende opleidingen of vakken uniek onderscheiden worden.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		},
+		"opleidingcode": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode",
+				"description": "opleidingcode"
+			},
+			"description": "De code van de opleiding binnen het codestelsel",
+			"maxLength": 8,
+			"minLength": 1
+		},
+		"wet": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02",
+				"description": "wet-v02"
+			},
+			"description": "Wet waarin of waaronder de juridische grondslag bepaald is.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
+		}
+	},
+	"required": [
+		"_links",
+		"ingangsdatum",
+		"ministerie",
+		"opleidingsstelsel",
+		"opleidingcode",
+		"wet"
+	]
+}

@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#133 in het DUO_RIO_Linked_Data op 20190620 om 17:02. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboCrossOverKwalificatie JSON-Schema",
 	"type": "object",
@@ -62,6 +62,11 @@
 				,"aangebodenMboOpleiding"
 			],
 			"type": "object"
+		},
+		"uri": {
+			"type": "string",
+			"format": "uri",
+			"description": "URI van de specifieke resource"
 		},
 		"code": {
 			"type": "string",

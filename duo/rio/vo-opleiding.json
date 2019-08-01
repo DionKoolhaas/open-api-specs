@@ -1,7 +1,7 @@
 {
 	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "MboDomein JSON-Schema",
+    "title": "VoOpleiding JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
@@ -22,8 +22,12 @@
 					"type": "object"
 				}
 				,
-				"mboKwalificatiedossier": {
-					"description": "MboKwalificatiedossier heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan) met deze resource MboDomein",
+				"vavoOpleidingserkenning": {
+					"description": "Deze resource heeft een associatie wordtErkendAls met VavoOpleidingserkenning",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls",
+						"description": "wordtErkendAls"
+					},
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -37,8 +41,27 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource MboDomein",
+				"voGroep": {
+					"description": "Deze resource heeft een associatie maaktDeelUitVan met VoGroep",
+					"externalDocs": { 
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/maaktDeelUitVan",
+						"description": "maaktDeelUitVan"
+					},
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"aangebodenVavoOpleiding": {
+					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isVanHetSoort) met deze resource VoOpleiding",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -54,8 +77,9 @@
 			},
 			"required": [
 				"self"
-				,"mboKwalificatiedossier"
-				,"aangebodenMboOpleiding"
+				,"vavoOpleidingserkenning"
+				,"voGroep"
+				,"aangebodenVavoOpleiding"
 			],
 			"type": "object"
 		},
@@ -74,15 +98,16 @@
 			"maxLength": 8,
 			"minLength": 1
 		},
-		"naam": {
+		"herkomstOpleiding": {
 			"type": "string",
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingKort",
-				"description": "naamOpleidingKort"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsherkomst-v01",
+				"description": "opleidingsherkomst-v01"
 			},
-			"description": "Korte naam voor een opleiding",
-			"maxLength": 40,
-			"minLength": 1
+			"description": "Geeft aan welke instantie de Opleiding heeft ontwikkeld.",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9_]*$"
 		},
 		"naamLang": {
 			"type": "string",
@@ -92,6 +117,16 @@
 			},
 			"description": "Lange naam voor een opleiding",
 			"maxLength": 225,
+			"minLength": 1
+		},
+		"naam": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/naamOpleidingKort",
+				"description": "naamOpleidingKort"
+			},
+			"description": "Korte naam voor een opleiding",
+			"maxLength": 40,
 			"minLength": 1
 		},
 		"internationaleNaam": {
@@ -114,27 +149,46 @@
 			"maxLength": 12,
 			"minLength": 1
 		},
-		"herkomstOpleiding": {
+		"waardedocumentsoort": {
 			"type": "string",
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingsherkomst-v01",
-				"description": "opleidingsherkomst-v01"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/soortWaardedocument-v01",
+				"description": "soortWaardedocument-v01"
 			},
-			"description": "Geeft aan welke instantie de Opleiding heeft ontwikkeld.",
+			"description": "Aanduiding van het soort waardedocument dat kan worden of is behaald.",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
 		},
-		"structuur": {
+		"niveau": {
 			"type": "string",
 			"externalDocs": { 
-				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/mBOStructuursoorttype-v01",
-				"description": "mBOStructuursoorttype-v01"
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/niveauVO-v03",
+				"description": "niveauVO-v03"
 			},
-			"description": "Unieke codering voor de stelsels binnen de MBO structuur.",
+			"description": "Een unieke code voor het opleidingsniveau ten behoeve van het Voortgezet Onderwijs",
+			"maxLength": 70,
+			"minLength": 1,
+			"pattern": "^[A-Z0-9\\-]*$"
+		},
+		"vWOrichting": {
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/vWOrichting-v01",
+				"description": "vWOrichting-v01"
+			},
+			"description": "De mogelijke opleidingen binnen het voortgezet wetenschappelijk onderwijs",
 			"maxLength": 70,
 			"minLength": 1,
 			"pattern": "^[A-Z0-9_]*$"
+		},
+		"leerwerktrajectIndicatie": {
+			"type": "boolean",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/leerwerktrajectindicatie-v01",
+				"description": "leerwerktrajectindicatie-v01"
+			},
+			"description": "Geeft aan of de VO-opleiding tot een leerwerktraject behoort."
 		},
 		"startdatum": {
 			"type": "string",
@@ -158,8 +212,10 @@
 	"required": [
 		"_links",
 		"code",
-		"naamLang",
 		"herkomstOpleiding",
+		"naamLang",
+		"niveau",
+		"leerwerktrajectIndicatie",
 		"startdatum"
 	]
 }
