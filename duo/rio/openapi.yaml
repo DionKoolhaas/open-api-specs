@@ -9,7 +9,7 @@ info:
     \ ingericht dat real-time selecties gemaakt kunnen worden en de gegevens van een onder andere \
     \ een onderwijsaanbieder of een opleidingseenheid opgevraagd. In versie 1.0.0  is ontsluiting \
     \ gerealiseerd voor MBO en VAVO volgend op ontwikkelpad van het register RIO. RIO vervangt \
-   \ eerdere wettelijke registraties van DUO vervangt én introduceert het onderwijsperspectief. \
+   \ eerdere wettelijke registraties van DUO vervangt en introduceert het onderwijsperspectief. \
     \ RIO is een samenwerking van overheid en onderwijs. Wilt u als de gebruiker van de API een \
     \ aanpassing? Laat het weten via de email."
   title: "RIO API"
