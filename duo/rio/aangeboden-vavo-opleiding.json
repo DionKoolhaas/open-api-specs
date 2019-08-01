@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "AangebodenVavoOpleiding JSON-Schema",
 	"type": "object",
@@ -137,17 +137,14 @@
 			"pattern": "^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$"
 		},
 		"eigenAangebodenOpleidingSleutel": {
-			"type": "array",
-			"items": {
-				"type": "string",
-				"externalDocs": { 
-					"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aangebodenOpleidingExterneIdentificatie-v01",
-					"description": "aangebodenOpleidingExterneIdentificatie-v01"
-				},
-				"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor een aangeboden opleiding ten behoeve van uitwisseling in de keten.",
-				"maxLength": 60,
-				"minLength": 1
-				}
+			"type": "string",
+			"externalDocs": { 
+				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/aangebodenOpleidingExterneIdentificatie-v01",
+				"description": "aangebodenOpleidingExterneIdentificatie-v01"
+			},
+			"description": "Een identificerend kenmerk dat door een onderwijsorganisatie is bepaald voor een aangeboden opleiding ten behoeve van uitwisseling in de keten.",
+			"maxLength": 60,
+			"minLength": 1
 		},
 		"eigenNaam": {
 			"type": "string",

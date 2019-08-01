@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboOpleidingserkenning JSON-Schema",
 	"type": "object",
@@ -22,23 +22,8 @@
 					"type": "object"
 				}
 				,
-				"examenlicentie": {
-					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
-				,
-				"mboOnderwijslicentie": {
-					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
+				"mboCrossOverKwalificatie": {
+					"description": "MboCrossOverKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -67,8 +52,23 @@
 					"type": "object"
 				}
 				,
-				"mboCrossOverKwalificatie": {
-					"description": "MboCrossOverKwalificatie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtErkendAls) met deze resource MboOpleidingserkenning",
+				"mboOnderwijslicentie": {
+					"description": "MboOnderwijslicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
+				,
+				"examenlicentie": {
+					"description": "Examenlicentie heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/geeftToestemmingVoor) met deze resource MboOpleidingserkenning",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -84,10 +84,10 @@
 			},
 			"required": [
 				"self"
-				,"examenlicentie"
-				,"mboOnderwijslicentie"
-				,"mboKwalificatie"
 				,"mboCrossOverKwalificatie"
+				,"mboKwalificatie"
+				,"mboOnderwijslicentie"
+				,"examenlicentie"
 			],
 			"type": "object"
 		},

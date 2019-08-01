@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#145 in het DUO_RIO_Linked_Data op 20190715 om 17:16. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Communicatiecontext JSON-Schema",
 	"type": "object",
@@ -22,7 +22,7 @@
 					"type": "object"
 				}
 				,
-				"nederlandsPostadres": {
+				"nederlandsPostAdres": {
 					"description": "Deze resource heeft een associatie isViaPostBereikbaarOp met NederlandsAdres",
 					"externalDocs": { 
 						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isViaPostBereikbaarOp",
@@ -41,11 +41,11 @@
 					"type": "object"
 				}
 				,
-				"nederlandsBezoekadres": {
-					"description": "Deze resource heeft een associatie isTeBezoekOp met NederlandsAdres",
+				"nederlandsBezoekAdres": {
+					"description": "Deze resource heeft een associatie isTeBezoekenOp met NederlandsAdres",
 					"externalDocs": { 
-						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBezoekOp",
-						"description": "isTeBezoekOp"
+						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBezoekenOp",
+						"description": "isTeBezoekenOp"
 					},
 					"properties": {
 						"href": {
@@ -92,8 +92,8 @@
 			},
 			"required": [
 				"self"
-				,"nederlandsPostadres"
-				,"nederlandsBezoekadres"
+				,"nederlandsPostAdres"
+				,"nederlandsBezoekAdres"
 				,"onderwijsbestuur"
 				,"onderwijsaanbieder"
 			],

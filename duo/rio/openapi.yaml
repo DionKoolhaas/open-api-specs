@@ -1,13 +1,21 @@
 openapi: 3.0.0
 info:
   contact:
-    name: Kadaster
-    email: dimitri.vanhees@kadaster.nl
-    url: 'https://www.kadaster.nl'
-  version: 0.0.1
-  title: 'DUO RIO API'
+    email: "gegevensmagazijn@duo.nl"
+    name: "Dienst Uitvoering Onderwijs"
+    url: "https://www.duo.nl"
+  description: "Deze API beschrijft de RIO-API endpoints. Ontwikkelaars die de data uit RIO in \
+    \ een eigen applicatie willen toepassen in de RIO-data gevirtualiseerd. De API is zo \
+    \ ingericht dat real-time selecties gemaakt kunnen worden en de gegevens van een onder andere \
+    \ een onderwijsaanbieder of een opleidingseenheid opgevraagd. In versie 1.0.0  is ontsluiting \
+    \ gerealiseerd voor MBO en VAVO volgend op ontwikkelpad van het register RIO. RIO vervangt \
+   \ eerdere wettelijke registraties van DUO vervangt én introduceert het onderwijsperspectief. \
+    \ RIO is een samenwerking van overheid en onderwijs. Wilt u als de gebruiker van de API een \
+    \ aanpassing? Laat het weten via de email."
+  title: "RIO API"
+  version: "1.0"
 servers:
-  - url: 'https://.../api/v0'
+  - url: 'https://.../api/v1'
 paths:
   '/aangeboden-mbo-opleiding-cohorten':
     get:
@@ -530,6 +538,7 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/communicatiecontext"
+        - $ref: "#/components/parameters/communicatiecontextRelatieType"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortProperty"
@@ -975,6 +984,14 @@ components:
       name: "communicatiecontext"
       schema:
         type: "string"
+    communicatiecontextRelatieType:
+      description: "Communicatiecontext heeft 2 type relaties met Nederlands adres: isViaPostBereikbaarOp en isTeBezoekenOp. Gebruik bij het filteren op communicatiecontext deze parameter om de relatietype te specificeren"
+      in: "query"
+      name: "communicatiecontextRelatieType"
+      schema:
+        enum:
+        - "isViaPostBereikbaarOp"
+        - "isTeBezoekenOp"
     examenlicentie:
       description: "URI van de op te vragen resource"
       in: "query"
