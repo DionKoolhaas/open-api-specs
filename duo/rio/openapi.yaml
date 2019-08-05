@@ -24,7 +24,6 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -213,7 +212,6 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleidingCohort"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -302,7 +300,6 @@ paths:
         - $ref: "#/components/parameters/nederlandsAdres"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -342,7 +339,6 @@ paths:
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -576,7 +572,6 @@ paths:
         - $ref: "#/components/parameters/mboOnderwijslicentie"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -616,7 +611,6 @@ paths:
         - $ref: "#/components/parameters/communicatiecontextRelatieType"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -809,7 +803,6 @@ paths:
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -897,7 +890,6 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -937,7 +929,6 @@ paths:
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
