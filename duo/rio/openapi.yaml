@@ -24,7 +24,6 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -39,10 +38,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleidingCohorten collectie'
-  '/aangeboden-mbo-opleiding-cohort':
+  '/aangeboden-mbo-opleiding-cohorten/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -68,12 +67,18 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatie"
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboDomein"
-        - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/eigenNaam"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "eigenNaam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/AangebodenMboOpleidingen'
@@ -86,10 +91,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleidingen collectie'
-  '/aangeboden-mbo-opleiding':
+  '/aangeboden-mbo-opleidingen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -111,9 +116,15 @@ paths:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "internationaleNaam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/AangebodenVavoOpleidingCohorten'
@@ -126,10 +137,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenVavoOpleidingCohorten collectie'
-  '/aangeboden-vavo-opleiding-cohort':
+  '/aangeboden-vavo-opleiding-cohorten/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -149,16 +160,22 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleidingCohort"
-        - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/eigenNaam"
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: "#/components/parameters/voGroep"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "eigenNaam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/AangebodenVavoOpleidingen'
@@ -171,10 +188,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenVavoOpleidingen collectie'
-  '/aangeboden-vavo-opleiding':
+  '/aangeboden-vavo-opleidingen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -196,7 +213,6 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleidingCohort"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -211,10 +227,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Bedrijfsopleidingen collectie'
-  '/bedrijfsopleiding':
+  '/bedrijfsopleidingen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -233,14 +249,20 @@ paths:
   '/bevoegd-gezag-erkenningen':
     get:
       parameters:
-        - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/volledigeNaam"
         - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "volledigeNaam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/BevoegdGezagErkenningen'
@@ -253,10 +275,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'BevoegdGezagErkenning collectie'
-  '/bevoegd-gezag-erkenning':
+  '/bevoegd-gezag-erkenningen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -280,7 +302,6 @@ paths:
         - $ref: "#/components/parameters/nederlandsAdres"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -295,10 +316,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Communicatiecontexten collectie'
-  '/communicatiecontext':
+  '/communicatiecontexten/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -321,7 +342,6 @@ paths:
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -336,10 +356,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Examenlicenties collectie'
-  '/examenlicentie':
+  '/examenlicenties/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -363,9 +383,15 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/MboCrossOverKwalificaties'
@@ -378,10 +404,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboCrossOverKwalificaties collectie'
-  '/mbo-cross-over-kwalificatie':
+  '/mbo-cross-over-kwalificaties/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -405,9 +431,15 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/MboDomeinen'
@@ -420,10 +452,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboDomeinen collectie'
-  '/mbo-domein':
+  '/mbo-domeinen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -448,9 +480,15 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/MboKwalificaties'
@@ -463,10 +501,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboKwalificaties collectie'
-  '/mbo-kwalificatie':
+  '/mbo-kwalificaties/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -489,9 +527,15 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/MboOnderwijslicenties'
@@ -504,10 +548,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboOnderwijslicenties collectie'
-  '/mbo-onderwijslicentie':
+  '/mbo-onderwijslicenties/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -532,7 +576,6 @@ paths:
         - $ref: "#/components/parameters/mboOnderwijslicentie"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -547,10 +590,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboOpleidingserkenningen collectie'
-  '/mbo-opleidingserkenning':
+  '/mbo-opleidingserkenningen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -573,7 +616,6 @@ paths:
         - $ref: "#/components/parameters/communicatiecontextRelatieType"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -588,10 +630,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'NederlandsAdressen collectie'
-  '/nederlands-adres':
+  '/nederlands-adressen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -618,9 +660,15 @@ paths:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/Onderwijsaanbieders'
@@ -633,10 +681,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsaanbieders collectie'
-  '/onderwijsaanbieder':
+  '/onderwijsaanbieders/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -662,9 +710,15 @@ paths:
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/Onderwijsbesturen'
@@ -677,10 +731,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsbesturen collectie'
-  '/onderwijsbestuur':
+  '/onderwijsbesturen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -702,14 +756,20 @@ paths:
         - $ref: "#/components/parameters/bevoegdGezagErkenning"
         - $ref: "#/components/parameters/examenlicentie"
         - $ref: "#/components/parameters/mboOnderwijslicentie"
-        - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/volledigeNaam"
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "volledigeNaam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/Onderwijsinstellingserkenningen'
@@ -722,10 +782,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsinstellingserkenningen collectie'
-  '/onderwijsinstellingserkenning':
+  '/onderwijsinstellingserkenningen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -749,7 +809,6 @@ paths:
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -764,10 +823,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijslocaties collectie'
-  '/onderwijslocatie':
+  '/onderwijslocaties/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -791,9 +850,15 @@ paths:
         - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/Onderwijslocatiegebruiken'
@@ -806,10 +871,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijslocatiegebruiken collectie'
-  '/onderwijslocatiegebruik':
+  '/onderwijslocatiegebruiken/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -832,7 +897,6 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -847,10 +911,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VavoOnderwijslicenties collectie'
-  '/vavo-onderwijslicentie':
+  '/vavo-onderwijslicenties/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -873,7 +937,6 @@ paths:
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
@@ -888,10 +951,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VavoOpleidingserkenningen collectie'
-  '/vavo-opleidingserkenning':
+  '/vavo-opleidingserkenningen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -915,9 +978,15 @@ paths:
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/VoGroepen'
@@ -930,10 +999,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VoGroepen collectie'
-  '/vo-groep':
+  '/vo-groepen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -958,9 +1027,15 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/sortProperty"
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
       responses:
         '200':
           $ref: '#/components/responses/VoOpleidingen'
@@ -973,10 +1048,10 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VoOpleidingen collectie'
-  '/vo-opleiding':
+  '/vo-opleidingen/{id}':
     get:
       parameters:
-        - $ref: '#/components/parameters/subject'
+        - $ref: '#/components/parameters/id'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -994,10 +1069,11 @@ paths:
       summary: 'VoOpleiding resource'
 components:
   parameters:
-    subject:
-      description: "URI van de op te vragen resource"
-      in: "query"
-      name: "subject"
+    id:
+      name: "id"
+      in: "path"
+      description: "Identifier"
+      required: true
       schema:
         type: "string"
     aangebodenMboOpleiding:
@@ -1100,9 +1176,33 @@ components:
       schema:
         type: "string"
     naam:
-      description: "Hoofdletter ongevoelig filteren op naam/eigenNaam/volledigeNaam/naamLang van de resource"
+      description: "Filteren het attribuut naam van deze resource"
       in: "query"
       name: "naam"
+      schema:
+        type: "string"
+    eigenNaam:
+      description: "Filteren het attribuut eigenNaam van de resource"
+      in: "query"
+      name: "naam"
+      schema:
+        type: "string"
+    volledigeNaam:
+      description: "Filteren het attribuut volledigeNaam van de resource"
+      in: "query"
+      name: "volledigeNaam"
+      schema:
+        type: "string"
+    naamLang:
+      description: "Filteren het attribuut naamLang van de resource"
+      in: "query"
+      name: "naamLang"
+      schema:
+        type: "string"
+    plaatsnaam:
+      description: "Filteren het attribuut plaatsnaam van de resource"
+      in: "query"
+      name: "plaatsnaam"
       schema:
         type: "string"
     nederlandsAdres:
@@ -1175,20 +1275,6 @@ components:
         enum:
         - "asc"
         - "desc"
-        type: "string"
-    sortProperty:
-      description: "Specificeert op welk atribuut gesorteerd moet worden."
-      in: "query"
-      name: "sortProperty"
-      schema:
-        enum:
-        - "internationaleNaam"
-        - "naam"
-        - "naamLang"
-        - "volledigeNaam"
-        - "startdatum"
-        - "opheffingsdatum"
-        - "plaatsnaam"
         type: "string"
   responses:
     AangebodenMboOpleidingen:
