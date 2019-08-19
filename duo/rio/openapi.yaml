@@ -752,7 +752,9 @@ paths:
         - $ref: "#/components/parameters/mboOnderwijslicentie"
         - $ref: "#/components/parameters/volledigeNaam"
         - $ref: "#/components/parameters/onderwijsaanbieder"
+        - $ref: "#/components/parameters/soort"
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
+        - $ref: "#/components/parameters/wet"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -1226,6 +1228,12 @@ components:
       name: "onderwijslocatie"
       schema:
         type: "string"
+    soort:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "soort"
+      schema:
+        type: "string"
     onderwijslocatiegebruik:
       description: "URI van de op te vragen resource"
       in: "query"
@@ -1254,6 +1262,12 @@ components:
       description: "URI van de op te vragen resource"
       in: "query"
       name: "voOpleiding"
+      schema:
+        type: "string"
+    wet:
+      description: "URI van de op te vragen resource"
+      in: "query"
+      name: "wet"
       schema:
         type: "string"
     sortDirection:
