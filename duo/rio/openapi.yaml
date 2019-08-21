@@ -300,7 +300,6 @@ paths:
         - $ref: "#/components/parameters/nederlandsAdres"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/Communicatiecontexten'
@@ -317,7 +316,6 @@ paths:
     get:
       parameters:
         - $ref: '#/components/parameters/id'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/Communicatiecontext'
@@ -339,7 +337,6 @@ paths:
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/Examenlicenties'
@@ -356,7 +353,6 @@ paths:
     get:
       parameters:
         - $ref: '#/components/parameters/id'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/Examenlicentie'
@@ -524,7 +520,6 @@ paths:
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
         - $ref: "#/components/parameters/sortDirection"
-        - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
           description: "Specificeert op welk atribuut gesorteerd moet worden."
           name: "sortProperty"
@@ -548,7 +543,6 @@ paths:
     get:
       parameters:
         - $ref: '#/components/parameters/id'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/MboOnderwijslicentie'
@@ -611,7 +605,6 @@ paths:
         - $ref: "#/components/parameters/communicatiecontextRelatieType"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/NederlandsAdressen'
@@ -628,7 +621,6 @@ paths:
     get:
       parameters:
         - $ref: '#/components/parameters/id'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/NederlandsAdres'
@@ -892,7 +884,6 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/VavoOnderwijslicenties'
@@ -909,7 +900,6 @@ paths:
     get:
       parameters:
         - $ref: '#/components/parameters/id'
-        - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
           $ref: '#/components/responses/VavoOnderwijslicentie'
