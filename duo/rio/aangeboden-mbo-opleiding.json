@@ -272,6 +272,14 @@
 			},
 			"description": "De datum die het einde van de periode aangeeft (exclusief).",
 			"format": "date"
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"onderwijslocatie" : {
+					"$ref": "onderwijslocatie.json"
+				}
+			}
 		}
 	},
 	"required": [
@@ -279,6 +287,7 @@
 		"leertraject",
 		"toelatingseisen",
 		"toegankelijkheid",
-		"startdatum"
+		"startdatum",
+		"_embedded"
 	]
 }

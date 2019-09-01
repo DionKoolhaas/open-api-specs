@@ -1295,7 +1295,7 @@ components:
                   aangebodenMboOpleidingen:
                     type: array
                     items:
-                      $ref: 'aangeboden-mbo-opleiding.json'
+                      $ref: 'aangeboden-mbo-opleiding_collectie.json'
                 required:
                   - aangebodenMboOpleidingen
               _links:

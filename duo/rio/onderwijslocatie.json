@@ -151,6 +151,17 @@
 				"description": "bagUri-v01"
 			},
 			"description": "Een internet adres van een adresseerbaar object in de Basisregistratie voor Adressen en Gebouwen."
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"onderwijslocatiegebruiken" : {
+					"type": "array",
+					"items": {
+						"$ref": "onderwijslocatiegebruik.json"
+					}
+				}
+			}
 		}
 	},
 	"required": [
@@ -160,6 +171,7 @@
 		"gpsLatitude",
 		"gpsLongitude",
 		"bagcode",
-		"bagUri"
+		"bagUri",
+		"_embedded"
 	]
 }
