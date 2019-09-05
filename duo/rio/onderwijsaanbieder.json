@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#164 in het DUO_RIO_Linked_Data op 20190904 om 11:54. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijsaanbieder JSON-Schema",
 	"type": "object",
@@ -60,8 +60,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenMboOpleiding": {
-					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor) met deze resource Onderwijsaanbieder",
+				"onderwijsinstellingserkenning": {
+					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -75,8 +75,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijsinstellingserkenning": {
-					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
+				"aangebodenMboOpleiding": {
+					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor) met deze resource Onderwijsaanbieder",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -109,8 +109,8 @@
 				"self"
 				,"onderwijsbestuur"
 				,"communicatiecontext"
-				,"aangebodenMboOpleiding"
 				,"onderwijsinstellingserkenning"
+				,"aangebodenMboOpleiding"
 				,"aangebodenVavoOpleiding"
 			],
 			"type": "object"

@@ -420,6 +420,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboKwalificatiedossier"
+        - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
         - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
@@ -512,6 +513,56 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboKwalificatie resource'
+  '/mbo-kwalificatiedossiers':
+    get:
+      parameters:
+        - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/mboDomein"
+        - $ref: "#/components/parameters/mboKwalificatie"
+        - $ref: "#/components/parameters/mboOpleidingserkenning"
+        - $ref: "#/components/parameters/naam"
+        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
+        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: "#/components/parameters/sortDirection"
+        - $ref: "#/components/parameters/datumGeldigOp"
+        - in: "query"
+          description: "Specificeert op welk atribuut gesorteerd moet worden."
+          name: "sortProperty"
+          schema:
+            enum:
+            - "naam"
+            type: "string"
+      responses:
+        '200':
+          $ref: '#/components/responses/MboKwalificatiedossier'
+        '401':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+        '403':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+        '406':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+        '503':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+      summary: 'MboKwalificatiedossiers collectie'
+  '/mbo-kwalificatiedossiers/{id}':
+    get:
+      parameters:
+        - $ref: '#/components/parameters/id'
+        - $ref: "#/components/parameters/datumGeldigOp"
+      responses:
+        '200':
+          $ref: '#/components/responses/MboKwalificatiedossier'
+        '401':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+        '403':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+        '404':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+        '406':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+        '503':
+          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+      summary: 'MboKwalificatiedossier resource'
   '/mbo-onderwijslicenties':
     get:
       parameters:
@@ -560,7 +611,9 @@ paths:
   '/mbo-opleidingserkenningen':
     get:
       parameters:
+        - $ref: "#/components/parameters/mboDomein"
         - $ref: "#/components/parameters/mboKwalificatie"
+        - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboCrossOverKwalificatie"
         - $ref: "#/components/parameters/examenlicentie"
         - $ref: "#/components/parameters/mboOnderwijslicentie"

@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#164 in het DUO_RIO_Linked_Data op 20190904 om 11:54. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "MboOnderwijslicentie JSON-Schema",
 	"type": "object",

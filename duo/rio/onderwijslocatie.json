@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#164 in het DUO_RIO_Linked_Data op 20190904 om 11:54. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "Onderwijslocatie JSON-Schema",
 	"type": "object",
@@ -37,8 +37,8 @@
 					"type": "object"
 				}
 				,
-				"onderwijslocatiegebruik": {
-					"description": "Onderwijslocatiegebruik heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isOp) met deze resource Onderwijslocatie",
+				"aangebodenVavoOpleiding": {
+					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp) met deze resource Onderwijslocatie",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -52,8 +52,8 @@
 					"type": "object"
 				}
 				,
-				"aangebodenVavoOpleiding": {
-					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp) met deze resource Onderwijslocatie",
+				"onderwijslocatiegebruik": {
+					"description": "Onderwijslocatiegebruik heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isOp) met deze resource Onderwijslocatie",
 					"properties": {
 						"href": {
 							"description": "URL van de link",
@@ -70,8 +70,8 @@
 			"required": [
 				"self"
 				,"aangebodenMboOpleiding"
-				,"onderwijslocatiegebruik"
 				,"aangebodenVavoOpleiding"
+				,"onderwijslocatiegebruik"
 			],
 			"type": "object"
 		},
@@ -156,7 +156,6 @@
 	"required": [
 		"_links",
 		"code",
-		"huisnummertoevoeging",
 		"gpsLatitude",
 		"gpsLongitude",
 		"bagcode",

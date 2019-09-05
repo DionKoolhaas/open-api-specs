@@ -1,5 +1,5 @@
 {
-	"__comment__": "Gegenereerd op basis van commit#158 in het DUO_RIO_Linked_Data op 20190801 om 13:19. Gemaakt met template-jsonschema.json",
+	"__comment__": "Gegenereerd op basis van commit#164 in het DUO_RIO_Linked_Data op 20190904 om 11:54. Gemaakt met template-jsonschema.json",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "NederlandsAdres JSON-Schema",
 	"type": "object",
@@ -36,9 +36,25 @@
 					],
 					"type": "object"
 				}
+				,
+				"communicatiecontext": {
+					"description": "Communicatiecontext heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBezoekenOp) met deze resource NederlandsAdres",
+					"properties": {
+						"href": {
+							"description": "URL van de link",
+							"format": "uri",
+							"type": "string"
+						}
+					},
+					"required": [
+						"href"
+					],
+					"type": "object"
+				}
 			},
 			"required": [
 				"self"
+				,"communicatiecontext"
 				,"communicatiecontext"
 			],
 			"type": "object"
