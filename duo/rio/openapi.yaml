@@ -1434,7 +1434,9 @@ components:
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-vavo-opleiding.json' 
+            $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+          example:
+            $ref: 'examples/aangeboden-vavo-opleiding.json'
     AangebodenVavoOpleidingCohorten:
       description: OK.
       headers:
@@ -1975,6 +1977,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+          example:
+            $ref: 'examples/aangeboden-vavo-opleiding.json'
     Onderwijslocaties:
       description: OK.
       headers:
