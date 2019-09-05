@@ -1352,7 +1352,7 @@ components:
                 required:
                   - aangebodenMboOpleidingen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     AangebodenMboOpleiding:
       description: OK.
       content:
@@ -1388,7 +1388,7 @@ components:
                 required:
                   - aangebodenMboOpleidingCohorten
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     AangebodenMboOpleidingCohort:
       description: OK.
       content:
@@ -1422,7 +1422,7 @@ components:
                 required:
                   - aangebodenVavoOpleidingen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     AangebodenVavoOpleiding:
       description: OK.
       content:
@@ -1458,7 +1458,7 @@ components:
                 required:
                   - aangebodenVavoOpleidingCohorten
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     AangebodenVavoOpleidingCohort:
       description: OK.
       content:
@@ -1492,7 +1492,7 @@ components:
                 required:
                   - bedrijfsopleidingen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Bedrijfsopleiding:
       description: OK.
       content:
@@ -1526,7 +1526,7 @@ components:
                 required:
                   - bevoegdGezagErkenningen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     BevoegdGezagErkenning:
       description: OK.
       content:
@@ -1560,7 +1560,7 @@ components:
                 required:
                   - communicatiecontexten
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Communicatiecontext:
       description: OK.
       content:
@@ -1594,7 +1594,7 @@ components:
                 required:
                   - examenlicenties
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Examenlicentie:
       description: OK.
       content:
@@ -1628,7 +1628,7 @@ components:
                 required:
                   - mboCrossOverKwalificaties
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     MboCrossOverKwalificatie:
       description: OK.
       content:
@@ -1662,7 +1662,7 @@ components:
                 required:
                   - mboDomeinen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     MboDomein:
       description: OK.
       content:
@@ -1696,7 +1696,7 @@ components:
                 required:
                   - mboKwalificaties
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     MboKwalificatie:
       description: OK.
       content:
@@ -1730,7 +1730,7 @@ components:
                 required:
                   - mboKwalificatiedossiers
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     MboKwalificatiedossier:
       description: OK.
       content:
@@ -1764,7 +1764,7 @@ components:
                 required:
                   - mboOnderwijslicenties
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     MboOnderwijslicentie:
       description: OK.
       content:
@@ -1798,7 +1798,7 @@ components:
                 required:
                   - mboOpleidingserkenningen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     MboOpleidingserkenning:
       description: OK.
       content:
@@ -1832,7 +1832,7 @@ components:
                 required:
                   - nederlandsAdressen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     NederlandsAdres:
       description: OK.
       content:
@@ -1866,7 +1866,7 @@ components:
                 required:
                   - onderwijsaanbieders
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Onderwijsaanbieder:
       description: OK.
       content:
@@ -1900,7 +1900,7 @@ components:
                 required:
                   - onderwijsinstellingen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Onderwijsbestuur:
       description: OK.
       content:
@@ -1934,7 +1934,7 @@ components:
                 required:
                   - onderwijsinstellingserkenningen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Onderwijsinstellingserkenning:
       description: OK.
       content:
@@ -1970,7 +1970,7 @@ components:
                 required:
                   - onderwijslocaties
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Onderwijslocatie:
       description: OK.
       content:
@@ -2004,7 +2004,7 @@ components:
                 required:
                   - onderwijslocatiegebruiken
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     Onderwijslocatiegebruik:
       description: OK.
       content:
@@ -2038,7 +2038,7 @@ components:
                 required:
                   - vavoOnderwijslicenties
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     VavoOnderwijslicentie:
       description: OK.
       content:
@@ -2072,7 +2072,7 @@ components:
                 required:
                   - vavoOpleidingserkenningen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     VavoOpleidingserkenning:
       description: OK.
       content:
@@ -2106,7 +2106,7 @@ components:
                 required:
                   - voGroepen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     VoGroep:
       description: OK.
       content:
@@ -2140,7 +2140,7 @@ components:
                 required:
                   - voOpleidingen
               _links:
-                $ref: 'links.yaml'
+                $ref: 'links.json'
     VoOpleiding:
       description: OK.
       content:
