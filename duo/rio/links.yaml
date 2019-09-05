@@ -1,0 +1,41 @@
+Links:
+  description: OK.
+  properties:
+    next:
+      description: "Absolute link naar volgende pagina (niet aanwezig\
+        \ als er geen volgende pagina is)"
+      properties:
+        href:
+          description: "URL van de link"
+          example: "https://data.pdok.nl/api/rce/v1/rijksmonumenten?page=3"
+          format: "uri"
+          type: "string"
+      required:
+      - "href"
+      type: "object"
+    prev:
+      description: "Absolute link naar vorige pagina (niet aanwezig\
+        \ als er geen vorige pagina is)"
+      properties:
+        href:
+          description: "URL van de link"
+          example: "https://data.pdok.nl/api/rce/v1/rijksmonumenten?page=1"
+          format: "uri"
+          type: "string"
+      required:
+      - "href"
+      type: "object"
+    self:
+      description: "Absolute link naar huidige pagina"
+      properties:
+        href:
+          description: "URL van de link"
+          example: "https://data.pdok.nl/api/rce/v1/rijksmonumenten?page=2"
+          format: "uri"
+          type: "string"
+      required:
+      - "href"
+      type: "object"
+  required:
+  - "self"
+  type: "object"

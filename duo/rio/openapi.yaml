@@ -1352,9 +1352,7 @@ components:
                 required:
                   - aangebodenMboOpleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     AangebodenMboOpleiding:
       description: OK.
       content:
@@ -1390,9 +1388,7 @@ components:
                 required:
                   - aangebodenMboOpleidingCohorten
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     AangebodenMboOpleidingCohort:
       description: OK.
       content:
@@ -1426,9 +1422,7 @@ components:
                 required:
                   - aangebodenVavoOpleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     AangebodenVavoOpleiding:
       description: OK.
       content:
@@ -1464,9 +1458,7 @@ components:
                 required:
                   - aangebodenVavoOpleidingCohorten
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     AangebodenVavoOpleidingCohort:
       description: OK.
       content:
@@ -1500,9 +1492,7 @@ components:
                 required:
                   - bedrijfsopleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Bedrijfsopleiding:
       description: OK.
       content:
@@ -1536,9 +1526,7 @@ components:
                 required:
                   - bevoegdGezagErkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     BevoegdGezagErkenning:
       description: OK.
       content:
@@ -1572,9 +1560,7 @@ components:
                 required:
                   - communicatiecontexten
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Communicatiecontext:
       description: OK.
       content:
@@ -1608,9 +1594,7 @@ components:
                 required:
                   - examenlicenties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Examenlicentie:
       description: OK.
       content:
@@ -1644,9 +1628,7 @@ components:
                 required:
                   - mboCrossOverKwalificaties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     MboCrossOverKwalificatie:
       description: OK.
       content:
@@ -1680,9 +1662,7 @@ components:
                 required:
                   - mboDomeinen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     MboDomein:
       description: OK.
       content:
@@ -1716,9 +1696,7 @@ components:
                 required:
                   - mboKwalificaties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     MboKwalificatie:
       description: OK.
       content:
@@ -1752,9 +1730,7 @@ components:
                 required:
                   - mboKwalificatiedossiers
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     MboKwalificatiedossier:
       description: OK.
       content:
@@ -1788,9 +1764,7 @@ components:
                 required:
                   - mboOnderwijslicenties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     MboOnderwijslicentie:
       description: OK.
       content:
@@ -1824,9 +1798,7 @@ components:
                 required:
                   - mboOpleidingserkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     MboOpleidingserkenning:
       description: OK.
       content:
@@ -1860,9 +1832,7 @@ components:
                 required:
                   - nederlandsAdressen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     NederlandsAdres:
       description: OK.
       content:
@@ -1896,9 +1866,7 @@ components:
                 required:
                   - onderwijsaanbieders
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Onderwijsaanbieder:
       description: OK.
       content:
@@ -1932,9 +1900,7 @@ components:
                 required:
                   - onderwijsinstellingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Onderwijsbestuur:
       description: OK.
       content:
@@ -1968,9 +1934,7 @@ components:
                 required:
                   - onderwijsinstellingserkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Onderwijsinstellingserkenning:
       description: OK.
       content:
@@ -2006,9 +1970,7 @@ components:
                 required:
                   - onderwijslocaties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Onderwijslocatie:
       description: OK.
       content:
@@ -2042,9 +2004,7 @@ components:
                 required:
                   - onderwijslocatiegebruiken
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     Onderwijslocatiegebruik:
       description: OK.
       content:
@@ -2078,9 +2038,7 @@ components:
                 required:
                   - vavoOnderwijslicenties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     VavoOnderwijslicentie:
       description: OK.
       content:
@@ -2114,9 +2072,7 @@ components:
                 required:
                   - vavoOpleidingserkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     VavoOpleidingserkenning:
       description: OK.
       content:
@@ -2150,9 +2106,7 @@ components:
                 required:
                   - voGroepen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     VoGroep:
       description: OK.
       content:
@@ -2186,9 +2140,7 @@ components:
                 required:
                   - voOpleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.yaml'
     VoOpleiding:
       description: OK.
       content:
