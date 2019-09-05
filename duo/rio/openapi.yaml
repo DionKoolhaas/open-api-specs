@@ -1360,7 +1360,7 @@ components:
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/angeboden-mbo-opleiding.json'
+            $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
     AangebodenMboOpleidingCohorten:
       description: OK.
       headers:
