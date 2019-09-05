@@ -1361,6 +1361,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+          example:
+            $ref: 'examples/aangeboden-mbo-opleiding.json'
     AangebodenMboOpleidingCohorten:
       description: OK.
       headers:
