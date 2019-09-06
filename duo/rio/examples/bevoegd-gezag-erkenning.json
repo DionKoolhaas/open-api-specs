@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenning/22334"
+    },
+    "onderwijsbestuur": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?bevoegdGezagErkenning=http://lod.onderwijsregistratie.nl/rio/id/BevoegdGezagErkenning/22334"
+    },
+    "onderwijsinstellingserkenning": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?bevoegdGezagErkenning=http://lod.onderwijsregistratie.nl/rio/id/BevoegdGezagErkenning/22334"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/BevoegdGezagErkenning/22334",
+  "nummer": "22334",
+  "startdatum": "2012-08-01",
+  "ingangsdatum": "2013-08-01",
+  "einddatum": "2012-08-01",
+  "soort": "BINS",
+  "verkorteNaam": "Stichting Agnieten",
+  "volledigeNaam": "Stichting Agnieten College De Boog",
+  "bekostigingscode": "NIET_VAN_TOEPASSING",
+  "wet": "WEB"
+}

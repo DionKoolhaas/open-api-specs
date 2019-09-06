@@ -1415,6 +1415,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+          example:
+            $ref: 'examples/aangeboden-mbo-opleiding-cohort.json'
     AangebodenVavoOpleidingen:
       description: OK.
       headers:
@@ -1553,6 +1555,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+          example:
+            $ref: 'examples/bevoegd-gezag-erkenning.json'
     Communicatiecontexten:
       description: OK.
       headers:
