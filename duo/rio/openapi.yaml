@@ -22,8 +22,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -67,8 +67,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboDomein"
         - $ref: "#/components/parameters/eigenNaam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -113,8 +113,8 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -164,8 +164,8 @@ paths:
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: "#/components/parameters/voGroep"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -210,8 +210,8 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenMboOpleidingCohort"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -250,8 +250,8 @@ paths:
         - $ref: "#/components/parameters/volledigeNaam"
         - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -298,8 +298,8 @@ paths:
         - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/nederlandsAdres"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/Communicatiecontexten'
@@ -335,8 +335,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/Examenlicenties'
@@ -373,8 +373,8 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -422,8 +422,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -471,8 +471,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -521,8 +521,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatie"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -568,8 +568,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - in: "query"
           description: "Specificeert op welk atribuut gesorteerd moet worden."
@@ -617,8 +617,8 @@ paths:
         - $ref: "#/components/parameters/mboCrossOverKwalificatie"
         - $ref: "#/components/parameters/examenlicentie"
         - $ref: "#/components/parameters/mboOnderwijslicentie"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -656,8 +656,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/communicatiecontext"
         - $ref: "#/components/parameters/communicatiecontextRelatieType"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/NederlandsAdressen'
@@ -697,8 +697,8 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -747,8 +747,8 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -800,8 +800,8 @@ paths:
         - $ref: "#/components/parameters/soort"
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
         - $ref: "#/components/parameters/wet"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -848,8 +848,8 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -888,8 +888,8 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/onderwijsbestuur"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -935,8 +935,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vavoOpleidingserkenning"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/VavoOnderwijslicenties'
@@ -972,8 +972,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
         - $ref: "#/components/parameters/voOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -1012,8 +1012,8 @@ paths:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/voOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -1061,8 +1061,8 @@ paths:
         - $ref: "#/components/parameters/voGroep"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -1271,6 +1271,26 @@ components:
       name: "onderwijslocatie"
       schema:
         type: "string"
+    page:
+      description: Pagina nummer
+      name: page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    pageSize:
+      name: pageSize
+      in: query
+      required: false
+      schema:
+        type: integer
+        enum:
+          - 10
+          - 20
+          - 40
+        default: 20
     soort:
       description: "URI van de op te vragen resource"
       in: "query"
