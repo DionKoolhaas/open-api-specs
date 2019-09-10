@@ -1,0 +1,17 @@
+{
+  "_links": {
+	"self": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleiding-cohorten/0180-COHORT-2"
+	},
+	"aangebodenVavoOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?aangebodenVavoOpleidingCohorthttp://lod.onderwijsregistratie.nl/cat/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2"
+		}
+	},
+	"uri": "http://lod.onderwijsregistratie.nl/cat/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2",
+    "code": "0180-COHORT-2",
+    "status": "O",
+    "beginAanmeldperiode": "2018-04-23",
+    "eindeAanmeldperiode": "2019-07-31",
+    "instroommoment": "2018-08-01",
+    "toestemmingVereistVoorAanmelding": "NEE"
+}

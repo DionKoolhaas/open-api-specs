@@ -1487,6 +1487,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json' 
+          example:
+            $ref: 'examples/aangeboden-vavo-opleiding-cohort.json'
     Bedrijfsopleidingen:
       description: OK.
       headers:
@@ -1521,6 +1523,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/bedrijfsopleiding.json'
+          example:
+            $ref: 'examples/bedrijfsopleiding.json'
     BevoegdGezagErkenningen:
       description: OK.
       headers:
@@ -1591,6 +1595,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/communicatiecontext.json'
+          example:
+            $ref: 'examples/communicatiecontext.json'
     Examenlicenties:
       description: OK.
       headers:
@@ -1625,6 +1631,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/examenlicentie.json'
+          example:
+            $ref: 'examples/examenlicenties.json'
     MboCrossOverKwalificaties:
       description: OK.
       headers:
@@ -1659,6 +1667,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+          example:
+            $ref: 'examples/mbo-cross-over-kwalificatie.json'
     MboDomeinen:
       description: OK.
       headers:
@@ -1693,6 +1703,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/mbo-domein.json'
+          example:
+            $ref: 'examples/mbo-domein.json'
     MboKwalificaties:
       description: OK.
       headers:
@@ -1726,7 +1738,9 @@ components:
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-kwalificatie.json'    
+            $ref: 'jsonschemas/mbo-kwalificatie.json'
+          example:
+            $ref: 'examples/mbo-kwalificatie.json'
     MboKwalificatiedossiers:
       description: OK.
       headers:

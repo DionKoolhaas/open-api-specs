@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties/25LT90622"
+    },
+	"mboOpleidingserkenning": {
+      	"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboCrossOverKwalificatie=http://lod.onderwijsregistratie.nl/cat/rio/id/MboCrossOverKwalificatie/25195"
+    },
+	"aangebodenMboOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboCrossOverKwalificatie=http://lod.onderwijsregistratie.nl/cat/rio/id/MboCrossOverKwalificatie/25195"
+	}
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/cat/rio/id/MboCrossOverKwalificatie/25195",
+  "code": "26000",
+  "naamLang": "Allround coördinator-instructeur buitensport",
+  "herkomstOpleiding": "SBB",
+  "opleidingssoort": "MIDDENKADEROPLEIDING",
+  "wetEisendMinisterie": "DEF",
+  "niveau": "MBO-4",
+  "studielasteenheid": "SBU",
+  "studielast": 6400,
+  "waardedocumentsoort": "DIPLOMA",
+  "startdatum": "2017-08-01"
+}

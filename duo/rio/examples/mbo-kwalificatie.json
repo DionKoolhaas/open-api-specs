@@ -1,0 +1,29 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties/25LT90622"
+    },
+	"mboOpleidingserkenning": {
+      	"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboKwalificatie=http://lod.onderwijsregistratie.nl/cat/rio/id/MboKwalificatie/25172"
+    },
+	"aangebodenMboOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboKwalificatie=http://lod.onderwijsregistratie.nl/cat/rio/id/MboKwalificatie/25172"
+	},
+    "mboKwalificatiedossier": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties-dossiers?mboKwalificatie=http://lod.onderwijsregistratie.nl/cat/rio/id/MboKwalificatie/25172"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/cat/rio/id/MboKwalificatie/25172",
+  "code": "25172",
+  "naam": "Leidinggevende bakkerij",
+  "naamLang": "Leidinggevende bakkerij",
+  "afkorting": "B & I",
+  "herkomstOpleiding": "SBB",
+  "startdatum": "2015-08-01",
+  "opleidingssoort": "MIDDENKADEROPLEIDING",
+  "wetEisendMinisterie": "DEF",
+  "studielasteenheid": "SBU",
+  "studielast": 6400,
+  "niveau": "MBO-4",
+  "waardedocumentsoort": "DIPLOMA"
+}
