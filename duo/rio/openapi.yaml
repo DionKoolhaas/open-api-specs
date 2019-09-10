@@ -1632,7 +1632,7 @@ components:
           schema:
             $ref: 'jsonschemas/examenlicentie.json'
           example:
-            $ref: 'examples/examenlicenties.json'
+            $ref: 'examples/examenlicentie.json'
     MboCrossOverKwalificaties:
       description: OK.
       headers:
