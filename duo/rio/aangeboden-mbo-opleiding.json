@@ -4,6 +4,10 @@
     "title": "AangebodenMboOpleiding JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
+	"externalDocs": { 
+		"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding",
+		"description": "AangebodenMboOpleiding klasse"
+	},
 	"properties": {
 		"_links": {
 			"properties": {
