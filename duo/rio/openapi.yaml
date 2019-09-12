@@ -22,6 +22,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/opleidingscode" 
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
@@ -373,6 +374,9 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode" 
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -421,6 +425,9 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: "#/components/parameters/naam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
@@ -471,6 +478,9 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -521,6 +531,9 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatie"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -697,6 +710,9 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
+        - $ref: "#/components/parameters/brin"
+        - $ref: "#/components/parameters/wet"
+        - $ref: "#/components/parameters/plaatsnaam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -1012,6 +1028,9 @@ paths:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/voOpleiding"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -1060,6 +1079,9 @@ paths:
         - $ref: "#/components/parameters/vavoOpleidingserkenning"
         - $ref: "#/components/parameters/voGroep"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: "#/components/parameters/naam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
@@ -1142,6 +1164,24 @@ components:
       name: "bedrijfsopleiding"
       schema:
         type: "string"
+    brin:
+      description: "BRIN van de op te vragen resource"
+      in: "query"
+      name: "brin"
+      schema:
+        type: "string"
+    communicatiecontext:
+      description: "Communicatiecontext van de op te vragen resource"
+      in: "query"
+      name: "communicatiecontext"
+      schema:
+        type: "string"
+    crebocode:
+      description: "CREBOcode"
+      in: "query"
+      name: "crebocode"
+      schema:
+        type: "string"
     bevoegdGezagErkenning:
       description: "URI van de op te vragen resource"
       in: "query"
@@ -1155,12 +1195,6 @@ components:
       schema:
         type: "string"
         format: "date"
-    communicatiecontext:
-      description: "URI van de op te vragen resource"
-      in: "query"
-      name: "communicatiecontext"
-      schema:
-        type: "string"
     communicatiecontextRelatieType:
       description: "Communicatiecontext heeft 2 type relaties met Nederlands adres: isViaPostBereikbaarOp en isTeBezoekenOp. Gebruik bij het filteren op communicatiecontext deze parameter om de relatietype te specificeren"
       in: "query"
@@ -1212,31 +1246,37 @@ components:
       schema:
         type: "string"
     naam:
-      description: "Filteren het attribuut naam van deze resource"
+      description: "Filteren op het attribuut naam van deze resource"
       in: "query"
       name: "naam"
       schema:
         type: "string"
     eigenNaam:
-      description: "Filteren het attribuut eigenNaam van de resource"
+      description: "Filteren op het attribuut eigenNaam van de resource"
       in: "query"
       name: "naam"
       schema:
         type: "string"
     volledigeNaam:
-      description: "Filteren het attribuut volledigeNaam van de resource"
+      description: "Filteren op het attribuut volledigeNaam van de resource"
       in: "query"
       name: "volledigeNaam"
       schema:
         type: "string"
     naamLang:
-      description: "Filteren het attribuut naamLang van de resource"
+      description: "Filteren op het attribuut naamLang van de resource"
       in: "query"
       name: "naamLang"
       schema:
         type: "string"
+    opleidingscode:
+      description: "Filteren op het attribuut opleidingscode van de resource"
+      in: "query"
+      name: "opleidingscode"
+      schema:
+        type: "string"
     plaatsnaam:
-      description: "Filteren het attribuut plaatsnaam van de resource"
+      description: "Filteren op het attribuut plaatsnaam van de resource"
       in: "query"
       name: "plaatsnaam"
       schema:
