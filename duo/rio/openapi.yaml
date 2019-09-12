@@ -22,6 +22,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/opleidingscode" 
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
@@ -37,6 +38,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleidingCohorten collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleidingCohort"
+        description: "AangebodenMboOpleidingCohort collectie opvragen"
   '/aangeboden-mbo-opleiding-cohorten/{id}':
     get:
       parameters:
@@ -56,6 +60,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleidingCohort resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleidingCohort"
+        description: "AangebodenMboOpleidingCohort opvragen o.b.v. id"
   '/aangeboden-mbo-opleidingen':
     get:
       parameters:
@@ -90,6 +97,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleidingen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding"
+        description: "AangebodenMboOpleiding collectie opvragen"
   '/aangeboden-mbo-opleidingen/{id}':
     get:
       parameters:
@@ -109,6 +119,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenMboOpleiding resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding"
+        description: "AangebodenMboOpleiding opvragen o.b.v. id"
   '/aangeboden-vavo-opleiding-cohorten':
     get:
       parameters:
@@ -136,6 +149,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenVavoOpleidingCohorten collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleidingCohort"
+        description: "AangebodenVavoOpleidingCohort collectie opvragen"
   '/aangeboden-vavo-opleiding-cohorten/{id}':
     get:
       parameters:
@@ -155,6 +171,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenVavoOpleidingCohort resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleidingCohort"
+        description: "AangebodenVavoOpleidingCohort opvragen o.b.v. id"
   '/aangeboden-vavo-opleidingen':
     get:
       parameters:
@@ -187,6 +206,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenVavoOpleidingen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleiding"
+        description: "AangebodenVavoOpleiding collectie opvragen"
   '/aangeboden-vavo-opleidingen/{id}':
     get:
       parameters:
@@ -206,6 +228,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'AangebodenVavoOpleiding resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleiding"
+        description: "AangebodenVavoOpleiding opvragen o.b.v. id"
   '/bedrijfsopleidingen':
     get:
       parameters:
@@ -225,6 +250,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Bedrijfsopleidingen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Bedrijfsopleiding"
+        description: "Bedrijfsopleiding collectie opvragen"
   '/bedrijfsopleidingen/{id}':
     get:
       parameters:
@@ -244,6 +272,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Bedrijfsopleiding resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Bedrijfsopleiding"
+        description: "Bedrijfsopleiding opvragen o.b.v. id"  
   '/bevoegd-gezag-erkenningen':
     get:
       parameters:
@@ -273,6 +304,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'BevoegdGezagErkenning collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/BevoegdGezagErkenning"
+        description: "BevoegdGezagErkenning collectie opvragen"
   '/bevoegd-gezag-erkenningen/{id}':
     get:
       parameters:
@@ -292,6 +326,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'BevoegdGezagErkenning resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/BevoegdGezagErkenning"
+        description: "BevoegdGezagErkenning opvragen o.b.v. id"   
   '/communicatiecontexten':
     get:
       parameters:
@@ -312,6 +349,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Communicatiecontexten collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Communicatiecontext"
+        description: "Communicatiecontext collectie opvragen"
   '/communicatiecontexten/{id}':
     get:
       parameters:
@@ -330,6 +370,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Communicatiecontext resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Communicatiecontext"
+        description: "Communicatiecontext opvragen o.b.v. id"   
   '/examenlicenties':
     get:
       parameters:
@@ -349,6 +392,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Examenlicenties collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Examenlicentie"
+        description: "Examenlicentie collectie opvragen"
   '/examenlicenties/{id}':
     get:
       parameters:
@@ -367,12 +413,18 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Examenlicentie resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Examenlicentie"
+        description: "Examenlicentie opvragen o.b.v. id"
   '/mbo-cross-over-kwalificaties':
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode" 
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -396,6 +448,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboCrossOverKwalificaties collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboCrossOverKwalificatie"
+        description: "MboCrossOverKwalificatie collectie opvragen"
   '/mbo-cross-over-kwalificaties/{id}':
     get:
       parameters:
@@ -415,12 +470,18 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboCrossOverKwalificatie resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboCrossOverKwalificatie"
+        description: "MboCrossOverKwalificatie opvragen o.b.v. id"
   '/mbo-domeinen':
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: "#/components/parameters/naam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
@@ -445,6 +506,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboDomeinen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboDomein"
+        description: "MboDomein collectie opvragen"
   '/mbo-domeinen/{id}':
     get:
       parameters:
@@ -464,6 +528,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboDomein resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboDomein"
+        description: "MboDomein opvragen o.b.v. id"   
   '/mbo-kwalificaties':
     get:
       parameters:
@@ -471,6 +538,9 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -494,6 +564,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboKwalificaties collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatie"
+        description: "MboKwalificatie collectie opvragen"
   '/mbo-kwalificaties/{id}':
     get:
       parameters:
@@ -513,6 +586,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboKwalificatie resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatie"
+        description: "MboKwalificatie opvragen o.b.v. id" 
   '/mbo-kwalificatiedossiers':
     get:
       parameters:
@@ -521,6 +597,9 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatie"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -544,6 +623,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboKwalificatiedossiers collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatiedossier"
+        description: "MboKwalificatiedossier collectie opvragen"
   '/mbo-kwalificatiedossiers/{id}':
     get:
       parameters:
@@ -563,6 +645,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboKwalificatiedossier resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatiedossier"
+        description: "MboKwalificatiedossier opvragen o.b.v. id"
   '/mbo-onderwijslicenties':
     get:
       parameters:
@@ -590,6 +675,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboOnderwijslicenties collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOnderwijslicentie"
+        description: "MboOnderwijslicentie collectie opvragen"
   '/mbo-onderwijslicenties/{id}':
     get:
       parameters:
@@ -608,6 +696,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboOnderwijslicentie resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOnderwijslicentie"
+        description: "MboOnderwijslicentie opvragen o.b.v. id"
   '/mbo-opleidingserkenningen':
     get:
       parameters:
@@ -632,6 +723,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboOpleidingserkenningen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOpleidingserkenning"
+        description: "MboOpleidingserkenning collectie opvragen"
   '/mbo-opleidingserkenningen/{id}':
     get:
       parameters:
@@ -651,6 +745,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'MboOpleidingserkenning resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOpleidingserkenning"
+        description: "MboOpleidingserkenning opvragen o.b.v. id"
   '/nederlands-adressen':
     get:
       parameters:
@@ -670,6 +767,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'NederlandsAdressen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/NederlandsAdres"
+        description: "NederlandsAdres collectie opvragen"
   '/nederlands-adressen/{id}':
     get:
       parameters:
@@ -688,6 +788,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'NederlandsAdres resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/NederlandsAdres"
+        description: "NederlandsAdres opvragen o.b.v. id"
   '/onderwijsaanbieders':
     get:
       parameters:
@@ -697,6 +800,9 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
+        - $ref: "#/components/parameters/brin"
+        - $ref: "#/components/parameters/wet"
+        - $ref: "#/components/parameters/plaatsnaam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -720,6 +826,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsaanbieders collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsaanbieder"
+        description: "Onderwijsaanbieder collectie opvragen"
   '/onderwijsaanbieders/{id}':
     get:
       parameters:
@@ -738,7 +847,10 @@ paths:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
-      summary: 'Onderwijsaanbieder resource'      
+      summary: 'Onderwijsaanbieder resource' 
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsaanbieder"
+        description: "Onderwijsaanbieder opvragen o.b.v. id"    
   '/onderwijsbesturen':
     get:
       parameters:
@@ -770,6 +882,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsbesturen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsbestuurder"
+        description: "Onderwijsbestuurder collectie opvragen"
   '/onderwijsbesturen/{id}':
     get:
       parameters:
@@ -789,6 +904,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsbestuur resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsbestuurder"
+        description: "Onderwijsbestuurder opvragen o.b.v. id"
   '/onderwijsinstellingserkenningen':
     get:
       parameters:
@@ -823,6 +941,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsinstellingserkenningen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsinstellingserkenning"
+        description: "Onderwijsinstellingserkenning collectie opvragen"
   '/onderwijsinstellingserkenningen/{id}':
     get:
       parameters:
@@ -842,6 +963,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijsinstellingserkenning resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsinstellingserkenning"
+        description: "Onderwijsinstellingserkenning opvragen o.b.v. id"
   '/onderwijslocaties':
     get:
       parameters:
@@ -863,6 +987,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijslocaties collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatie"
+        description: "Onderwijslocatie collectie opvragen"
   '/onderwijslocaties/{id}':
     get:
       parameters:
@@ -882,6 +1009,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijslocaties resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatie"
+        description: "Onderwijslocatie opvragen o.b.v. id"
   '/onderwijslocatiegebruiken':
     get:
       parameters:
@@ -911,6 +1041,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijslocatiegebruiken collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatiegebruik"
+        description: "Onderwijslocatiegebruik collectie opvragen"
   '/onderwijslocatiegebruiken/{id}':
     get:
       parameters:
@@ -930,6 +1063,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'Onderwijslocatiegebruik resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatiegebruik"
+        description: "Onderwijslocatiegebruik opvragen o.b.v. id"
   '/vavo-onderwijslicenties':
     get:
       parameters:
@@ -949,6 +1085,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VavoOnderwijslicenties collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOnderwijslicentie"
+        description: "VavoOnderwijslicentie collectie opvragen"
   '/vavo-onderwijslicenties/{id}':
     get:
       parameters:
@@ -967,6 +1106,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VavoOnderwijslicentie resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOnderwijslicentie"
+        description: "VavoOnderwijslicentie opvragen o.b.v. id"
   '/vavo-opleidingserkenningen':
     get:
       parameters:
@@ -987,6 +1129,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VavoOpleidingserkenningen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOpleidingserkenning"
+        description: "VavoOpleidingserkenning collectie opvragen"
   '/vavo-opleidingserkenningen/{id}':
     get:
       parameters:
@@ -1006,12 +1151,18 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VavoOpleidingserkenning resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOpleidingserkenning"
+        description: "VavoOpleidingserkenning opvragen o.b.v. id"
   '/vo-groepen':
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/voOpleiding"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -1035,6 +1186,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VoGroepen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoGroep"
+        description: "VoGroep collectie opvragen"
   '/vo-groepen/{id}':
     get:
       parameters:
@@ -1054,12 +1208,18 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VoGroep resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoGroep"
+        description: "VoGroep opvragen o.b.v. id"
   '/vo-opleidingen':
     get:
       parameters:
         - $ref: "#/components/parameters/vavoOpleidingserkenning"
         - $ref: "#/components/parameters/voGroep"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
+        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/wet"
         - $ref: "#/components/parameters/naam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
@@ -1084,6 +1244,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VoOpleidingen collectie'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoOpleiding"
+        description: "VoOpleiding collectie opvragen"
   '/vo-opleidingen/{id}':
     get:
       parameters:
@@ -1103,6 +1266,9 @@ paths:
         '503':
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
       summary: 'VoOpleiding resource'
+      externalDocs:
+        url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoOpleiding"
+        description: "VoOpleiding opvragen o.b.v. id"
 components:
   parameters:
     id:
@@ -1113,37 +1279,64 @@ components:
       schema:
         type: "string"
     aangebodenMboOpleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
       in: "query"
       name: "aangebodenMboOpleiding"
       schema:
         type: "string"
     aangebodenMboOpleidingCohort:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleidingCohort"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
       in: "query"
       name: "aangebodenMboOpleidingCohort"
       schema:
         type: "string"
     aangebodenVavoOpleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
       in: "query"
       name: "aangebodenVavoOpleiding"
       schema:
         type: "string"
     aangebodenVavoOpleidingCohort:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleidingCohort"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2"
       in: "query"
       name: "aangebodenVavoOpleidingCohort"
       schema:
         type: "string"
     bedrijfsopleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Bedrijfsopleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Bedrijfsopleiding/00000401-0000-4000-8000-000000001200"
       in: "query"
       name: "bedrijfsopleiding"
       schema:
         type: "string"
+    brin:
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/bRIN"
+      example: "00GT"
+      in: "query"
+      name: "brin"
+      schema:
+        type: "string"
+    communicatiecontext:
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Communicatiecontext"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+      in: "query"
+      name: "communicatiecontext"
+      schema:
+        type: "string"
+    crebocode:
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/cREBOcode-v02"
+      example: "97552"
+      in: "query"
+      name: "crebocode"
+      schema:
+        type: "string"
     bevoegdGezagErkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/BevoegdGezagErkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/BevoegdGezagErkenning/22334"
       in: "query"
       name: "bevoegdGezagErkenning"
       schema:
@@ -1155,14 +1348,9 @@ components:
       schema:
         type: "string"
         format: "date"
-    communicatiecontext:
-      description: "URI van de op te vragen resource"
-      in: "query"
-      name: "communicatiecontext"
-      schema:
-        type: "string"
     communicatiecontextRelatieType:
       description: "Communicatiecontext heeft 2 type relaties met Nederlands adres: isViaPostBereikbaarOp en isTeBezoekenOp. Gebruik bij het filteren op communicatiecontext deze parameter om de relatietype te specificeren"
+      example: "isViaPostBereikbaarOp"
       in: "query"
       name: "communicatiecontextRelatieType"
       schema:
@@ -1170,103 +1358,123 @@ components:
         - "isViaPostBereikbaarOp"
         - "isTeBezoekenOp"
     examenlicentie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Examenlicentie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622"
       in: "query"
       name: "examenlicentie"
       schema:
         type: "string"
     mboCrossOverKwalificatie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboCrossOverKwalificatie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboCrossOverKwalificatie/25195"
       in: "query"
       name: "mboCrossOverKwalificatie"
       schema:
         type: "string"
     mboDomein:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboDomein"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
       in: "query"
       name: "mboDomein"
       schema:
         type: "string"
     mboKwalificatie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatie/25172"
       in: "query"
       name: "mboKwalificatie"
       schema:
         type: "string"
     mboKwalificatiedossier:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatiedossier"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
       in: "query"
       name: "mboKwalificatiedossier"
       schema:
         type: "string"
     mboOnderwijslicentie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboOnderwijslicentie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboOnderwijslicentie/24CE10505"
       in: "query"
       name: "mboOnderwijslicentie"
       schema:
         type: "string"
     mboOpleidingserkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboOpleidingserkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
       in: "query"
       name: "mboOpleidingserkenning"
       schema:
         type: "string"
     naam:
-      description: "Filteren het attribuut naam van deze resource"
+      description: "Filteren op het attribuut naam van deze resource"
       in: "query"
       name: "naam"
       schema:
         type: "string"
     eigenNaam:
-      description: "Filteren het attribuut eigenNaam van de resource"
+      description: "Filteren op het attribuut eigenNaam van de resource"
       in: "query"
       name: "naam"
       schema:
         type: "string"
     volledigeNaam:
-      description: "Filteren het attribuut volledigeNaam van de resource"
+      description: "Filteren op het attribuut volledigeNaam van de resource"
       in: "query"
       name: "volledigeNaam"
       schema:
         type: "string"
     naamLang:
-      description: "Filteren het attribuut naamLang van de resource"
+      description: "Filteren op het attribuut naamLang van de resource"
       in: "query"
       name: "naamLang"
       schema:
         type: "string"
+    opleidingscode:
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode"
+      example: "26000"
+      in: "query"
+      name: "opleidingscode"
+      schema:
+        type: "string"
     plaatsnaam:
-      description: "Filteren het attribuut plaatsnaam van de resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/plaatsnaam-v02"
+      example: "APELDOORN" 
       in: "query"
       name: "plaatsnaam"
       schema:
         type: "string"
     nederlandsAdres:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/NederlandsAdres"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"
       in: "query"
       name: "nederlandsAdres"
       schema:
         type: "string"
     onderwijsaanbieder:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsaanbieder"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
       in: "query"
       name: "onderwijsaanbieder"
       schema:
         type: "string"
     onderwijsbestuur:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsbestuur"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
       in: "query"
       name: "onderwijsbestuur"
       schema:
         type: "string"
     onderwijsinstellingserkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsinstellingserkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsinstellingserkenning/30AW"
       in: "query"
       name: "onderwijsinstellingserkenning"
       schema:
         type: "string"
     onderwijslocatie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatie/110X502"
       in: "query"
       name: "onderwijslocatie"
       schema:
@@ -1292,43 +1500,50 @@ components:
           - 40
         default: 20
     soort:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingssoort-v04"
+      example: "VAK"
       in: "query"
       name: "soort"
       schema:
         type: "string"
     onderwijslocatiegebruik:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatiegebruik"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
       in: "query"
       name: "onderwijslocatiegebruik"
       schema:
         type: "string"
     vavoOpleidingserkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOpleidingserkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VavoOpleidingserkenning/5250"
       in: "query"
       name: "vavoOpleidingserkenning"
       schema:
         type: "string"
     vavoOnderwijslicentie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOnderwijslicentie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VavoOnderwijslicentie/08PG5450"
       in: "query"
       name: "vavoOnderwijslicentie"
       schema:
         type: "string"
     voGroep:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VoGroep"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
       in: "query"
       name: "voGroep"
       schema:
         type: "string"
     voOpleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VoOpleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VoOpleiding/2553"
       in: "query"
       name: "voOpleiding"
       schema:
         type: "string"
     wet:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02"
+      example: "WEB"
       in: "query"
       name: "wet"
       schema:
