@@ -36,25 +36,9 @@
 					],
 					"type": "object"
 				}
-				,
-				"communicatiecontext": {
-					"description": "Communicatiecontext heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBezoekenOp) met deze resource NederlandsAdres",
-					"properties": {
-						"href": {
-							"description": "URL van de link",
-							"format": "uri",
-							"type": "string"
-						}
-					},
-					"required": [
-						"href"
-					],
-					"type": "object"
-				}
 			},
 			"required": [
 				"self"
-				,"communicatiecontext"
 				,"communicatiecontext"
 			],
 			"type": "object"

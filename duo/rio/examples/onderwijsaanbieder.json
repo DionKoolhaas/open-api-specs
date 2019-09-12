@@ -1,0 +1,28 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders/100A026"
+    },
+	"onderwijsinstellingserkenning": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+    },
+    "communicatiecontext": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+    },
+    "onderwijsbestuur": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+    },
+    "aangebodenVavoOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+		},
+    "aangebodenMboOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+	}
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026",
+  "onderwijsaanbiederID": "100A026",
+  "naam": "Prof G Meijer college",
+  "onderwijsmethode": "97552",
+  "eigenOnderwijsaanbiederSleutel": "7311PE",
+  "inBedrijfdatum": "2018-04-01"
+}

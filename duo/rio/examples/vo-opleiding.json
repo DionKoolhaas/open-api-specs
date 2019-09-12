@@ -1,0 +1,25 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleiding/2553"
+    },
+	"aangebodenVavoOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+	},
+    "voGroep": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groep?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+    },
+    "vavoOpleidingserkenning": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenning?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553" 
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/VoOpleiding/2553",
+  "code": "2553",
+  "naam": "LWOO Basisbg Lw Ec M & C",
+  "naamLang": "Basisberoepsgerichte Leerweg Sector Economie Afdeling Mode en Commercie",
+  "afkorting": "LWOO-BBLECMC",
+  "herkomstOpleiding": "OCW",
+  "startdatum": "2001-08-01",
+  "niveau": "VO-VMBO-BB",
+  "leerwerktrajectIndicatie": false
+}

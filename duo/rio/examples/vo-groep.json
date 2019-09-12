@@ -1,0 +1,20 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groepen/1000"
+    },
+	"aangebodenVavoOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?voGroep=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
+	},
+    "voOpleiding": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleiding?voGroep=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000",
+  "code": "1000",
+  "naam": "VMBO BB ENT BW",
+  "naamLang": "VMBO BB ENT Bouwen, wonen en interieur",
+  "afkorting": "VMBO ENT BW",
+  "herkomstOpleiding": "OCW",
+  "startdatum": "2015-08-01"
+}

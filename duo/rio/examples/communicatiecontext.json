@@ -1,0 +1,24 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten/500A010_ALGEMEEN"
+    },
+    "onderwijsbestuur": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+    },
+    "nederlandsPostAdres": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isTeBezoekenOp"
+    },
+      "nederlandsBezoekAdres": {
+        "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isViaPostBereikbaarOp"
+    },
+     "onderwijsaanbieder": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN",
+  "telefoonnummer": "050-5511450",
+  "eMailadres": "mailto:testemail@testemail.nl",
+   "webadres": "http://de-beste-school.nl",
+   "context": "ALGEMEEN"
+}

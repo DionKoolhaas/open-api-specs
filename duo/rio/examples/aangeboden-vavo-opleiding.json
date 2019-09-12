@@ -1,0 +1,30 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen/f92dbbe5-575a-49b5-b956-344aefb514ed"
+    },
+    "aangebodenVavoOpleidingCohort": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleiding-cohorten?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+    },
+    "onderwijslocatie": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+    },
+    "onderwijsaanbieder": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+    },
+    "voOpleiding": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+    },
+    "voGroep": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groepen?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+    }
+  },
+  	"uri": "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed",
+    "code": "f92dbbe5-575a-49b5-b956-344aefb514ed",
+    "startdatum": "2019-08-29",
+    "opheffingsdatum": "2024-07-01",
+    "toelatingseisen": "NEE",
+    "toegankelijkheid": "ALL",
+    "eigenNaam": "VAVO ATH zonder profiel"
+
+}

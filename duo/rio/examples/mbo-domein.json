@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen/92090"
+    },
+	"mboOpleidingserkenning": {
+      	"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboDomein=http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
+    },
+	"aangebodenMboOpleiding": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboDomein=http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
+	},
+    "mboKwalificatiedossier": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificatie-dossier?mboDomein=http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090",
+  "code": "92090",
+  "naam": "Bouw en infra",
+  "naamLang": "Bouw en infra",
+  "afkorting": "B & I",
+  "herkomstOpleiding": "SBB",
+  "startdatum": "2017-08-01"
+}

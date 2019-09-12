@@ -22,8 +22,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -67,8 +67,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboDomein"
         - $ref: "#/components/parameters/eigenNaam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -113,8 +113,8 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -164,8 +164,8 @@ paths:
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: "#/components/parameters/voGroep"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -210,8 +210,8 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenMboOpleidingCohort"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -250,8 +250,8 @@ paths:
         - $ref: "#/components/parameters/volledigeNaam"
         - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -298,8 +298,8 @@ paths:
         - $ref: "#/components/parameters/onderwijsbestuur"
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/nederlandsAdres"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/Communicatiecontexten'
@@ -335,8 +335,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/Examenlicenties'
@@ -373,8 +373,8 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -422,8 +422,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -471,8 +471,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -521,8 +521,8 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatie"
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -568,8 +568,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/mboOpleidingserkenning"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - in: "query"
           description: "Specificeert op welk atribuut gesorteerd moet worden."
@@ -617,8 +617,8 @@ paths:
         - $ref: "#/components/parameters/mboCrossOverKwalificatie"
         - $ref: "#/components/parameters/examenlicentie"
         - $ref: "#/components/parameters/mboOnderwijslicentie"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -656,8 +656,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/communicatiecontext"
         - $ref: "#/components/parameters/communicatiecontextRelatieType"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/NederlandsAdressen'
@@ -697,8 +697,8 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -747,8 +747,8 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -800,8 +800,8 @@ paths:
         - $ref: "#/components/parameters/soort"
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
         - $ref: "#/components/parameters/wet"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -848,8 +848,8 @@ paths:
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/onderwijslocatiegebruik"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -888,8 +888,8 @@ paths:
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/onderwijsbestuur"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -935,8 +935,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vavoOpleidingserkenning"
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
       responses:
         '200':
           $ref: '#/components/responses/VavoOnderwijslicenties'
@@ -972,8 +972,8 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
         - $ref: "#/components/parameters/voOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
       responses:
         '200':
@@ -1012,8 +1012,8 @@ paths:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/voOpleiding"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -1061,8 +1061,8 @@ paths:
         - $ref: "#/components/parameters/voGroep"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/page'
-        - $ref: 'https://rawgit.com/PDOK/open-api-specs/master/shared/parameters.yaml#/pageSize'
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -1271,6 +1271,26 @@ components:
       name: "onderwijslocatie"
       schema:
         type: "string"
+    page:
+      description: Pagina nummer
+      name: page
+      in: query
+      required: false
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+    pageSize:
+      name: pageSize
+      in: query
+      required: false
+      schema:
+        type: integer
+        enum:
+          - 10
+          - 20
+          - 40
+        default: 20
     soort:
       description: "URI van de op te vragen resource"
       in: "query"
@@ -1348,19 +1368,19 @@ components:
                   aangebodenMboOpleidingen:
                     type: array
                     items:
-                      $ref: 'aangeboden-mbo-opleiding.json'
+                      $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
                 required:
                   - aangebodenMboOpleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     AangebodenMboOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'aangeboden-mbo-opleiding.json'
+            $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+          example:
+            $ref: 'examples/aangeboden-mbo-opleiding.json'
     AangebodenMboOpleidingCohorten:
       description: OK.
       headers:
@@ -1384,19 +1404,19 @@ components:
                   aangebodenMboOpleidingCohorten:
                     type: array
                     items:
-                      $ref: 'aangeboden-mbo-opleiding-cohort.json'
+                      $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
                 required:
                   - aangebodenMboOpleidingCohorten
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     AangebodenMboOpleidingCohort:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'aangeboden-mbo-opleiding-cohort.json'
+            $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+          example:
+            $ref: 'examples/aangeboden-mbo-opleiding-cohort.json'
     AangebodenVavoOpleidingen:
       description: OK.
       headers:
@@ -1420,19 +1440,19 @@ components:
                   aangebodenVavoOpleidingen:
                     type: array
                     items:
-                      $ref: 'aangeboden-vavo-opleiding.json'
+                      $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
                 required:
                   - aangebodenVavoOpleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     AangebodenVavoOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'aangeboden-vavo-opleiding.json' 
+            $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+          example:
+            $ref: 'examples/aangeboden-vavo-opleiding.json'
     AangebodenVavoOpleidingCohorten:
       description: OK.
       headers:
@@ -1456,19 +1476,19 @@ components:
                   aangebodenVavoOpleidingCohorten:
                     type: array
                     items:
-                      $ref: 'aangeboden-vavo-opleiding-cohort.json'
+                      $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json'
                 required:
                   - aangebodenVavoOpleidingCohorten
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     AangebodenVavoOpleidingCohort:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'aangeboden-vavo-opleiding-cohort.json' 
+            $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json' 
+          example:
+            $ref: 'examples/aangeboden-vavo-opleiding-cohort.json'
     Bedrijfsopleidingen:
       description: OK.
       headers:
@@ -1492,19 +1512,19 @@ components:
                   bedrijfsopleidingen:
                     type: array
                     items:
-                      $ref: 'bedrijfsopleiding.json'
+                      $ref: 'jsonschemas/bedrijfsopleiding.json'
                 required:
                   - bedrijfsopleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Bedrijfsopleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'bedrijfsopleiding.json'
+            $ref: 'jsonschemas/bedrijfsopleiding.json'
+          example:
+            $ref: 'examples/bedrijfsopleiding.json'
     BevoegdGezagErkenningen:
       description: OK.
       headers:
@@ -1528,19 +1548,19 @@ components:
                   bevoegdGezagErkenningen:
                     type: array
                     items:
-                      $ref: 'bevoegd-gezag-erkenning.json'
+                      $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
                 required:
                   - bevoegdGezagErkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     BevoegdGezagErkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'bevoegd-gezag-erkenning.json'
+            $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+          example:
+            $ref: 'examples/bevoegd-gezag-erkenning.json'
     Communicatiecontexten:
       description: OK.
       headers:
@@ -1564,19 +1584,19 @@ components:
                   communicatiecontexten:
                     type: array
                     items:
-                      $ref: 'communicatiecontext.json'
+                      $ref: 'jsonschemas/communicatiecontext.json'
                 required:
                   - communicatiecontexten
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Communicatiecontext:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'communicatiecontext.json'
+            $ref: 'jsonschemas/communicatiecontext.json'
+          example:
+            $ref: 'examples/communicatiecontext.json'
     Examenlicenties:
       description: OK.
       headers:
@@ -1600,19 +1620,19 @@ components:
                   examenlicenties:
                     type: array
                     items:
-                      $ref: 'examenlicentie.json'
+                      $ref: 'jsonschemas/examenlicentie.json'
                 required:
                   - examenlicenties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Examenlicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'examenlicentie.json'
+            $ref: 'jsonschemas/examenlicentie.json'
+          example:
+            $ref: 'examples/examenlicentie.json'
     MboCrossOverKwalificaties:
       description: OK.
       headers:
@@ -1636,19 +1656,19 @@ components:
                   mboCrossOverKwalificaties:
                     type: array
                     items:
-                      $ref: 'mbo-cross-over-kwalificatie.json'
+                      $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
                 required:
                   - mboCrossOverKwalificaties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     MboCrossOverKwalificatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'mbo-cross-over-kwalificatie.json'
+            $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+          example:
+            $ref: 'examples/mbo-cross-over-kwalificatie.json'
     MboDomeinen:
       description: OK.
       headers:
@@ -1672,19 +1692,19 @@ components:
                   mboDomeinen:
                     type: array
                     items:
-                      $ref: 'mbo-domein.json'
+                      $ref: 'jsonschemas/mbo-domein.json'
                 required:
                   - mboDomeinen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     MboDomein:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'mbo-domein.json'
+            $ref: 'jsonschemas/mbo-domein.json'
+          example:
+            $ref: 'examples/mbo-domein.json'
     MboKwalificaties:
       description: OK.
       headers:
@@ -1708,19 +1728,19 @@ components:
                   mboKwalificaties:
                     type: array
                     items:
-                      $ref: 'mbo-kwalificatie.json'
+                      $ref: 'jsonschemas/mbo-kwalificatie.json'
                 required:
                   - mboKwalificaties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     MboKwalificatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'mbo-kwalificatie.json'    
+            $ref: 'jsonschemas/mbo-kwalificatie.json'
+          example:
+            $ref: 'examples/mbo-kwalificatie.json'
     MboKwalificatiedossiers:
       description: OK.
       headers:
@@ -1744,19 +1764,19 @@ components:
                   mboKwalificatiedossiers:
                     type: array
                     items:
-                      $ref: 'mbo-kwalificatiedossier.json'
+                      $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
                 required:
                   - mboKwalificatiedossiers
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     MboKwalificatiedossier:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'mbo-kwalificatiedossier.json'
+            $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+          example:
+            $ref: 'examples/mbo-kwalificatiedossier.json'
     MboOnderwijslicenties:
       description: OK.
       headers:
@@ -1780,19 +1800,19 @@ components:
                   mboOnderwijslicenties:
                     type: array
                     items:
-                      $ref: 'mbo-onderwijslicentie.json'
+                      $ref: 'jsonschemas/mbo-onderwijslicentie.json'
                 required:
                   - mboOnderwijslicenties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     MboOnderwijslicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'mbo-onderwijslicentie.json'
+            $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+          example:
+            $ref: 'examples/mbo-onderwijslicentie.json'
     MboOpleidingserkenningen:
       description: OK.
       headers:
@@ -1816,19 +1836,19 @@ components:
                   mboOpleidingserkenningen:
                     type: array
                     items:
-                      $ref: 'mbo-opleidingserkenning.json'
+                      $ref: 'jsonschemas/mbo-opleidingserkenning.json'
                 required:
                   - mboOpleidingserkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     MboOpleidingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'mbo-opleidingserkenning.json' 
+            $ref: 'jsonschemas/mbo-opleidingserkenning.json' 
+          example:
+            $ref: 'examples/mbo-opleidingserkenning.json'
     NederlandsAdressen:
       description: OK.
       headers:
@@ -1852,19 +1872,19 @@ components:
                   nederlandsAdressen:
                     type: array
                     items:
-                      $ref: 'nederlands-adres.json'
+                      $ref: 'jsonschemas/nederlands-adres.json'
                 required:
                   - nederlandsAdressen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     NederlandsAdres:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'nederlands-adres.json'
+            $ref: 'jsonschemas/nederlands-adres.json'
+          example:
+            $ref: 'examples/nederlands-adres.json'
     Onderwijsaanbieders:
       description: OK.
       headers:
@@ -1888,19 +1908,19 @@ components:
                   onderwijsaanbieders:
                     type: array
                     items:
-                      $ref: 'onderwijsaanbieder.json'
+                      $ref: 'jsonschemas/onderwijsaanbieder.json'
                 required:
                   - onderwijsaanbieders
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Onderwijsaanbieder:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'onderwijsaanbieder.json'
+            $ref: 'jsonschemas/onderwijsaanbieder.json'
+          example:
+            $ref: 'examples/onderwijsaanbieder.json'
     Onderwijsbesturen:
       description: OK.
       headers:
@@ -1924,19 +1944,19 @@ components:
                   onderwijsbesturen:
                     type: array
                     items:
-                      $ref: 'onderwijsbestuur.json'
+                      $ref: 'jsonschemas/onderwijsbestuur.json'
                 required:
                   - onderwijsinstellingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Onderwijsbestuur:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'onderwijsbestuur.json'
+            $ref: 'jsonschemas/onderwijsbestuur.json'
+          example:
+            $ref: 'examples/onderwijsbestuur.json'
     Onderwijsinstellingserkenningen:
       description: OK.
       headers:
@@ -1960,19 +1980,19 @@ components:
                   onderwijsinstellingserkenningen:
                     type: array
                     items:
-                      $ref: 'onderwijsinstellingserkenning.json'
+                      $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
                 required:
                   - onderwijsinstellingserkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Onderwijsinstellingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'onderwijsinstellingserkenning.json'
+            $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+          example:
+            $ref: 'examples/onderwijsinstellingserkenning.json'
     Onderwijslocaties:
       description: OK.
       headers:
@@ -1996,19 +2016,19 @@ components:
                   onderwijslocaties:
                     type: array
                     items:
-                      $ref: 'onderwijslocatie.json'
+                      $ref: 'jsonschemas/onderwijslocatie.json'
                 required:
                   - onderwijslocaties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Onderwijslocatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'onderwijslocatie.json'
+            $ref: 'jsonschemas/onderwijslocatie.json'
+          example:
+            $ref: 'examples/onderwijslocatie.json'
     Onderwijslocatiegebruiken:
       description: OK.
       headers:
@@ -2032,19 +2052,19 @@ components:
                   onderwijslocatiegebruiken:
                     type: array
                     items:
-                      $ref: 'onderwijslocatiegebruik.json'
+                      $ref: 'jsonschemas/onderwijslocatiegebruik.json'
                 required:
                   - onderwijslocatiegebruiken
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     Onderwijslocatiegebruik:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'onderwijslocatiegebruik.json'
+            $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+          example:
+            $ref: 'examples/onderwijslocatiegebruik.json'
     VavoOnderwijslicenties:
       description: OK.
       headers:
@@ -2068,19 +2088,19 @@ components:
                   vavoOnderwijslicenties:
                     type: array
                     items:
-                      $ref: 'vavo-onderwijslicentie.json'
+                      $ref: 'jsonschemas/vavo-onderwijslicentie.json'
                 required:
                   - vavoOnderwijslicenties
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     VavoOnderwijslicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'vavo-onderwijslicentie.json'
+            $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+          example:
+            $ref: 'examples/vavo-onderwijslicentie.json'
     VavoOpleidingserkenningen:
       description: OK.
       headers:
@@ -2104,19 +2124,19 @@ components:
                   vavoOpleidingserkenningen:
                     type: array
                     items:
-                      $ref: 'vavo-opleidingserkenning.json'
+                      $ref: 'jsonschemas/vavo-opleidingserkenning.json'
                 required:
                   - vavoOpleidingserkenningen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     VavoOpleidingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'vavo-opleidingserkenning.json'
+            $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+          example:
+            $ref: 'examples/vavo-opleidingserkenning.json'
     VoGroepen:
       description: OK.
       headers:
@@ -2140,19 +2160,19 @@ components:
                   voGroepen:
                     type: array
                     items:
-                      $ref: 'vo-groep.json'
+                      $ref: 'jsonschemas/vo-groep.json'
                 required:
                   - voGroepen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     VoGroep:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'vo-groep.json'
+            $ref: 'jsonschemas/vo-groep.json'
+          example:
+            $ref: 'examples/vo-groep.json'
     VoOpleidingen:
       description: OK.
       headers:
@@ -2176,16 +2196,16 @@ components:
                   voOpleidingen:
                     type: array
                     items:
-                      $ref: 'vo-opleiding.json'
+                      $ref: 'jsonschemas/vo-opleiding.json'
                 required:
                   - voOpleidingen
               _links:
-                type: object
-                allOf:
-                  - $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/schemas.yaml#/HalCollectionLinks'
+                $ref: 'links.json'
     VoOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'vo-opleiding.json'
+            $ref: 'jsonschemas/vo-opleiding.json'
+          example:
+            $ref: 'examples/vo-opleiding.json'
