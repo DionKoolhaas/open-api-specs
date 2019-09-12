@@ -2184,6 +2184,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/vo-opleiding.json'
           schema:
             required:
               - _embedded

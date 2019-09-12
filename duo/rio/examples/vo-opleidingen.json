@@ -1,0 +1,18 @@
+{
+	"_embedded": {
+		"voOpleidingen": [
+			$ref: "vo-opleiding.json"
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://data.pdok.nl/api/rce/v1/rijksmonumenten?page=3"
+		},
+		"prev": {
+			"href": "https://data.pdok.nl/api/rce/v1/rijksmonumenten?page=1"
+		},
+		"self": {
+			"href": "https://data.pdok.nl/api/rce/v1/rijksmonumenten?page=2"
+		}
+	}
+}
