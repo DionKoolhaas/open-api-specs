@@ -2185,7 +2185,7 @@ components:
       content:
         application/hal+json:
           example:
-            $ref: 'examples/vo-opleiding.json'
+            $ref: 'examples/vo-opleidingen.json'
           schema:
             required:
               - _embedded
