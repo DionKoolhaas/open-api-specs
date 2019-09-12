@@ -1135,55 +1135,64 @@ components:
       schema:
         type: "string"
     aangebodenMboOpleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
       in: "query"
       name: "aangebodenMboOpleiding"
       schema:
         type: "string"
     aangebodenMboOpleidingCohort:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleidingCohort"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
       in: "query"
       name: "aangebodenMboOpleidingCohort"
       schema:
         type: "string"
     aangebodenVavoOpleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
       in: "query"
       name: "aangebodenVavoOpleiding"
       schema:
         type: "string"
     aangebodenVavoOpleidingCohort:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleidingCohort"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2"
       in: "query"
       name: "aangebodenVavoOpleidingCohort"
       schema:
         type: "string"
     bedrijfsopleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Bedrijfsopleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Bedrijfsopleiding/00000401-0000-4000-8000-000000001200"
       in: "query"
       name: "bedrijfsopleiding"
       schema:
         type: "string"
     brin:
-      description: "BRIN van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/bRIN"
+      example: "00GT"
       in: "query"
       name: "brin"
       schema:
         type: "string"
     communicatiecontext:
-      description: "Communicatiecontext van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Communicatiecontext"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
       in: "query"
       name: "communicatiecontext"
       schema:
         type: "string"
     crebocode:
-      description: "CREBOcode"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/cREBOcode-v02"
+      example: "97552"
       in: "query"
       name: "crebocode"
       schema:
         type: "string"
     bevoegdGezagErkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/BevoegdGezagErkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/BevoegdGezagErkenning/22334"
       in: "query"
       name: "bevoegdGezagErkenning"
       schema:
@@ -1197,6 +1206,7 @@ components:
         format: "date"
     communicatiecontextRelatieType:
       description: "Communicatiecontext heeft 2 type relaties met Nederlands adres: isViaPostBereikbaarOp en isTeBezoekenOp. Gebruik bij het filteren op communicatiecontext deze parameter om de relatietype te specificeren"
+      example: "isViaPostBereikbaarOp"
       in: "query"
       name: "communicatiecontextRelatieType"
       schema:
@@ -1204,43 +1214,50 @@ components:
         - "isViaPostBereikbaarOp"
         - "isTeBezoekenOp"
     examenlicentie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Examenlicentie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622"
       in: "query"
       name: "examenlicentie"
       schema:
         type: "string"
     mboCrossOverKwalificatie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboCrossOverKwalificatie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboCrossOverKwalificatie/25195"
       in: "query"
       name: "mboCrossOverKwalificatie"
       schema:
         type: "string"
     mboDomein:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboDomein"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
       in: "query"
       name: "mboDomein"
       schema:
         type: "string"
     mboKwalificatie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatie/25172"
       in: "query"
       name: "mboKwalificatie"
       schema:
         type: "string"
     mboKwalificatiedossier:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatiedossier"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
       in: "query"
       name: "mboKwalificatiedossier"
       schema:
         type: "string"
     mboOnderwijslicentie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboOnderwijslicentie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboOnderwijslicentie/24CE10505"
       in: "query"
       name: "mboOnderwijslicentie"
       schema:
         type: "string"
     mboOpleidingserkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/MboOpleidingserkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
       in: "query"
       name: "mboOpleidingserkenning"
       schema:
@@ -1270,43 +1287,50 @@ components:
       schema:
         type: "string"
     opleidingscode:
-      description: "Filteren op het attribuut opleidingscode van de resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode"
+      example: "26000"
       in: "query"
       name: "opleidingscode"
       schema:
         type: "string"
     plaatsnaam:
-      description: "Filteren op het attribuut plaatsnaam van de resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/plaatsnaam-v02"
+      example: "APELDOORN" 
       in: "query"
       name: "plaatsnaam"
       schema:
         type: "string"
     nederlandsAdres:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/NederlandsAdres"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"
       in: "query"
       name: "nederlandsAdres"
       schema:
         type: "string"
     onderwijsaanbieder:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsaanbieder"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
       in: "query"
       name: "onderwijsaanbieder"
       schema:
         type: "string"
     onderwijsbestuur:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsbestuur"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
       in: "query"
       name: "onderwijsbestuur"
       schema:
         type: "string"
     onderwijsinstellingserkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsinstellingserkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsinstellingserkenning/30AW"
       in: "query"
       name: "onderwijsinstellingserkenning"
       schema:
         type: "string"
     onderwijslocatie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatie/110X502"
       in: "query"
       name: "onderwijslocatie"
       schema:
@@ -1332,43 +1356,50 @@ components:
           - 40
         default: 20
     soort:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/instellingssoort-v04"
+      example: "VAK"
       in: "query"
       name: "soort"
       schema:
         type: "string"
     onderwijslocatiegebruik:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatiegebruik"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
       in: "query"
       name: "onderwijslocatiegebruik"
       schema:
         type: "string"
     vavoOpleidingserkenning:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOpleidingserkenning"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VavoOpleidingserkenning/5250"
       in: "query"
       name: "vavoOpleidingserkenning"
       schema:
         type: "string"
     vavoOnderwijslicentie:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOnderwijslicentie"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VavoOnderwijslicentie/08PG5450"
       in: "query"
       name: "vavoOnderwijslicentie"
       schema:
         type: "string"
     voGroep:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VoGroep"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
       in: "query"
       name: "voGroep"
       schema:
         type: "string"
     voOpleiding:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/rio/def/VoOpleiding"
+      example: "http://lod.onderwijsregistratie.nl/rio/id/VoOpleiding/2553"
       in: "query"
       name: "voOpleiding"
       schema:
         type: "string"
     wet:
-      description: "URI van de op te vragen resource"
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/wet-v02"
+      example: "WEB"
       in: "query"
       name: "wet"
       schema:
