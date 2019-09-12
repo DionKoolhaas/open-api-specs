@@ -1,0 +1,23 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties/110X502"
+    },
+	"onderwijslocatie": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+    },
+    "onderwijslocatiegebruik": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocatiegebruiken?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatie/110X502",
+  "code": "110X502",
+  "postcode": "2905AB",
+  "huisnummer": 69,
+  "huisnummertoevoeging": "A",
+  "gpsLatitude": 53.08113973,
+  "gpsLongitude":5.79237696,
+  "bagUri": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/76",
+  "bagcode": "76"  
+    
+}

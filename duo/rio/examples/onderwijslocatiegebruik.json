@@ -1,0 +1,16 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties/110X502"
+    },
+	"onderwijslocatie": {
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?onderwijslocatiegebruik=http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
+    },
+    "onderwijsbestuur": {
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?onderwijslocatiegebruik=http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
+    }
+  },
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338",
+  "naam": "11QY01",
+  "inBedrijfdatum": "1999-06-01" 
+}

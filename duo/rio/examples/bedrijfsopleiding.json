@@ -1,7 +1,7 @@
 {
   "_links": {
     "self": {
-      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleiding/00000401-0000-4000-8000-000000001200"
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleidingen/00000401-0000-4000-8000-000000001200"
     },
     "aangebodenMboOpleidingCohort": {
       "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleiding-cohorten?bedrijfsopleiding=http://lod.onderwijsregistratie.nl/rio/id/Bedrijfsopleiding/00000401-0000-4000-8000-000000001200"

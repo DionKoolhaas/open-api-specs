@@ -1,7 +1,7 @@
 {
   "_links": {
     "self": {
-      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenning/22334"
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenningen/22334"
     },
     "onderwijsbestuur": {
       "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?bevoegdGezagErkenning=http://lod.onderwijsregistratie.nl/rio/id/BevoegdGezagErkenning/22334"

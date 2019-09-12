@@ -1775,6 +1775,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+          example:
+            $ref: 'examples/mbo-kwalificatiedossier.json'
     MboOnderwijslicenties:
       description: OK.
       headers:
@@ -1809,6 +1811,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+          example:
+            $ref: 'examples/mbo-onderwijslicentie.json'
     MboOpleidingserkenningen:
       description: OK.
       headers:
@@ -1843,6 +1847,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/mbo-opleidingserkenning.json' 
+          example:
+            $ref: 'examples/mbo-opleidingserkenning.json'
     NederlandsAdressen:
       description: OK.
       headers:
@@ -1877,6 +1883,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/nederlands-adres.json'
+          example:
+            $ref: 'examples/nederlands-adres.json'
     Onderwijsaanbieders:
       description: OK.
       headers:
@@ -1911,6 +1919,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/onderwijsaanbieder.json'
+          example:
+            $ref: 'examples/onderwijsaanbieder.json'
     Onderwijsbesturen:
       description: OK.
       headers:
@@ -1945,6 +1955,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/onderwijsbestuur.json'
+          example:
+            $ref: 'examples/onderwijsbestuur.json'
     Onderwijsinstellingserkenningen:
       description: OK.
       headers:
@@ -1980,7 +1992,7 @@ components:
           schema:
             $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
           example:
-            $ref: 'examples/aangeboden-vavo-opleiding.json'
+            $ref: 'examples/onderwijsinstellingserkenning.json'
     Onderwijslocaties:
       description: OK.
       headers:
@@ -2015,6 +2027,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/onderwijslocatie.json'
+          example:
+            $ref: 'examples/onderwijslocatie.json'
     Onderwijslocatiegebruiken:
       description: OK.
       headers:
@@ -2049,6 +2063,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+          example:
+            $ref: 'examples/onderwijslocatiegebruik.json'
     VavoOnderwijslicenties:
       description: OK.
       headers:
@@ -2083,6 +2099,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+          example:
+            $ref: 'examples/vavo-onderwijslicentie.json'
     VavoOpleidingserkenningen:
       description: OK.
       headers:
@@ -2117,6 +2135,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+          example:
+            $ref: 'examples/vavo-opleidingserkenning.json'
     VoGroepen:
       description: OK.
       headers:
@@ -2151,6 +2171,8 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/vo-groep.json'
+          example:
+            $ref: 'examples/vo-groep.json'
     VoOpleidingen:
       description: OK.
       headers:
@@ -2185,3 +2207,5 @@ components:
         application/hal+json:
           schema:
             $ref: 'jsonschemas/vo-opleiding.json'
+          example:
+            $ref: 'examples/vo-opleiding.json'

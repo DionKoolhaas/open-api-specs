@@ -4,13 +4,13 @@
 		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleiding-cohorten/0180-COHORT-1"
 	},
 	"bedrijfsopleiding": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/cat/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
 	},
 	"aangebodenMboOpleiding": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/cat/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
+		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
 		}
 	},
-	"uri": "http://lod.onderwijsregistratie.nl/cat/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1",
+	"uri": "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1",
     "code": "0180-COHORT-1",
     "status": "O",
     "beginAanmeldperiode": "2018-04-23",
