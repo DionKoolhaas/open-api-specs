@@ -2161,8 +2161,6 @@ components:
                     type: array
                     items:
                       $ref: 'jsonschemas/vo-groep.json'
-                    example:
-                      $ref: 'examples/vo-groep.json'
                 required:
                   - voGroepen
               _links:
