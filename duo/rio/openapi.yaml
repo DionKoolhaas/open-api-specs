@@ -22,6 +22,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/opleidingscode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
@@ -126,6 +127,7 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
+        - $ref: "#/components/parameters/opleidingscode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -1566,6 +1568,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/aangeboden-mbo-opleidingen-collectie.json'
           schema:
             required:
               - _embedded
@@ -1602,6 +1606,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/aangeboden-mbo-opleiding-cohorten-collectie.json'
           schema:
             required:
               - _embedded
@@ -1638,6 +1644,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/aangeboden-vavo-opleidingen-collectie.json'
           schema:
             required:
               - _embedded
@@ -1674,6 +1682,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/aangeboden-vavo-opleiding-cohorten-collectie.json'
           schema:
             required:
               - _embedded
@@ -1710,6 +1720,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/bedrijfsopleidingen-collectie.json'
           schema:
             required:
               - _embedded
@@ -1746,6 +1758,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/bevoegd-gezag-erkenningen-collectie.json'
           schema:
             required:
               - _embedded
@@ -1820,6 +1834,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/examenlicenties-collectie.json'
           schema:
             required:
               - _embedded
@@ -2044,6 +2060,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/mbo-opleidingserkenningen-collectie.json'
           schema:
             required:
               - _embedded
@@ -2155,6 +2173,8 @@ components:
       content:
         application/hal+json:
           schema:
+            $ref: 'jsonschemas/onderwijsbesturen.json'
+          schema:
             required:
               - _embedded
               - _links
@@ -2190,6 +2210,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/onderwijsinstellingserkenningen-collectie.json'
           schema:
             required:
               - _embedded
@@ -2226,6 +2248,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/onderwijslocaties-collectie.json'
           schema:
             required:
               - _embedded
@@ -2262,6 +2286,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/onderwijslocatiegebruiken-collectie.json'
           schema:
             required:
               - _embedded
@@ -2298,6 +2324,10 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/vavo-onderwijslicenties-collectie.json'
+          schema:
+            $ref: 'jsonschemas/vavo-onderwijslicentie.json'
           schema:
             required:
               - _embedded
@@ -2334,6 +2364,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/vavo-opleidingserkenningen-collectie.json'
           schema:
             required:
               - _embedded

@@ -1,0 +1,40 @@
+{
+	"_embedded": {
+		"onderwijsbesturen": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen/101B402"
+					},
+					"onderwijslocatiegebruik": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocatiegebruiken?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+					},
+					"onderwijsaanbieder": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+					},
+					"bevoegdGezagErkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenningen?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+					},
+					"communicatiecontext": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402",
+				"bestuurID": "101B402",
+				"naam": "Nederlandse Academie voor Beeldcreatie",
+				"inBedrijfdatum": "2018-04-01"
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?page=2"
+		}
+	}
+}

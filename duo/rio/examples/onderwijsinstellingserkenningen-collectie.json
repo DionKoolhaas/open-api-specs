@@ -1,0 +1,54 @@
+
+
+{
+	"_embedded": {
+		"onderwijsinstellingserkenningen": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen/30AW"
+					},
+					"bevoegdGezagErkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenning?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"onderwijsaanbieder": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"examenlicentie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"mboOnderwijslicentie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"vavoOnderwijslicentie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsinstellingserkenning/30AW",
+				"bRIN4": "30AW",
+				"startdatum": "2019-01-02",
+				"ingangsdatum": "2019-01-02",
+				"soort": "VAK",
+				"verkorteNaam": "Stichting NOBEL",
+				"volledigeNaam": "Stichting NOBEL",
+				"bekostigingscode": "NIET_VAN_TOEPASSING",
+				"wet": "WVO",
+				"richtingen": [
+					"ABZ",
+					"PC"
+				]
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?page=2"
+		}
+	}
+}

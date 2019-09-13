@@ -1,0 +1,35 @@
+{
+	"_embedded": {
+		"vavoOnderwijslicenties": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties/08PG5450"
+					},
+					"onderwijsinstellingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?vavoOnderwijslicentie=http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622"
+					},
+					"vavoOpleidingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenningen?vavoOnderwijslicentie=http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/VavoOnderwijslicentie/08PG5450",
+				"begindatum": "2018-08-01",
+				"einddatum": "2019-08-01",
+				"stadium": "STANDAARD",
+				"bekostigd": true
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?page=2"
+		}
+	}
+}

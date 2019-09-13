@@ -1,7 +1,7 @@
 {
 	"__comment__": "Gegenereerd op basis van commit#164 in het DUO_RIO_Linked_Data op 20190904 om 11:54. Gemaakt met template-jsonschema.json",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Onderwijslocatie JSON-Schema",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Onderwijslocatie JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
@@ -20,8 +20,7 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"aangebodenMboOpleiding": {
 					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp) met deze resource Onderwijslocatie",
 					"properties": {
@@ -35,8 +34,7 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"aangebodenVavoOpleiding": {
 					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenOp) met deze resource Onderwijslocatie",
 					"properties": {
@@ -50,8 +48,7 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"onderwijslocatiegebruik": {
 					"description": "Onderwijslocatiegebruik heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isOp) met deze resource Onderwijslocatie",
 					"properties": {
@@ -68,10 +65,10 @@
 				}
 			},
 			"required": [
-				"self"
-				,"aangebodenMboOpleiding"
-				,"aangebodenVavoOpleiding"
-				,"onderwijslocatiegebruik"
+				"self",
+				"aangebodenMboOpleiding",
+				"aangebodenVavoOpleiding",
+				"onderwijslocatiegebruik"
 			],
 			"type": "object"
 		},
@@ -82,7 +79,7 @@
 		},
 		"code": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijslocatieID-v01",
 				"description": "onderwijslocatieID-v01"
 			},
@@ -93,7 +90,7 @@
 		},
 		"postcode": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/postcode-v02",
 				"description": "postcode-v02"
 			},
@@ -103,7 +100,7 @@
 		},
 		"huisnummer": {
 			"type": "integer",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummer-v03",
 				"description": "huisnummer-v03"
 			},
@@ -111,7 +108,7 @@
 		},
 		"huisnummertoevoeging": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/huisnummertoevoeging-v03",
 				"description": "huisnummertoevoeging-v03"
 			},
@@ -121,7 +118,7 @@
 		},
 		"gpsLatitude": {
 			"type": "number",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/latitude-v01",
 				"description": "latitude-v01"
 			},
@@ -129,7 +126,7 @@
 		},
 		"gpsLongitude": {
 			"type": "number",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/longitude-v01",
 				"description": "longitude-v01"
 			},
@@ -137,7 +134,7 @@
 		},
 		"bagcode": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bAGID-v01",
 				"description": "bAGID-v01"
 			},
@@ -146,11 +143,22 @@
 		},
 		"bagUri": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/bagUri-v01",
 				"description": "bagUri-v01"
 			},
 			"description": "Een internet adres van een adresseerbaar object in de Basisregistratie voor Adressen en Gebouwen."
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"onderwijslocatiegebruik": {
+					"type": "array",
+					"items": {
+						"$ref": "onderwijslocatiegebruik.json"
+					}
+				}
+			}
 		}
 	},
 	"required": [
