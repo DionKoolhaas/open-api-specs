@@ -2327,8 +2327,6 @@ components:
           example:
             $ref: 'examples/vavo-onderwijslicenties-collectie.json'
           schema:
-            $ref: 'jsonschemas/vavo-onderwijslicentie.json'
-          schema:
             required:
               - _embedded
               - _links
