@@ -26,5 +26,92 @@
   "studielast": 6400,
   "niveau": "MBO-4",
   "waardedocumentsoort": "DIPLOMA",
-  "structuur": "HKS"
+  "structuur": "HKS",
+  "_embedded": {
+		"mboOpleidingserkenning": [{
+			"_links": {
+				"self": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen/97552"
+				},
+				"mboCrossOverKwalificatie": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-cross-over-kwalificaties?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+				},
+				"mboKwalificatie": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+				},
+				"mboDomein": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+				},
+				"mboKwalificatiedossier": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties-dossiers?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+				},
+				"examenlicentie": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+				},
+				"mboOnderwijslicentie": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+				}
+			},
+			"uri": "http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552",
+			"ingangsdatum": "2008-08-01",
+			"einddatum": "2013-08-01",
+			"CREBOcode": "97552",
+			"instroomEinddatum": "2016-08-01",
+			"prijsfactorBekostiging": 1.03,
+			"wet": "WEB",
+			"ministerie": "EZ",
+			"opleidingsstelsel": "LANDBOUW"
+		}],
+		"mboKwalificatiedossier" : [{
+	"_links": {
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificatiedossiers/22000"
+		},
+		"mboOpleidingserkenning": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+		},
+		"aangebodenMboOpleiding": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+		},
+		"mboKwalificatie": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+		},
+		"mboDomein": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+		}
+	},
+	"uri": "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000",
+	"code": "22000",
+	"naam": "Assistent bouw en infra",
+	"naamLang": "Assistent bouw en infra",
+	"afkorting": "ABI",
+	"herkomstOpleiding": "SBB",
+	"startdatum": "2015-08-01",
+	"_embedded": {
+		"mboDomein": {
+			"_links": {
+				"self": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen/92090"
+				},
+				"mboOpleidingserkenning": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboDomein=http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
+				},
+				"aangebodenMboOpleiding": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboDomein=http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
+				},
+				"mboKwalificatiedossier": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificatie-dossier?mboDomein=http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090"
+				}
+			},
+			"uri": "http://lod.onderwijsregistratie.nl/rio/id/MboDomein/92090",
+			"code": "92090",
+			"naam": "Bouw en infra",
+			"naamLang": "Bouw en infra",
+			"afkorting": "B & I",
+			"herkomstOpleiding": "SBB",
+			"startdatum": "2017-08-01"
+		}
+		}
+		}]
+	}
 }

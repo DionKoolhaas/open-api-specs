@@ -193,6 +193,23 @@
 			},
 			"description": "De datum die het einde van de periode aangeeft (exclusief).",
 			"format": "date"
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"mboOpleidingserkenning": {
+					"type": "array",
+					"items": {
+						"$ref": "mbo-opleidingserkenning.json"
+					}
+				},
+				"mboDomein": {
+					"type": "array",
+					"items": {
+						"$ref": "mbo-domein.json"
+					}
+				}
+			}
 		}
 	},
 	"required": [

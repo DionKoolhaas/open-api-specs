@@ -207,6 +207,23 @@
 			},
 			"description": "De datum die het einde van de periode aangeeft (exclusief).",
 			"format": "date"
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+			"vavoOpleidingserkenning": {
+				"type": "array",
+				"items": {
+					"$ref" : "vavo-opleidingserkenning.json"
+				}
+			},
+			"voGroep": {
+				"type": "array",
+				"items": {
+					"$ref" : "vo-groep.json"
+				}
+			}
+			}
 		}
 	},
 	"required": [
