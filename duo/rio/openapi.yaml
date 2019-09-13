@@ -2172,8 +2172,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
-          schema:
-            $ref: 'jsonschemas/onderwijsbesturen.json'
+          example:
+            $ref: 'examples/onderwijsbesturen-collectie.json'
           schema:
             required:
               - _embedded
