@@ -189,6 +189,26 @@
 			},
 			"description": "De datum waarop een organisatorische eenheid zoals een onderwijsaanbieder niet meer bestaat.",
 			"format": "date"
+		},
+		"_embedded": {
+			"onderwijsinstellingserkenning": {
+				"type": "array",
+				"items": {
+					"$ref" : "onderwijsinstellingserkenning.json"
+				}
+			},
+			"communicatiecontext": {
+				"type": "array",
+				"items": {
+					"$ref" : "communicatiecontext.json"
+				}
+			},
+			"onderwijsbestuur": {
+				"type": "array",
+				"items": {
+					"$ref" : "onderwijsbestuur.json"
+				}
+			}
 		}
 	},
 	"required": [
