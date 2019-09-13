@@ -207,6 +207,7 @@
 					}
 				}
 			}
+		}
 		},
 		"required": [
 			"_links",
@@ -214,5 +215,5 @@
 			"naam",
 			"inBedrijfdatum"
 		]
-	}
+	
 }

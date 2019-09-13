@@ -26,82 +26,86 @@
 	"eigenOnderwijsaanbiederSleutel": "7311PE",
 	"inBedrijfdatum": "2018-04-01",
 	"_embedded": {
-		"onderwijsinstellingserkenning": [{
-			"_links": {
-				"self": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenning/30AW"
+		"onderwijsinstellingserkenning": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenning/30AW"
+					},
+					"bevoegdGezagErkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenning?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"onderwijsaanbieder": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"examenlicentie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"mboOnderwijslicentie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					},
+					"vavoOnderwijslicentie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+					}
 				},
-				"bevoegdGezagErkenning": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenning?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsinstellingserkenning/30AW",
+				"bRIN4": "30AW",
+				"startdatum": "2019-01-02",
+				"ingangsdatum": "2019-01-02",
+				"soort": "VAK",
+				"verkorteNaam": "Stichting NOBEL",
+				"volledigeNaam": "Stichting NOBEL",
+				"bekostigingscode": "NIET_VAN_TOEPASSING",
+				"wet": "WVO",
+				"richtingen": [
+					"ABZ",
+					"PC"
+				]
+			}
+		],
+		"onderwijsbestuur": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten/500A010_ALGEMEEN"
+					},
+					"onderwijsbestuur": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+					},
+					"nederlandsPostAdres": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isTeBezoekenOp"
+					},
+					"nederlandsBezoekAdres": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isViaPostBereikbaarOp"
+					},
+					"onderwijsaanbieder": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+					}
 				},
-				"onderwijsaanbieder": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
-				},
-				"examenlicentie": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
-				},
-				"mboOnderwijslicentie": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
-				},
-				"vavoOnderwijslicentie": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN",
+				"telefoonnummer": "050-5511450",
+				"eMailadres": "mailto:testemail@testemail.nl",
+				"webadres": "http://de-beste-school.nl",
+				"context": "ALGEMEEN",
+				"_embedded": {
+					"nederlandsPostAdres": {
+						"_links": {
+							"self": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressem/7311PE27"
+							},
+							"communicatiecontext": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?nederlandsadres=http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"
+							}
+						},
+						"uri": "http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27",
+						"straatnaam": "Spoorstraat",
+						"huisnummer": 27,
+						"huisnummertoevoeging": "97552",
+						"postcode": "7311PE",
+						"plaatsnaam": "APELDOORN"
+					}
 				}
-			},
-			"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsinstellingserkenning/30AW",
-			"bRIN4": "30AW",
-			"startdatum": "2019-01-02",
-			"ingangsdatum": "2019-01-02",
-			"soort": "VAK",
-			"verkorteNaam": "Stichting NOBEL",
-			"volledigeNaam": "Stichting NOBEL",
-			"bekostigingscode": "NIET_VAN_TOEPASSING",
-			"wet": "WVO",
-			"richtingen": [
-				"ABZ",
-				"PC"
-			]
-		}],
-		"communicatiecontext": [{
-	"_links": {
-		"self": {
-			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten/500A010_ALGEMEEN"
-		},
-		"onderwijsbestuur": {
-			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
-		},
-		"nederlandsPostAdres": {
-			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isTeBezoekenOp"
-		},
-		"nederlandsBezoekAdres": {
-			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isViaPostBereikbaarOp"
-		},
-		"onderwijsaanbieder": {
-			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
-		}
-	},
-	"uri": "http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN",
-	"telefoonnummer": "050-5511450",
-	"eMailadres": "mailto:testemail@testemail.nl",
-	"webadres": "http://de-beste-school.nl",
-	"context": "ALGEMEEN",
-	"_embedded": {
-		"nederlandsPostAdres": {
-			"_links": {
-				"self": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressem/7311PE27"
-				},
-				"communicatiecontext": {
-					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?nederlandsadres=http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"
-				}
-			},
-			"uri": "http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27",
-			"straatnaam": "Spoorstraat",
-			"huisnummer": 27,
-			"huisnummertoevoeging": "97552",
-			"postcode": "7311PE",
-			"plaatsnaam": "APELDOORN"
-		}
-	}
-}]
+			}
+		]
 	}
 }
