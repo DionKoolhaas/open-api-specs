@@ -1,0 +1,33 @@
+{
+	"_embedded": {
+		"nederlandsAdressen": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen/7311PE27"
+					},
+					"communicatiecontext": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?nederlandsadres=http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27",
+				"straatnaam": "Spoorstraat",
+				"huisnummer": 27,
+				"huisnummertoevoeging": "97552",
+				"postcode": "7311PE",
+				"plaatsnaam": "APELDOORN"
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?page=2"
+		}
+	}
+}

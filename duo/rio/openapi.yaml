@@ -1113,6 +1113,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/vavoOnderwijslicentie"
         - $ref: "#/components/parameters/voOpleiding"
+        - $ref: "#/components/parameters/opleidingcode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
@@ -1427,11 +1428,11 @@ components:
       name: "naamLang"
       schema:
         type: "string"
-    opleidingscode:
+    opleidingcode:
       description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode"
       example: "26000"
       in: "query"
-      name: "opleidingscode"
+      name: "opleidingcode"
       schema:
         type: "string"
     plaatsnaam:
@@ -2098,6 +2099,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/nederlands-adressen-collectie.json'
           schema:
             required:
               - _embedded

@@ -7,7 +7,7 @@
 			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
 		},
 		"voGroep": {
-			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groep?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groepen?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
 		},
 		"vavoOpleidingserkenning": {
 			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenning?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
