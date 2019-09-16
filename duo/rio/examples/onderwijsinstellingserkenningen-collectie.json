@@ -9,7 +9,7 @@
 						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen/30AW"
 					},
 					"bevoegdGezagErkenning": {
-						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenning?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bevoegd-gezag-erkenningen?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
 					},
 					"onderwijsaanbieder": {
 						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?onderwijsinstellingserkenning=http://lod.onderwijsregistratie.nl/rio/id/onderwijsinstellingserkenning/f92dbbe5-575a-49b5-b956-344aefb514ed"
