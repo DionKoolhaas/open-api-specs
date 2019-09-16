@@ -210,6 +210,29 @@
 			},
 			"description": "De datum die het einde van de periode aangeeft (exclusief).",
 			"format": "date"
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"onderwijsaanbieder": {
+					"type": "array",
+					"items": {
+						"$ref": "onderwijsaanbieder.json"
+					}
+				},
+				"voOpleiding": {
+					"type": "array",
+					"items": {
+						"$ref": "vo-opleiding.json"
+					}
+				},
+				"voGroep": {
+					"type": "array",
+					"items": {
+						"$ref": "vo-groep.json"
+					}
+				}
+			}
 		}
 	},
 	"required": [

@@ -1,7 +1,7 @@
 {
 	"__comment__": "Gegenereerd op basis van commit#164 in het DUO_RIO_Linked_Data op 20190904 om 11:54. Gemaakt met template-jsonschema.json",
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "Onderwijsaanbieder JSON-Schema",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Onderwijsaanbieder JSON-Schema",
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
@@ -20,11 +20,10 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"onderwijsbestuur": {
 					"description": "Deze resource heeft een associatie behoortTot met Onderwijsbestuur",
-					"externalDocs": { 
+					"externalDocs": {
 						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/behoortTot",
 						"description": "behoortTot"
 					},
@@ -39,11 +38,10 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"communicatiecontext": {
 					"description": "Deze resource heeft een associatie isTeBereikenVoor met Communicatiecontext",
-					"externalDocs": { 
+					"externalDocs": {
 						"url": "http://lod.onderwijsregistratie.nl/cat/rio/def/isTeBereikenVoor",
 						"description": "isTeBereikenVoor"
 					},
@@ -58,8 +56,7 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"onderwijsinstellingserkenning": {
 					"description": "Onderwijsinstellingserkenning heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/isErkenningVan) met deze resource Onderwijsaanbieder",
 					"properties": {
@@ -73,8 +70,7 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"aangebodenMboOpleiding": {
 					"description": "AangebodenMboOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor) met deze resource Onderwijsaanbieder",
 					"properties": {
@@ -88,8 +84,7 @@
 						"href"
 					],
 					"type": "object"
-				}
-				,
+				},
 				"aangebodenVavoOpleiding": {
 					"description": "AangebodenVavoOpleiding heeft een associatie (http://lod.onderwijsregistratie.nl/cat/rio/def/wordtAangebodenDoor) met deze resource Onderwijsaanbieder",
 					"properties": {
@@ -106,12 +101,12 @@
 				}
 			},
 			"required": [
-				"self"
-				,"onderwijsbestuur"
-				,"communicatiecontext"
-				,"onderwijsinstellingserkenning"
-				,"aangebodenMboOpleiding"
-				,"aangebodenVavoOpleiding"
+				"self",
+				"onderwijsbestuur",
+				"communicatiecontext",
+				"onderwijsinstellingserkenning",
+				"aangebodenMboOpleiding",
+				"aangebodenVavoOpleiding"
 			],
 			"type": "object"
 		},
@@ -122,7 +117,7 @@
 		},
 		"onderwijsaanbiederID": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijsaanbiederID-v01",
 				"description": "onderwijsaanbiederID-v01"
 			},
@@ -133,7 +128,7 @@
 		},
 		"naam": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/organisatorischeEenheidnaam-v01",
 				"description": "organisatorischeEenheidnaam-v01"
 			},
@@ -143,7 +138,7 @@
 		},
 		"internationaleNaam": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/internationaleNaam-v01",
 				"description": "internationaleNaam-v01"
 			},
@@ -153,7 +148,7 @@
 		},
 		"onderwijsmethode": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijsmethode-v01",
 				"description": "onderwijsmethode-v01"
 			},
@@ -164,7 +159,7 @@
 		},
 		"eigenOnderwijsaanbiederSleutel": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/onderwijsaanbiederExterneIdentificatie-v01",
 				"description": "onderwijsaanbiederExterneIdentificatie-v01"
 			},
@@ -174,7 +169,7 @@
 		},
 		"inBedrijfdatum": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/inBedrijfdatum-v01",
 				"description": "inBedrijfdatum-v01"
 			},
@@ -183,18 +178,42 @@
 		},
 		"uitBedrijfdatum": {
 			"type": "string",
-			"externalDocs": { 
+			"externalDocs": {
 				"url": "http://lod.onderwijsregistratie.nl/cat/cdm/def/uitBedrijfdatum-v01",
 				"description": "uitBedrijfdatum-v01"
 			},
 			"description": "De datum waarop een organisatorische eenheid zoals een onderwijsaanbieder niet meer bestaat.",
 			"format": "date"
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"onderwijsinstellingserkenning": {
+					"type": "array",
+					"items": {
+						"$ref": "onderwijsinstellingserkenning.json"
+					}
+				},
+				"communicatiecontext": {
+					"type": "array",
+					"items": {
+						"$ref": "communicatiecontext.json"
+					}
+				},
+				"onderwijsbestuur": {
+					"type": "array",
+					"items": {
+						"$ref": "onderwijsbestuur.json"
+					}
+				}
+			}
 		}
-	},
-	"required": [
-		"_links",
-		"onderwijsaanbiederID",
-		"naam",
-		"inBedrijfdatum"
-	]
+		},
+		"required": [
+			"_links",
+			"onderwijsaanbiederID",
+			"naam",
+			"inBedrijfdatum"
+		]
+	
 }

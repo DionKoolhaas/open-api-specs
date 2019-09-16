@@ -1,0 +1,88 @@
+{
+	"_embedded": {
+		"voOpleidingen": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen/2553"
+					},
+					"aangebodenVavoOpleiding": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+					},
+					"voGroep": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groep?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+					},
+					"vavoOpleidingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenning?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/VoOpleiding/2553",
+				"code": "2553",
+				"naam": "LWOO Basisbg Lw Ec M & C",
+				"naamLang": "Basisberoepsgerichte Leerweg Sector Economie Afdeling Mode en Commercie",
+				"afkorting": "LWOO-BBLECMC",
+				"herkomstOpleiding": "OCW",
+				"startdatum": "2001-08-01",
+				"niveau": "VO-VMBO-BB",
+				"leerwerktrajectIndicatie": false,
+				"_embedded": {
+					"vavoOpleidingserkenning": [
+						{
+							"_links": {
+								"self": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenningen/5250"
+								},
+								"voOpleiding": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen?vavoOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+								},
+								"vavoOnderwijslicentie": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-onderwijslicenties?vavoOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+								}
+							},
+							"uri": "http://lod.onderwijsregistratie.nl/rio/id/VavoOpleidingserkenning/5250",
+							"ingangsdatum": "2008-08-01",
+							"einddatum": "2013-08-01",
+							"wet": "WEB",
+							"ministerie": "EZ",
+							"opleidingsstelsel": "KSE",
+							"opleidingcode": "5250"
+						}
+					],
+					"voGroep": [
+						{
+							"_links": {
+								"self": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groepen/1000"
+								},
+								"aangebodenVavoOpleiding": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?voGroep=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
+								},
+								"voOpleiding": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleiding?voGroep=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
+								}
+							},
+							"uri": "http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000",
+							"code": "1000",
+							"naam": "VMBO BB ENT BW",
+							"naamLang": "VMBO BB ENT Bouwen, wonen en interieur",
+							"afkorting": "VMBO ENT BW",
+							"herkomstOpleiding": "OCW",
+							"startdatum": "2015-08-01"
+						}
+					]
+				}
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen?page=2"
+		}
+	}
+}

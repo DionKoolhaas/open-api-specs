@@ -13,7 +13,7 @@
       "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
     },
     "mboKwalificatiedossier": {
-      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties-dossiers?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificatiedossiers?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"
     },
     "examenlicentie": {
       "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?mboOpleidingserkenning=http://lod.onderwijsregistratie.nl/rio/id/MboOpleidingserkenning/97552"

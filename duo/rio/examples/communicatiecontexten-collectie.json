@@ -1,0 +1,59 @@
+{
+	"_embedded": {
+		"communicatiecontexten": [
+			{
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN",
+				"telefoonnummer": "050-5511450",
+				"eMailadres": "mailto:testemail@testemail.nl",
+				"webadres": "http://de-beste-school.nl",
+				"context": "ALGEMEEN",
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten/500A010_ALGEMEEN"
+					},
+					"onderwijsbestuur": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+					},
+					"nederlandsPostAdres": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isTeBezoekenOp"
+					},
+					"nederlandsBezoekAdres": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN&communicatiecontextRelatieType=isViaPostBereikbaarOp"
+					},
+					"onderwijsaanbieder": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?communicatiecontext=http://lod.onderwijsregistratie.nl/rio/id/Communicatiecontext/500A010_ALGEMEEN"
+					}
+				},
+				"_embedded": {
+					"nederlandsBezoekAdres": {
+						"_links": {
+							"self": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressem/7311PE27"
+							},
+							"communicatiecontext": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?nederlandsadres=http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"
+							}
+						},
+						"uri": "http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27",
+						"straatnaam": "Spoorstraat",
+						"huisnummer": 27,
+						"huisnummertoevoeging": "97552",
+						"postcode": "7311PE",
+						"plaatsnaam": "APELDOORN"
+					}
+				}
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?page=2"
+		}
+	}
+}

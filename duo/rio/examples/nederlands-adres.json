@@ -1,7 +1,7 @@
 {
   "_links": {
     "self": {
-      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressem/7311PE27"
+      "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/nederlands-adressen/7311PE27"
     },
 	"communicatiecontext": {
       "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?nederlandsadres=http://lod.onderwijsregistratie.nl/rio/id/NederlandsAdres/7311PE27"

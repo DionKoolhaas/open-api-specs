@@ -150,6 +150,23 @@
 			"description": "Is een tekstuele toelichting op de voor aanmelding vereiste toestemming van de onderwijsaanbieder.",
 			"maxLength": 3000,
 			"minLength": 1
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+				"aangebodenMboOpleiding": {
+					"type": "array",
+					"items": {
+						"$ref": "aangeboden-mbo-opleiding.json"
+					}
+				},
+				"bedrijfsopleiding": {
+					"type": "array",
+					"items": {
+						"$ref": "bedrijfsopleiding.json"
+					}
+				}
+			}
 		}
 	},
 	"required": [

@@ -1,0 +1,34 @@
+{
+	"_embedded": {
+		"examenlicenties": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties/25LT90622"
+					},
+					"onderwijsinstellingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?examenlicentie=http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622"
+					},
+					"mboOpleidingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?examenlicentie=http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Examenlicentie/25LT90622",
+				"begindatum": "2007-08-01",
+				"einddatum": "2017-08-01",
+				"stadium": "STANDAARD"
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/examenlicenties?page=2"
+		}
+	}
+}

@@ -1,17 +1,145 @@
 {
-  "_links": {
-	"self": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleiding-cohorten/0180-COHORT-2"
-	},
-	"aangebodenVavoOpleiding": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?aangebodenVavoOpleidingCohorthttp://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2"
+	"_links": {
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleiding-cohorten/0180-COHORT-2"
+		},
+		"aangebodenVavoOpleiding": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?aangebodenVavoOpleidingCohorthttp://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2"
 		}
 	},
 	"uri": "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleidingCohort/0180-COHORT-2",
-    "code": "0180-COHORT-2",
-    "status": "O",
-    "beginAanmeldperiode": "2018-04-23",
-    "eindeAanmeldperiode": "2019-07-31",
-    "instroommoment": "2018-08-01",
-    "toestemmingVereistVoorAanmelding": "NEE"
+	"code": "0180-COHORT-2",
+	"status": "O",
+	"beginAanmeldperiode": "2018-04-23",
+	"eindeAanmeldperiode": "2019-07-31",
+	"instroommoment": "2018-08-01",
+	"toestemmingVereistVoorAanmelding": "NEE",
+	"_embedded": {
+		"aangebodenVavoOpleiding": {
+			"_links": {
+				"self": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				},
+				"aangebodenVavoOpleidingCohort": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleiding-cohorten?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				},
+				"onderwijslocatie": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				},
+				"onderwijsaanbieder": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				},
+				"voOpleiding": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				},
+				"voGroep": {
+					"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groepen?aangebodenVavoOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed"
+				}
+			},
+			"uri": "http://lod.onderwijsregistratie.nl/rio/id/AangebodenVavoOpleiding/f92dbbe5-575a-49b5-b956-344aefb514ed",
+			"code": "f92dbbe5-575a-49b5-b956-344aefb514ed",
+			"startdatum": "2019-08-29",
+			"opheffingsdatum": "2024-07-01",
+			"toelatingseisen": "NEE",
+			"toegankelijkheid": "ALL",
+			"eigenNaam": "VAVO ATH zonder profiel",
+			"_embedded": {
+				"voOpleiding": [{
+					"_links": {
+						"self": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleidingen/2553"
+						},
+						"aangebodenVavoOpleiding": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+						},
+						"voGroep": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-groep?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+						},
+						"vavoOpleidingserkenning": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenning?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
+						}
+					},
+					"uri": "http://lod.onderwijsregistratie.nl/rio/id/VoOpleiding/2553",
+					"code": "2553",
+					"naam": "LWOO Basisbg Lw Ec M & C",
+					"naamLang": "Basisberoepsgerichte Leerweg Sector Economie Afdeling Mode en Commercie",
+					"afkorting": "LWOO-BBLECMC",
+					"herkomstOpleiding": "OCW",
+					"startdatum": "2001-08-01",
+					"niveau": "VO-VMBO-BB",
+					"leerwerktrajectIndicatie": false
+				}],
+				"onderwijsaanbieder": [{
+					"_links": {
+						"self": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders/100A026"
+						},
+						"onderwijsinstellingserkenning": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+						},
+						"communicatiecontext": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+						},
+						"onderwijsbestuur": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+						},
+						"aangebodenVavoOpleiding": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+						},
+						"aangebodenMboOpleiding": {
+							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+						}
+					},
+					"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026",
+					"onderwijsaanbiederID": "100A026",
+					"naam": "Prof G Meijer college",
+					"onderwijsmethode": "97552",
+					"eigenOnderwijsaanbiederSleutel": "7311PE",
+					"inBedrijfdatum": "2018-04-01"
+				}],
+					"onderwijslocatie": [{
+						"_links": {
+							"self": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties/110X502"
+							},
+							"onderwijslocatie": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+							},
+							"onderwijslocatiegebruik": {
+								"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocatiegebruiken?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+							}
+						},
+						"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatie/110X502",
+						"code": "110X502",
+						"postcode": "2905AB",
+						"huisnummer": 69,
+						"huisnummertoevoeging": "A",
+						"gpsLatitude": 53.08113973,
+						"gpsLongitude": 5.79237696,
+						"bagUri": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/76",
+						"bagcode": "76",
+						"_embedded": {
+							"onderwijslocatiegebruik": [
+								{
+									"_links": {
+										"self": {
+											"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties/110X502"
+										},
+										"onderwijslocatie": {
+											"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?onderwijslocatiegebruik=http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
+										},
+										"onderwijsbestuur": {
+											"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?onderwijslocatiegebruik=http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
+										}
+									},
+									"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338",
+									"naam": "11QY01",
+									"inBedrijfdatum": "1999-06-01"
+								}
+							]
+						}
+					}]
+			}
+		}
+	}
 }

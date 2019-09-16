@@ -1,20 +1,176 @@
 {
-  "_links": {
-	"self": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleiding-cohorten/0180-COHORT-1"
-	},
-	"bedrijfsopleiding": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
-	},
-	"aangebodenMboOpleiding": {
-		"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
+	"_links": {
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleiding-cohorten/0180-COHORT-1"
+		},
+		"bedrijfsopleiding": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
+		},
+		"aangebodenMboOpleiding": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?aangebodenMboOpleidingCohort=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1"
 		}
 	},
 	"uri": "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleidingCohort/0180-COHORT-1",
-    "code": "0180-COHORT-1",
-    "status": "O",
-    "beginAanmeldperiode": "2018-04-23",
-    "eindeAanmeldperiode": "2019-07-31",
-    "instroommoment": "2018-08-01",
-    "toestemmingVereistVoorAanmelding": "NEE"
+	"code": "0180-COHORT-1",
+	"status": "O",
+	"beginAanmeldperiode": "2018-04-23",
+	"eindeAanmeldperiode": "2019-07-31",
+	"instroommoment": "2018-08-01",
+	"toestemmingVereistVoorAanmelding": "NEE",
+	"_embedded": {
+		"bedrijfsopleiding": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen/00000401-0000-4000-8000-000000025290"
+					},
+					"aangebodenMboOpleidingCohort": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleiding-cohorten?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					},
+					"onderwijslocatie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					},
+					"onderwijsaanbieder": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					},
+					"mboCrossOverKwalificatie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-cross-over-kwalificaties?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					},
+					"mboKwalificatie": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					},
+					"mboDomein": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					},
+					"mboKwalificatiedossier": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificatiedossiers?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290",
+				"code": "00000401-0000-4000-8000-000000025290",
+				"startdatum": "2015-08-01",
+				"leertraject": "BOL",
+				"toelatingseisen": "NEE",
+				"toegankelijkheid": "ALL",
+				"mboNiveau": "MBO-4",
+				"eigenNaam": "Bedrijfsadministrateur",
+				"_embedded": {
+					"bedrijfsopleiding" : [{
+  						"_links": {
+    						"self": {
+      							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/bedrijfsopleidingen/00000401-0000-4000-8000-000000001200"
+    						},
+    						"aangebodenMboOpleidingCohort": {
+      							"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleiding-cohorten?bedrijfsopleiding=http://lod.onderwijsregistratie.nl/rio/id/Bedrijfsopleiding/00000401-0000-4000-8000-000000001200"
+    						}
+  						},
+  						"uri": "http://lod.onderwijsregistratie.nl/rio/id/Bedrijfsopleiding/00000401-0000-4000-8000-000000001200",
+ 						"toegangscodeCohort": "A"
+					}],
+					"mboKwalificatiedossier": [
+						{
+							"_links": {
+								"self": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificatiedossiers/22000"
+								},
+								"mboOpleidingserkenning": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+								},
+								"aangebodenMboOpleiding": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+								},
+								"mboKwalificatie": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+								},
+								"mboDomein": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-domeinen?mboKwalificatiedossier=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000"
+								}
+							},
+							"uri": "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatiedossier/22000",
+							"code": "22000",
+							"naam": "Assistent bouw en infra",
+							"naamLang": "Assistent bouw en infra",
+							"afkorting": "ABI",
+							"herkomstOpleiding": "SBB",
+							"startdatum": "2015-08-01"
+						}
+					],
+					"onderwijsaanbieder": [
+						{
+							"_links": {
+								"self": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsaanbieders/100A026"
+								},
+								"onderwijsinstellingserkenning": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+								},
+								"communicatiecontext": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/communicatiecontexten?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+								},
+								"onderwijsbestuur": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+								},
+								"aangebodenVavoOpleiding": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-vavo-opleidingen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+								},
+								"aangebodenMboOpleiding": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?onderwijsaanbieder=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026"
+								}
+							},
+							"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijsaanbieder/100A026",
+							"onderwijsaanbiederID": "100A026",
+							"naam": "Prof G Meijer college",
+							"onderwijsmethode": "97552",
+							"eigenOnderwijsaanbiederSleutel": "7311PE",
+							"inBedrijfdatum": "2018-04-01"
+						}
+					],
+					"onderwijslocatie": [
+						{
+							"_links": {
+								"self": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties/110X502"
+								},
+								"onderwijslocatie": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?aangebodenMboOpleiding=http://lod.onderwijsregistratie.nl/rio/id/AangebodenMboOpleiding/00000401-0000-4000-8000-000000025290"
+								},
+								"onderwijslocatiegebruik": {
+									"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocatiegebruiken?onderwijsbestuur=http://lod.onderwijsregistratie.nl/rio/id/Onderwijsbestuur/101B402"
+								}
+							},
+							"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatie/110X502",
+							"code": "110X502",
+							"postcode": "2905AB",
+							"huisnummer": 69,
+							"huisnummertoevoeging": "A",
+							"gpsLatitude": 53.08113973,
+							"gpsLongitude": 5.79237696,
+							"bagUri": "http://bag.basisregistraties.overheid.nl/bag/id/verblijfsobject/76",
+							"bagcode": "76",
+							"_embedded": {
+								"onderwijslocatiegebruik": [
+									{
+										"_links": {
+											"self": {
+												"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties/110X502"
+											},
+											"onderwijslocatie": {
+												"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijslocaties?onderwijslocatiegebruik=http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
+											},
+											"onderwijsbestuur": {
+												"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsbesturen?onderwijslocatiegebruik=http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338"
+											}
+										},
+										"uri": "http://lod.onderwijsregistratie.nl/rio/id/Onderwijslocatiegebruik/100B065100X338",
+										"naam": "11QY01",
+										"inBedrijfdatum": "1999-06-01"
+									}
+								]
+							}
+						}
+					]
+				}
+			}
+		]
+	}
 }

@@ -144,6 +144,23 @@
 			"description": "De locatie op het World Wide Web waar documenten en andere objecten kunnen worden gevonden",
 			"maxLength": 320,
 			"minLength": 0
+		},
+		"_embedded": {
+			"type": "object",
+			"properties": {
+			"nederlandsPostAdres": {
+				"type": "array",
+				"items": {
+					"$ref" : "nederlands-adres.json"
+				}
+			},
+			"nederlandsBezoekAdres": {
+				"type": "array",
+				"items": {
+					"$ref" : "nederlands-adres.json"
+				}
+			}
+			}
 		}
 	},
 	"required": [
