@@ -1,0 +1,36 @@
+{
+	"_embedded": {
+		"mboOnderwijslicenties": [
+			{
+				"_links": {
+					"self": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties/24CE10505"
+					},
+					"onderwijsinstellingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/onderwijsinstellingserkenningen?mboOnderwijslicentie=http://lod.onderwijsregistratie.nl/rio/id/MboOnderwijslicentie/24CE10505"
+					},
+					"mboOpleidingserkenning": {
+						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-opleidingserkenningen?mboOnderwijslicentie=http://lod.onderwijsregistratie.nl/rio/id/MboOnderwijslicentie/24CE10505"
+					}
+				},
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/MboOnderwijslicentie/24CE10505",
+				"begindatum": "1997-08-01",
+				"einddatum": "2017-08-01",
+				"stadium": "STANDAARD",
+				"bekostigd": true,
+				"leerweg": "BOL"
+			}
+		]
+	},
+	"_links": {
+		"next": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?page=3"
+		},
+		"prev": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?page=1"
+		},
+		"self": {
+			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-onderwijslicenties?page=2"
+		}
+	}
+}

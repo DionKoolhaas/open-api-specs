@@ -2024,6 +2024,8 @@ components:
           $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
       content:
         application/hal+json:
+          example:
+            $ref: 'examples/mbo-onderwijslicenties-collectie.json'
           schema:
             required:
               - _embedded
