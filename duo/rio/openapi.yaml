@@ -22,7 +22,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
-        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/opleidingcode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/datumGeldigOp"
