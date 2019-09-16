@@ -1215,11 +1215,11 @@ paths:
         - $ref: "#/components/parameters/vavoOpleidingserkenning"
         - $ref: "#/components/parameters/voGroep"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: "#/components/parameters/crebocode"
         - $ref: "#/components/parameters/wet"
         - $ref: "#/components/parameters/naam"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
+        - $ref: '#/components/parameters/vavoOpleidingserkenningCode'
         - $ref: "#/components/parameters/sortDirection"
         - $ref: "#/components/parameters/datumGeldigOp"
         - in: "query"
@@ -1432,6 +1432,13 @@ components:
       example: "26000"
       in: "query"
       name: "opleidingcode"
+      schema:
+        type: "string"
+    vavoOpleidingserkenningCode:
+      description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/opleidingcode van VavoOpleidingserkenning"
+      example: "26000"
+      in: "query"
+      name: "vavoOpleidingserkenningCode"
       schema:
         type: "string"
     plaatsnaam:
