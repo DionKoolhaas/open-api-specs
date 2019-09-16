@@ -74,7 +74,6 @@ paths:
         - $ref: "#/components/parameters/mboKwalificatiedossier"
         - $ref: "#/components/parameters/mboDomein"
         - $ref: "#/components/parameters/eigenNaam"
-        - $ref: "#/components/parameters/opleidingscode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -127,7 +126,7 @@ paths:
     get:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/opleidingcode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -185,7 +184,7 @@ paths:
         - $ref: "#/components/parameters/onderwijslocatie"
         - $ref: "#/components/parameters/voOpleiding"
         - $ref: "#/components/parameters/voGroep"
-        - $ref: "#/components/parameters/opleidingscode"
+        - $ref: "#/components/parameters/opleidingcode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
