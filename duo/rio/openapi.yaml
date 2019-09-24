@@ -22,6 +22,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/bedrijfsopleiding"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
+        - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: "#/components/parameters/opleidingcode"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
@@ -127,6 +128,7 @@ paths:
       parameters:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/opleidingcode"
+        - $ref: "#/components/parameters/onderwijsaanbieder"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
         - $ref: "#/components/parameters/sortDirection"
@@ -798,7 +800,7 @@ paths:
         - $ref: "#/components/parameters/onderwijsinstellingserkenning"
         - $ref: "#/components/parameters/aangebodenMboOpleiding"
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
-        - $ref: "#/components/parameters/brin"
+        - $ref: "#/components/parameters/bRIN4"
         - $ref: "#/components/parameters/wet"
         - $ref: "#/components/parameters/plaatsnaam"
         - $ref: '#/components/parameters/page'
@@ -1310,11 +1312,11 @@ components:
       name: "bedrijfsopleiding"
       schema:
         type: "string"
-    brin:
+    bRIN4:
       description: "Filteren op http://lod.onderwijsregistratie.nl/cat/cdm/def/bRIN"
       example: "00GT"
       in: "query"
-      name: "brin"
+      name: "bRIN4"
       schema:
         type: "string"
     communicatiecontext:

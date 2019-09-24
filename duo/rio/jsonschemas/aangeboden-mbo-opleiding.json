@@ -293,6 +293,12 @@
 						"$ref": "mbo-kwalificatiedossier.json"
 					}
 				},
+				"mboKwalificatie": {
+					"type": "array",
+					"items": {
+						"$ref": "mbo-kwalificatie.json"
+					}
+				},
 				"onderwijslocatie": {
 					"type": "array",
 					"items": {
