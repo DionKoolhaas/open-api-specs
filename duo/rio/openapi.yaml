@@ -1161,7 +1161,7 @@ paths:
         - $ref: "#/components/parameters/aangebodenVavoOpleiding"
         - $ref: "#/components/parameters/naam"
         - $ref: "#/components/parameters/voOpleiding"
-        - $ref: "#/components/parameters/crebocode"
+        - $ref: "#/components/parameters/vavoOpleidingserkenningCode"
         - $ref: "#/components/parameters/wet"
         - $ref: '#/components/parameters/page'
         - $ref: '#/components/parameters/pageSize'
