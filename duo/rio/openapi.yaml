@@ -31,13 +31,13 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenMboOpleidingCohorten'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenMboOpleidingCohorten collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleidingCohort"
@@ -51,15 +51,15 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenMboOpleidingCohort'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenMboOpleidingCohort resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleidingCohort"
@@ -90,13 +90,13 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenMboOpleidingen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenMboOpleidingen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding"
@@ -110,15 +110,15 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenMboOpleiding'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenMboOpleiding resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenMboOpleiding"
@@ -144,13 +144,13 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenVavoOpleidingCohorten'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenVavoOpleidingCohorten collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleidingCohort"
@@ -164,15 +164,15 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenVavoOpleidingCohort'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenVavoOpleidingCohort resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleidingCohort"
@@ -202,13 +202,13 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenVavoOpleidingen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenVavoOpleidingen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleiding"
@@ -222,15 +222,15 @@ paths:
         '200':
           $ref: '#/components/responses/AangebodenVavoOpleiding'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'AangebodenVavoOpleiding resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/AangebodenVavoOpleiding"
@@ -246,13 +246,13 @@ paths:
         '200':
           $ref: '#/components/responses/Bedrijfsopleidingen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Bedrijfsopleidingen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Bedrijfsopleiding"
@@ -266,15 +266,15 @@ paths:
         '200':
           $ref: '#/components/responses/Bedrijfsopleiding'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Bedrijfsopleiding resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Bedrijfsopleiding"
@@ -300,13 +300,13 @@ paths:
         '200':
           $ref: '#/components/responses/BevoegdGezagErkenningen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'BevoegdGezagErkenning collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/BevoegdGezagErkenning"
@@ -320,15 +320,15 @@ paths:
         '200':
           $ref: '#/components/responses/BevoegdGezagErkenning'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'BevoegdGezagErkenning resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/BevoegdGezagErkenning"
@@ -345,13 +345,13 @@ paths:
         '200':
           $ref: '#/components/responses/Communicatiecontexten'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Communicatiecontexten collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Communicatiecontext"
@@ -364,15 +364,15 @@ paths:
         '200':
           $ref: '#/components/responses/Communicatiecontext'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Communicatiecontext resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Communicatiecontext"
@@ -388,13 +388,13 @@ paths:
         '200':
           $ref: '#/components/responses/Examenlicenties'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Examenlicenties collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Examenlicentie"
@@ -407,15 +407,15 @@ paths:
         '200':
           $ref: '#/components/responses/Examenlicentie'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Examenlicentie resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Examenlicentie"
@@ -443,13 +443,13 @@ paths:
         '200':
           $ref: '#/components/responses/MboCrossOverKwalificaties'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboCrossOverKwalificaties collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboCrossOverKwalificatie"
@@ -463,15 +463,15 @@ paths:
         '200':
           $ref: '#/components/responses/MboCrossOverKwalificatie'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboCrossOverKwalificatie resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboCrossOverKwalificatie"
@@ -500,13 +500,13 @@ paths:
         '200':
           $ref: '#/components/responses/MboDomeinen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboDomeinen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboDomein"
@@ -520,15 +520,15 @@ paths:
         '200':
           $ref: '#/components/responses/MboDomein'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboDomein resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboDomein"
@@ -557,13 +557,13 @@ paths:
         '200':
           $ref: '#/components/responses/MboKwalificaties'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboKwalificaties collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatie"
@@ -577,15 +577,15 @@ paths:
         '200':
           $ref: '#/components/responses/MboKwalificatie'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboKwalificatie resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatie"
@@ -615,13 +615,13 @@ paths:
         '200':
           $ref: '#/components/responses/MboKwalificatiedossier'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboKwalificatiedossiers collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatiedossier"
@@ -635,15 +635,15 @@ paths:
         '200':
           $ref: '#/components/responses/MboKwalificatiedossier'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboKwalificatiedossier resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboKwalificatiedossier"
@@ -667,13 +667,13 @@ paths:
         '200':
           $ref: '#/components/responses/MboOnderwijslicenties'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboOnderwijslicenties collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOnderwijslicentie"
@@ -686,15 +686,15 @@ paths:
         '200':
           $ref: '#/components/responses/MboOnderwijslicentie'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboOnderwijslicentie resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOnderwijslicentie"
@@ -715,13 +715,13 @@ paths:
         '200':
           $ref: '#/components/responses/MboOpleidingserkenningen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboOpleidingserkenningen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOpleidingserkenning"
@@ -735,15 +735,15 @@ paths:
         '200':
           $ref: '#/components/responses/MboOpleidingserkenning'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'MboOpleidingserkenning resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/MboOpleidingserkenning"
@@ -759,13 +759,13 @@ paths:
         '200':
           $ref: '#/components/responses/NederlandsAdressen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'NederlandsAdressen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/NederlandsAdres"
@@ -778,15 +778,15 @@ paths:
         '200':
           $ref: '#/components/responses/NederlandsAdres'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'NederlandsAdres resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/NederlandsAdres"
@@ -818,13 +818,13 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijsaanbieders'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijsaanbieders collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsaanbieder"
@@ -838,15 +838,15 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijsaanbieder'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijsaanbieder resource' 
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsaanbieder"
@@ -874,13 +874,13 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijsbesturen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijsbesturen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsbestuurder"
@@ -894,15 +894,15 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijsbestuur'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijsbestuur resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsbestuurder"
@@ -933,13 +933,13 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijsinstellingserkenningen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijsinstellingserkenningen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsinstellingserkenning"
@@ -953,15 +953,15 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijsinstellingserkenning'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijsinstellingserkenning resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijsinstellingserkenning"
@@ -979,13 +979,13 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijslocaties'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijslocaties collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatie"
@@ -999,15 +999,15 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijslocatie'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijslocaties resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatie"
@@ -1033,13 +1033,13 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijslocatiegebruiken'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijslocatiegebruiken collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatiegebruik"
@@ -1053,15 +1053,15 @@ paths:
         '200':
           $ref: '#/components/responses/Onderwijslocatiegebruik'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'Onderwijslocatiegebruik resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/Onderwijslocatiegebruik"
@@ -1077,13 +1077,13 @@ paths:
         '200':
           $ref: '#/components/responses/VavoOnderwijslicenties'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VavoOnderwijslicenties collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOnderwijslicentie"
@@ -1096,15 +1096,15 @@ paths:
         '200':
           $ref: '#/components/responses/VavoOnderwijslicentie'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VavoOnderwijslicentie resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOnderwijslicentie"
@@ -1122,13 +1122,13 @@ paths:
         '200':
           $ref: '#/components/responses/VavoOpleidingserkenningen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VavoOpleidingserkenningen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOpleidingserkenning"
@@ -1142,15 +1142,15 @@ paths:
         '200':
           $ref: '#/components/responses/VavoOpleidingserkenning'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VavoOpleidingserkenning resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VavoOpleidingserkenning"
@@ -1178,13 +1178,13 @@ paths:
         '200':
           $ref: '#/components/responses/VoGroepen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VoGroepen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoGroep"
@@ -1198,15 +1198,15 @@ paths:
         '200':
           $ref: '#/components/responses/VoGroep'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VoGroep resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoGroep"
@@ -1235,13 +1235,13 @@ paths:
         '200':
           $ref: '#/components/responses/VoOpleidingen'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VoOpleidingen collectie'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoOpleiding"
@@ -1255,15 +1255,15 @@ paths:
         '200':
           $ref: '#/components/responses/VoOpleiding'
         '401':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+          $ref: '#/components/responses/401'
         '403':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+          $ref: '#/components/responses/403'
         '404':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+          $ref: '#/components/responses/404'
         '406':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+          $ref: '#/components/responses/406'
         '503':
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
+          $ref: '#/components/responses/503'
       summary: 'VoOpleiding resource'
       externalDocs:
         url: "http://lod.onderwijsregistratie.nl/cat/rio/def/VoOpleiding"
@@ -1566,15 +1566,25 @@ components:
         - "desc"
         type: "string"
   responses:
+    '401':
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/401'
+    '403':
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/403'
+    '404':
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/404'
+    '406':
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/406'
+    '503':
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/responses.yaml#/503'
     AangebodenMboOpleidingen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1591,28 +1601,28 @@ components:
                   aangebodenMboOpleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+                      $ref: '#/components/schemas/AangebodenMboOpleiding'
                 required:
                   - aangebodenMboOpleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenMboOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+            $ref: '#/components/schemas/AangebodenMboOpleiding'
           example:
             $ref: 'examples/aangeboden-mbo-opleiding.json'
     AangebodenMboOpleidingCohorten:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1629,28 +1639,28 @@ components:
                   aangebodenMboOpleidingCohorten:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+                      $ref: '#/components/schemas/AangebodenMboOpleidingCohort'
                 required:
                   - aangebodenMboOpleidingCohorten
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenMboOpleidingCohort:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+            $ref: '#/components/schemas/AangebodenMboOpleidingCohort'
           example:
             $ref: 'examples/aangeboden-mbo-opleiding-cohort.json'
     AangebodenVavoOpleidingen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1667,28 +1677,28 @@ components:
                   aangebodenVavoOpleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+                      $ref: '#/components/schemas/AangebodenVavoOpleiding'
                 required:
                   - aangebodenVavoOpleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenVavoOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+            $ref: '#/components/schemas/AangebodenVavoOpleiding'
           example:
             $ref: 'examples/aangeboden-vavo-opleiding.json'
     AangebodenVavoOpleidingCohorten:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1705,28 +1715,28 @@ components:
                   aangebodenVavoOpleidingCohorten:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json'
+                      $ref: '#/components/schemas/AangebodenVavoOpleidingCohort'
                 required:
                   - aangebodenVavoOpleidingCohorten
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenVavoOpleidingCohort:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json' 
+            $ref: '#/components/schemas/AangebodenVavoOpleidingCohort'
           example:
             $ref: 'examples/aangeboden-vavo-opleiding-cohort.json'
     Bedrijfsopleidingen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1743,28 +1753,28 @@ components:
                   bedrijfsopleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/bedrijfsopleiding.json'
+                      $ref: '#/components/schemas/Bedrijfsopleiding'
                 required:
                   - bedrijfsopleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Bedrijfsopleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/bedrijfsopleiding.json'
+            $ref: '#/components/schemas/Bedrijfsopleiding'
           example:
             $ref: 'examples/bedrijfsopleiding.json'
     BevoegdGezagErkenningen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1781,28 +1791,28 @@ components:
                   bevoegdGezagErkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+                      $ref: '#/components/schemas/BevoegdGezagErkenning'
                 required:
                   - bevoegdGezagErkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     BevoegdGezagErkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+            $ref: '#/components/schemas/BevoegdGezagErkenning'
           example:
             $ref: 'examples/bevoegd-gezag-erkenning.json'
     Communicatiecontexten:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1819,28 +1829,28 @@ components:
                   communicatiecontexten:
                     type: array
                     items:
-                      $ref: 'jsonschemas/communicatiecontext.json'
+                      $ref: '#/components/schemas/Communicatiecontext'
                 required:
                   - communicatiecontexten
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Communicatiecontext:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/communicatiecontext.json'
+            $ref: '#/components/schemas/Communicatiecontext'
           example:
             $ref: 'examples/communicatiecontext.json'
     Examenlicenties:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1857,28 +1867,28 @@ components:
                   examenlicenties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/examenlicentie.json'
+                      $ref: '#/components/schemas/Examenlicentie'
                 required:
                   - examenlicenties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Examenlicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/examenlicentie.json'
+            $ref: '#/components/schemas/Examenlicentie'
           example:
             $ref: 'examples/examenlicentie.json'
     MboCrossOverKwalificaties:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1895,28 +1905,28 @@ components:
                   mboCrossOverKwalificaties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+                      $ref: '#/components/schemas/MboCrossOverKwalificatie'
                 required:
                   - mboCrossOverKwalificaties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboCrossOverKwalificatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+            $ref: '#/components/schemas/MboCrossOverKwalificatie'
           example:
             $ref: 'examples/mbo-cross-over-kwalificatie.json'
     MboDomeinen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1933,28 +1943,28 @@ components:
                   mboDomeinen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-domein.json'
+                      $ref: '#/components/schemas/MboDomein'
                 required:
                   - mboDomeinen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboDomein:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-domein.json'
+            $ref: '#/components/schemas/MboDomein'
           example:
             $ref: 'examples/mbo-domein.json'
     MboKwalificaties:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -1971,28 +1981,28 @@ components:
                   mboKwalificaties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-kwalificatie.json'
+                      $ref: '#/components/schemas/MboKwalificatie'
                 required:
                   - mboKwalificaties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboKwalificatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-kwalificatie.json'
+            $ref: '#/components/schemas/MboKwalificatie'
           example:
             $ref: 'examples/mbo-kwalificatie.json'
     MboKwalificatiedossiers:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2009,28 +2019,28 @@ components:
                   mboKwalificatiedossiers:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+                      $ref: '#/components/schemas/MboKwalificatiedossier'
                 required:
                   - mboKwalificatiedossiers
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboKwalificatiedossier:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+            $ref: '#/components/schemas/MboKwalificatiedossier'
           example:
             $ref: 'examples/mbo-kwalificatiedossier.json'
     MboOnderwijslicenties:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2047,28 +2057,28 @@ components:
                   mboOnderwijslicenties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+                      $ref: '#/components/schemas/MboOnderwijslicentie'
                 required:
                   - mboOnderwijslicenties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboOnderwijslicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+            $ref: '#/components/schemas/MboOnderwijslicentie'
           example:
             $ref: 'examples/mbo-onderwijslicentie.json'
     MboOpleidingserkenningen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2085,28 +2095,28 @@ components:
                   mboOpleidingserkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-opleidingserkenning.json'
+                      $ref: '#/components/schemas/MboOpleidingserkenning'
                 required:
                   - mboOpleidingserkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboOpleidingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-opleidingserkenning.json' 
+            $ref: '#/components/schemas/MboOpleidingserkenning'
           example:
             $ref: 'examples/mbo-opleidingserkenning.json'
     NederlandsAdressen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2123,28 +2133,28 @@ components:
                   nederlandsAdressen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/nederlands-adres.json'
+                      $ref: '#/components/schemas/NederlandsAdres'
                 required:
                   - nederlandsAdressen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     NederlandsAdres:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/nederlands-adres.json'
+            $ref: '#/components/schemas/NederlandsAdres'
           example:
             $ref: 'examples/nederlands-adres.json'
     Onderwijsaanbieders:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2161,28 +2171,28 @@ components:
                   onderwijsaanbieders:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijsaanbieder.json'
+                      $ref: '#/components/schemas/Onderwijsaanbieder'
                 required:
                   - onderwijsaanbieders
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijsaanbieder:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijsaanbieder.json'
+            $ref: '#/components/schemas/Onderwijsaanbieder'
           example:
             $ref: 'examples/onderwijsaanbieder.json'
     Onderwijsbesturen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2199,28 +2209,28 @@ components:
                   onderwijsbesturen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijsbestuur.json'
+                      $ref: '#/components/schemas/Onderwijsbestuur'
                 required:
                   - onderwijsinstellingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijsbestuur:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijsbestuur.json'
+            $ref: '#/components/schemas/Onderwijsbestuur'
           example:
             $ref: 'examples/onderwijsbestuur.json'
     Onderwijsinstellingserkenningen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2237,28 +2247,28 @@ components:
                   onderwijsinstellingserkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+                      $ref: '#/components/schemas/Onderwijsinstellingserkenning'
                 required:
                   - onderwijsinstellingserkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijsinstellingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+            $ref: '#/components/schemas/Onderwijsinstellingserkenning'
           example:
             $ref: 'examples/onderwijsinstellingserkenning.json'
     Onderwijslocaties:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2275,28 +2285,28 @@ components:
                   onderwijslocaties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijslocatie.json'
+                      $ref: '#/components/schemas/Onderwijslocatie'
                 required:
                   - onderwijslocaties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijslocatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijslocatie.json'
+            $ref: '#/components/schemas/Onderwijslocatie'
           example:
             $ref: 'examples/onderwijslocatie.json'
     Onderwijslocatiegebruiken:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2313,28 +2323,28 @@ components:
                   onderwijslocatiegebruiken:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+                      $ref: '#/components/schemas/Onderwijslocatiegebruik'
                 required:
                   - onderwijslocatiegebruiken
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijslocatiegebruik:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+            $ref: '#/components/schemas/Onderwijslocatiegebruik'
           example:
             $ref: 'examples/onderwijslocatiegebruik.json'
     VavoOnderwijslicenties:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2351,28 +2361,28 @@ components:
                   vavoOnderwijslicenties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+                      $ref: '#/components/schemas/VavoOnderwijslicentie'
                 required:
                   - vavoOnderwijslicenties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VavoOnderwijslicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+            $ref: '#/components/schemas/VavoOnderwijslicentie'
           example:
             $ref: 'examples/vavo-onderwijslicentie.json'
     VavoOpleidingserkenningen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2389,28 +2399,28 @@ components:
                   vavoOpleidingserkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+                      $ref: '#/components/schemas/VavoOpleidingserkenning'
                 required:
                   - vavoOpleidingserkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VavoOpleidingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+            $ref: '#/components/schemas/VavoOpleidingserkenning'
           example:
             $ref: 'examples/vavo-opleidingserkenning.json'
     VoGroepen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2427,28 +2437,28 @@ components:
                   voGroepen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vo-groep.json'
+                      $ref: '#/components/schemas/VoGroep'
                 required:
                   - voGroepen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VoGroep:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vo-groep.json'
+            $ref: '#/components/schemas/VoGroep'
           example:
             $ref: 'examples/vo-groep.json'
     VoOpleidingen:
       description: OK.
       headers:
         X-Pagination-Page:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+          $ref: '#/components/headers/xPaginationPage'
         X-Pagination-Limit:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+          $ref: '#/components/headers/xPaginationLimit'
         X-Total-Count:
-          $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
+          $ref: '#/components/headers/xTotalCount'
       content:
         application/hal+json:
           example:
@@ -2465,16 +2475,74 @@ components:
                   voOpleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vo-opleiding.json'
+                      $ref: '#/components/schemas/VoOpleiding'
                 required:
                   - voOpleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VoOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vo-opleiding.json'
+            $ref: '#/components/schemas/VoOpleiding'
           example:
             $ref: 'examples/vo-opleiding.json'
+  schemas:
+    Links:
+      $ref: 'links.json'
+    AangebodenMboOpleiding:
+      $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+    AangebodenMboOpleidingCohort:
+      $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+    AangebodenVavoOpleiding:
+      $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+    AangebodenVavoOpleidingCohort:
+      $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json' 
+    Bedrijfsopleiding:
+      $ref: 'jsonschemas/bedrijfsopleiding.json'
+    BevoegdGezagErkenning:
+      $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+    Communicatiecontext:
+      $ref: 'jsonschemas/communicatiecontext.json'
+    Examenlicentie:
+      $ref: 'jsonschemas/examenlicentie.json'
+    MboCrossOverKwalificatie:
+      $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+    MboDomein:
+      $ref: 'jsonschemas/mbo-domein.json'
+    MboKwalificatie:
+      $ref: 'jsonschemas/mbo-kwalificatie.json'
+    MboKwalificatiedossier:
+      $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+    MboOnderwijslicentie:
+      $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+    MboOpleidingserkenning:
+      $ref: 'jsonschemas/mbo-opleidingserkenning.json'
+    NederlandsAdres:
+      $ref: 'jsonschemas/nederlands-adres.json'
+    Onderwijsaanbieder:
+      $ref: 'jsonschemas/onderwijsaanbieder.json'
+    Onderwijsbestuur:
+      $ref: 'jsonschemas/onderwijsbestuur.json'
+    Onderwijsinstellingserkenning:
+      $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+    Onderwijslocatie:
+      $ref: 'examples/onderwijslocatie.json'
+    Onderwijslocatiegebruik:
+      $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+    VavoOnderwijslicentie:
+      $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+    VavoOpleidingserkenning:
+      $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+    VoGroep:
+      $ref: 'jsonschemas/vo-groep.json'
+    VoOpleiding:
+      $ref: 'jsonschemas/vo-opleiding.json'
+  headers:
+    xPaginationLimit:
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationLimit'
+    xPaginationPage:
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xPaginationPage'
+    xTotalCount:
+      $ref: 'https://rawgit.com/dvh/KP-APIs/master/oas-components/headers.yaml#/xTotalCount'
