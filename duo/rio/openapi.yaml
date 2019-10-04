@@ -1601,17 +1601,17 @@ components:
                   aangebodenMboOpleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+                      $ref: '#/components/schemas/AangebodenMboOpleiding'
                 required:
                   - aangebodenMboOpleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenMboOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+            $ref: '#/components/schemas/AangebodenMboOpleiding'
           example:
             $ref: 'examples/aangeboden-mbo-opleiding.json'
     AangebodenMboOpleidingCohorten:
@@ -1639,17 +1639,17 @@ components:
                   aangebodenMboOpleidingCohorten:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+                      $ref: '#/components/schemas/AangebodenMboOpleidingCohort'
                 required:
                   - aangebodenMboOpleidingCohorten
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenMboOpleidingCohort:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+            $ref: '#/components/schemas/AangebodenMboOpleidingCohort'
           example:
             $ref: 'examples/aangeboden-mbo-opleiding-cohort.json'
     AangebodenVavoOpleidingen:
@@ -1677,17 +1677,17 @@ components:
                   aangebodenVavoOpleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+                      $ref: '#/components/schemas/AangebodenVavoOpleiding'
                 required:
                   - aangebodenVavoOpleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenVavoOpleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+            $ref: '#/components/schemas/AangebodenVavoOpleiding'
           example:
             $ref: 'examples/aangeboden-vavo-opleiding.json'
     AangebodenVavoOpleidingCohorten:
@@ -1715,17 +1715,17 @@ components:
                   aangebodenVavoOpleidingCohorten:
                     type: array
                     items:
-                      $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json'
+                      $ref: '#/components/schemas/AangebodenVavoOpleidingCohort'
                 required:
                   - aangebodenVavoOpleidingCohorten
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     AangebodenVavoOpleidingCohort:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json' 
+            $ref: '#/components/schemas/AangebodenVavoOpleidingCohort'
           example:
             $ref: 'examples/aangeboden-vavo-opleiding-cohort.json'
     Bedrijfsopleidingen:
@@ -1753,17 +1753,17 @@ components:
                   bedrijfsopleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/bedrijfsopleiding.json'
+                      $ref: '#/components/schemas/Bedrijfsopleiding'
                 required:
                   - bedrijfsopleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Bedrijfsopleiding:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/bedrijfsopleiding.json'
+            $ref: '#/components/schemas/Bedrijfsopleiding'
           example:
             $ref: 'examples/bedrijfsopleiding.json'
     BevoegdGezagErkenningen:
@@ -1791,17 +1791,17 @@ components:
                   bevoegdGezagErkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+                      $ref: '#/components/schemas/BevoegdGezagErkenning'
                 required:
                   - bevoegdGezagErkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     BevoegdGezagErkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+            $ref: '#/components/schemas/BevoegdGezagErkenning'
           example:
             $ref: 'examples/bevoegd-gezag-erkenning.json'
     Communicatiecontexten:
@@ -1829,17 +1829,17 @@ components:
                   communicatiecontexten:
                     type: array
                     items:
-                      $ref: 'jsonschemas/communicatiecontext.json'
+                      $ref: '#/components/schemas/Communicatiecontext'
                 required:
                   - communicatiecontexten
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Communicatiecontext:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/communicatiecontext.json'
+            $ref: '#/components/schemas/Communicatiecontext'
           example:
             $ref: 'examples/communicatiecontext.json'
     Examenlicenties:
@@ -1867,17 +1867,17 @@ components:
                   examenlicenties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/examenlicentie.json'
+                      $ref: '#/components/schemas/Examenlicentie'
                 required:
                   - examenlicenties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Examenlicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/examenlicentie.json'
+            $ref: '#/components/schemas/Examenlicentie'
           example:
             $ref: 'examples/examenlicentie.json'
     MboCrossOverKwalificaties:
@@ -1905,17 +1905,17 @@ components:
                   mboCrossOverKwalificaties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+                      $ref: '#/components/schemas/MboCrossOverKwalificatie'
                 required:
                   - mboCrossOverKwalificaties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboCrossOverKwalificatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+            $ref: '#/components/schemas/MboCrossOverKwalificatie'
           example:
             $ref: 'examples/mbo-cross-over-kwalificatie.json'
     MboDomeinen:
@@ -1943,17 +1943,17 @@ components:
                   mboDomeinen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-domein.json'
+                      $ref: '#/components/schemas/MboDomein'
                 required:
                   - mboDomeinen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboDomein:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-domein.json'
+            $ref: '#/components/schemas/MboDomein'
           example:
             $ref: 'examples/mbo-domein.json'
     MboKwalificaties:
@@ -1981,17 +1981,17 @@ components:
                   mboKwalificaties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-kwalificatie.json'
+                      $ref: '#/components/schemas/MboKwalificatie'
                 required:
                   - mboKwalificaties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboKwalificatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-kwalificatie.json'
+            $ref: '#/components/schemas/MboKwalificatie'
           example:
             $ref: 'examples/mbo-kwalificatie.json'
     MboKwalificatiedossiers:
@@ -2019,17 +2019,17 @@ components:
                   mboKwalificatiedossiers:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+                      $ref: '#/components/schemas/MboKwalificatiedossier'
                 required:
                   - mboKwalificatiedossiers
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboKwalificatiedossier:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+            $ref: '#/components/schemas/MboKwalificatiedossier'
           example:
             $ref: 'examples/mbo-kwalificatiedossier.json'
     MboOnderwijslicenties:
@@ -2057,17 +2057,17 @@ components:
                   mboOnderwijslicenties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+                      $ref: '#/components/schemas/MboOnderwijslicentie'
                 required:
                   - mboOnderwijslicenties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboOnderwijslicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+            $ref: '#/components/schemas/MboOnderwijslicentie'
           example:
             $ref: 'examples/mbo-onderwijslicentie.json'
     MboOpleidingserkenningen:
@@ -2095,17 +2095,17 @@ components:
                   mboOpleidingserkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/mbo-opleidingserkenning.json'
+                      $ref: '#/components/schemas/MboOpleidingserkenning'
                 required:
                   - mboOpleidingserkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     MboOpleidingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/mbo-opleidingserkenning.json' 
+            $ref: '#/components/schemas/MboOpleidingserkenning'
           example:
             $ref: 'examples/mbo-opleidingserkenning.json'
     NederlandsAdressen:
@@ -2133,17 +2133,17 @@ components:
                   nederlandsAdressen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/nederlands-adres.json'
+                      $ref: '#/components/schemas/NederlandsAdres'
                 required:
                   - nederlandsAdressen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     NederlandsAdres:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/nederlands-adres.json'
+            $ref: '#/components/schemas/NederlandsAdres'
           example:
             $ref: 'examples/nederlands-adres.json'
     Onderwijsaanbieders:
@@ -2171,17 +2171,17 @@ components:
                   onderwijsaanbieders:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijsaanbieder.json'
+                      $ref: '#/components/schemas/Onderwijsaanbieder'
                 required:
                   - onderwijsaanbieders
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijsaanbieder:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijsaanbieder.json'
+            $ref: '#/components/schemas/Onderwijsaanbieder'
           example:
             $ref: 'examples/onderwijsaanbieder.json'
     Onderwijsbesturen:
@@ -2209,17 +2209,17 @@ components:
                   onderwijsbesturen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijsbestuur.json'
+                      $ref: '#/components/schemas/Onderwijsbestuur'
                 required:
                   - onderwijsinstellingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijsbestuur:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijsbestuur.json'
+            $ref: '#/components/schemas/Onderwijsbestuur'
           example:
             $ref: 'examples/onderwijsbestuur.json'
     Onderwijsinstellingserkenningen:
@@ -2247,17 +2247,17 @@ components:
                   onderwijsinstellingserkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+                      $ref: '#/components/schemas/Onderwijsinstellingserkenning'
                 required:
                   - onderwijsinstellingserkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijsinstellingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+            $ref: '#/components/schemas/Onderwijsinstellingserkenning'
           example:
             $ref: 'examples/onderwijsinstellingserkenning.json'
     Onderwijslocaties:
@@ -2285,17 +2285,17 @@ components:
                   onderwijslocaties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijslocatie.json'
+                      $ref: '#/components/schemas/Onderwijslocatie'
                 required:
                   - onderwijslocaties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijslocatie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijslocatie.json'
+            $ref: '#/components/schemas/Onderwijslocatie'
           example:
             $ref: 'examples/onderwijslocatie.json'
     Onderwijslocatiegebruiken:
@@ -2323,17 +2323,17 @@ components:
                   onderwijslocatiegebruiken:
                     type: array
                     items:
-                      $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+                      $ref: '#/components/schemas/Onderwijslocatiegebruik'
                 required:
                   - onderwijslocatiegebruiken
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     Onderwijslocatiegebruik:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+            $ref: '#/components/schemas/Onderwijslocatiegebruik'
           example:
             $ref: 'examples/onderwijslocatiegebruik.json'
     VavoOnderwijslicenties:
@@ -2361,17 +2361,17 @@ components:
                   vavoOnderwijslicenties:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+                      $ref: '#/components/schemas/VavoOnderwijslicentie'
                 required:
                   - vavoOnderwijslicenties
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VavoOnderwijslicentie:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+            $ref: '#/components/schemas/VavoOnderwijslicentie'
           example:
             $ref: 'examples/vavo-onderwijslicentie.json'
     VavoOpleidingserkenningen:
@@ -2399,17 +2399,17 @@ components:
                   vavoOpleidingserkenningen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+                      $ref: '#/components/schemas/VavoOpleidingserkenning'
                 required:
                   - vavoOpleidingserkenningen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VavoOpleidingserkenning:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+            $ref: '#/components/schemas/VavoOpleidingserkenning'
           example:
             $ref: 'examples/vavo-opleidingserkenning.json'
     VoGroepen:
@@ -2437,17 +2437,17 @@ components:
                   voGroepen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vo-groep.json'
+                      $ref: '#/components/schemas/VoGroep'
                 required:
                   - voGroepen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VoGroep:
       description: OK.
       content:
         application/hal+json:
           schema:
-            $ref: 'jsonschemas/vo-groep.json'
+            $ref: '#/components/schemas/VoGroep'
           example:
             $ref: 'examples/vo-groep.json'
     VoOpleidingen:
@@ -2475,11 +2475,11 @@ components:
                   voOpleidingen:
                     type: array
                     items:
-                      $ref: 'jsonschemas/vo-opleiding.json'
+                      $ref: '#/components/schemas/VoOpleiding'
                 required:
                   - voOpleidingen
               _links:
-                $ref: 'links.json'
+                $ref: '#/components/schemas/Links'
     VoOpleiding:
       description: OK.
       content:
@@ -2489,6 +2489,54 @@ components:
           example:
             $ref: 'examples/vo-opleiding.json'
   schemas:
+    Links:
+      $ref: 'links.json'
+    AangebodenMboOpleiding:
+      $ref: 'jsonschemas/aangeboden-mbo-opleiding.json'
+    AangebodenMboOpleidingCohort:
+      $ref: 'jsonschemas/aangeboden-mbo-opleiding-cohort.json'
+    AangebodenVavoOpleiding:
+      $ref: 'jsonschemas/aangeboden-vavo-opleiding.json'
+    AangebodenVavoOpleidingCohort:
+      $ref: 'jsonschemas/aangeboden-vavo-opleiding-cohort.json' 
+    Bedrijfsopleiding:
+      $ref: 'jsonschemas/bedrijfsopleiding.json'
+    BevoegdGezagErkenning:
+      $ref: 'jsonschemas/bevoegd-gezag-erkenning.json'
+    Communicatiecontext:
+      $ref: 'jsonschemas/communicatiecontext.json'
+    Examenlicentie:
+      $ref: 'jsonschemas/examenlicentie.json'
+    MboCrossOverKwalificatie:
+      $ref: 'jsonschemas/mbo-cross-over-kwalificatie.json'
+    MboDomein:
+      $ref: 'jsonschemas/mbo-domein.json'
+    MboKwalificatie:
+      $ref: 'jsonschemas/mbo-kwalificatie.json'
+    MboKwalificatiedossier:
+      $ref: 'jsonschemas/mbo-kwalificatiedossier.json'
+    MboOnderwijslicentie:
+      $ref: 'jsonschemas/mbo-onderwijslicentie.json'
+    MboOpleidingserkenning:
+      $ref: 'jsonschemas/mbo-opleidingserkenning.json'
+    NederlandsAdres:
+      $ref: 'jsonschemas/nederlands-adres.json'
+    Onderwijsaanbieder:
+      $ref: 'jsonschemas/onderwijsaanbieder.json'
+    Onderwijsbestuur:
+      $ref: 'jsonschemas/onderwijsbestuur.json'
+    Onderwijsinstellingserkenning:
+      $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
+    Onderwijslocatie:
+      $ref: 'examples/onderwijslocatie.json'
+    Onderwijslocatiegebruik:
+      $ref: 'jsonschemas/onderwijslocatiegebruik.json'
+    VavoOnderwijslicentie:
+      $ref: 'jsonschemas/vavo-onderwijslicentie.json'
+    VavoOpleidingserkenning:
+      $ref: 'jsonschemas/vavo-opleidingserkenning.json'
+    VoGroep:
+      $ref: 'jsonschemas/vo-groep.json'
     VoOpleiding:
       $ref: 'jsonschemas/vo-opleiding.json'
   headers:
