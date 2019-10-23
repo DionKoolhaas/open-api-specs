@@ -13,7 +13,7 @@
 						"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vo-opleiding?voGroep=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000"
 					}
 				},
-				"uri": "http://lod.onderwijsregistratie.nl/rio/id/VoGroep/1000",
+				"uri": "http://lod.onderwijsregistratie.nl/rio/id/Opleidingseenheid/1000",
 				"code": "1000",
 				"naam": "VMBO BB ENT BW",
 				"naamLang": "VMBO BB ENT Bouwen, wonen en interieur",

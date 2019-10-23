@@ -13,7 +13,7 @@
       "href": "https://lod.onderwijsregistratie.nl/api/rio/v1/mbo-kwalificaties-dossier?mboKwalificatie=http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatie/25172"
     }
   },
-  "uri": "http://lod.onderwijsregistratie.nl/rio/id/MboKwalificatie/25172",
+  "uri": "http://lod.onderwijsregistratie.nl/rio/id/Opleidingseenheid/25172",
   "code": "25172",
   "naam": "Leidinggevende bakkerij",
   "naamLang": "Leidinggevende bakkerij",

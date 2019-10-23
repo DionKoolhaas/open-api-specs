@@ -10,7 +10,7 @@
 			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/aangeboden-mbo-opleidingen?mboCrossOverKwalificatie=http://lod.onderwijsregistratie.nl/rio/id/MboCrossOverKwalificatie/25195"
 		}
 	},
-	"uri": "http://lod.onderwijsregistratie.nl/rio/id/MboCrossOverKwalificatie/25195",
+	"uri": "http://lod.onderwijsregistratie.nl/rio/id/Opleidingseenheid/25195",
 	"code": "26000",
 	"naamLang": "Allround coordinator-instructeur buitensport",
 	"herkomstOpleiding": "SBB",

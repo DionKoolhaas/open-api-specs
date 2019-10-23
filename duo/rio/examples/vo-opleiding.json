@@ -13,7 +13,7 @@
 			"href": "https://lod.onderwijsregistratie.nl/api/rio/v1/vavo-opleidingserkenning?voOpleiding=http://lod.onderwijsregistratie.nl/rio/id/VoGroep/2553"
 		}
 	},
-	"uri": "http://lod.onderwijsregistratie.nl/rio/id/VoOpleiding/2553",
+	"uri": "http://lod.onderwijsregistratie.nl/rio/id/Opleidingseenheid/2553",
 	"code": "2553",
 	"naam": "LWOO Basisbg Lw Ec M & C",
 	"naamLang": "Basisberoepsgerichte Leerweg Sector Economie Afdeling Mode en Commercie",
