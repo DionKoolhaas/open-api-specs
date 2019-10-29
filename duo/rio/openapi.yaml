@@ -2528,7 +2528,7 @@ components:
     Onderwijsinstellingserkenning:
       $ref: 'jsonschemas/onderwijsinstellingserkenning.json'
     Onderwijslocatie:
-      $ref: 'examples/onderwijslocatie.json'
+      $ref: 'jsonschemas/onderwijslocatie.json'
     Onderwijslocatiegebruik:
       $ref: 'jsonschemas/onderwijslocatiegebruik.json'
     VavoOnderwijslicentie:
